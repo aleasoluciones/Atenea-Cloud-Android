@@ -1,19 +1,16 @@
-# Seafile Android Client [![Build Status](https://secure.travis-ci.org/haiwen/seadroid.png?branch=master)](http://travis-ci.org/haiwen/seadroid)
+# Atenea Cloud Android Client
 
-The application has been published onto the market for easy access:
-
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/badge_new.png)](https://play.google.com/store/apps/details?id=com.seafile.seadroid2)
-[![Get it on F-Droid](https://cloud.githubusercontent.com/assets/12447257/8024903/ce8dca32-0d44-11e5-95b0-e97d1d027351.png)](https://f-droid.org/repository/browse/?fdid=com.seafile.seadroid2)
+Atenea Cloud Android client - SeaDroid mod
 
 ## Contributors
 
-See [Contributors Graph](https://github.com/haiwen/seadroid/graphs/contributors)
+See [Contributors Graph](https://github.com/haiwen/atenea-cloud/graphs/contributors)
 
 ## Build the APK
 
 * Make sure you have installed the [Android SDK](http://developer.android.com/sdk/index.html) then:
 
-* cd into seadroid directory
+* cd into atenea-cloud directory
 * Create `key.properties` file or simply rename `key.properties.example` and change configurations to match yours.
 
 * Create keystore file if you don't have one
@@ -23,7 +20,7 @@ See [Contributors Graph](https://github.com/haiwen/seadroid/graphs/contributors)
  ```
 * Build with `./gradlew assembleRelease`
 
-You will get `app/build/outputs/apk/seafile-${versionName}.apk` after the build finishes.
+You will get `app/build/outputs/apk/atenea-cloud-${versionName}.apk` after the build finishes.
 
 ## Develop in Android Studio
 
@@ -36,21 +33,6 @@ You will get `app/build/outputs/apk/seafile-${versionName}.apk` after the build 
 
 * Open Android Studio
 * Import project
-* Select seadroid directory
+* Select atenea-cloud directory
 * Choose import from gradle
 * Click next until import is completed
-
-## Develop in IntelliJ/Eclipse
-For those who are using maven build structures, checkout the project from [maven](https://github.com/haiwen/seadroid/tree/maven) branch.
-
-## Internationalization
-
-### Contribute your translation
-
-Please submit translations via Transifex: https://www.transifex.com/haiwen/seadroid/
-
-Steps:
-
-1. Create a free account on Transifex (https://www.transifex.com/).
-2. Send a request to join the language translation.
-3. After accepted by the project maintainer, then you can upload your file or translate online.
