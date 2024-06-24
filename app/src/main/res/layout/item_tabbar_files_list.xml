@@ -4,18 +4,6 @@
     android:id="@+id/ll_root"
     android:layout_width="wrap_content"
     android:layout_height="36dp"
-<<<<<<< HEAD
-    android:foreground="?selectableItemBackground"
-    android:gravity="center_vertical"
-    android:orientation="horizontal">
-
-    <ImageView
-        android:layout_width="16dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="2dp"
-        android:clickable="false"
-        android:src="@drawable/baseline_arrow_forward_24"
-=======
     android:background="@android:color/transparent"
     android:orientation="horizontal">
 
@@ -25,24 +13,15 @@
         android:background="?android:attr/selectableItemBackground"
         android:clickable="false"
         android:src="@drawable/ic_tabbar_partition"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         app:tint="@color/white" />
 
     <TextView
         android:id="@+id/btn_item_tabbar"
         android:layout_width="wrap_content"
-<<<<<<< HEAD
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:text="@string/app_name"
-        android:textColor="@color/item_title_color"
-        android:textSize="16sp" />
-=======
         android:layout_height="match_parent"
         android:background="?android:attr/selectableItemBackground"
         android:gravity="center"
         android:minWidth="20dp"
         android:textColor="#000000" />
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
 </LinearLayout>

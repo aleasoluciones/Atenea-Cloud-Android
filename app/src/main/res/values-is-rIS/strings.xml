@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Velkomin í Seafile</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'>Persónuverndarstefna</string>
@@ -99,7 +96,6 @@
   <string name='deny'>Neita</string>
   <string name='allow'>Leyfa</string>
   <string name="welcome_to_seafile">Velkominn</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Veldu reikning til að byrja</string>
   <string name="edit_account">Breyta</string>
   <string name="delete_account">Eyða</string>
@@ -304,10 +300,7 @@
   <string name="settings_account_info_title">Notendaupplýsingar</string>
   <string name="settings_account_info_load_data">hleð...</string>
   <string name="settings_account_space_title">Pláss notað</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">Núverandi áætlun</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Útskrá</string>
   <string name="settings_account_sign_out_hint">Smelltu til að útskrá</string>
   <string name="settings_account_sign_out_confirm">Viltu skrá þig út?</string>
@@ -501,12 +494,9 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
-<<<<<<< HEAD
-=======
 
 
 
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

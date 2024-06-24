@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Üdvözlöm a Seafile-ban</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'>Adatvédelmi irányelv</string>
@@ -98,7 +95,6 @@
   <string name='deny'>Tagadni</string>
   <string name='allow'>Lehetővé teszi</string>
   <string name="welcome_to_seafile">Üdvözöljük</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Válasszon egy fiókot</string>
   <string name="edit_account">Szerkeszt</string>
   <string name="delete_account">Töröl</string>
@@ -337,10 +333,7 @@
   <string name="settings_account_info_title">Felhasználói információ</string>
   <string name="settings_account_info_load_data">betöltés...</string>
   <string name="settings_account_space_title">Felhasznált hely</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">Jelenlegi terv</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Kijelentkezés</string>
   <string name="settings_account_sign_out_hint">Koppintson a kilépéshez</string>
   <string name="settings_account_sign_out_confirm">Ki szeretne lépni?</string>
@@ -450,8 +443,6 @@
   <string name="settings_about_title">Névjegy</string>
   <string name="settings_about_version_title">Alkalmazás verzió</string>
   <string name="settings_about_author_title">Névjegy</string>
-<<<<<<< HEAD
-=======
 
   <string name="settings_about_author_info">
     <![CDATA[
@@ -463,7 +454,6 @@
     ]]>
   </string>
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">HALADÓ BEÁLLÍTÁSOK</string>
   <string name="settings_storage_title">GYORSÍTÓTÁR</string>
   <string name="settings_cache_title">Gyorsítótár mérete</string>
@@ -570,10 +560,7 @@
   <string name="action_mode_no_items_selected">Nincs kiválasztott elem</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
-<<<<<<< HEAD
-=======
   <string name="permission_read_exteral_storage_rationale">A fájlok kezeléséhez engedélyezze a tárhely elérését.</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">A névjegyek kezeléséhez engedélyezd a névjegyekhez való hozzáférést.</string>
   <string name="permission_not_granted">Engedély nem lett megadva</string>
   <string name="history_change_title">Változtatás részletei</string>
@@ -606,11 +593,6 @@
   <string name="input_auto_expiration">Adja meg a lejárati időt</string>
   <!--editor-->
   <!--Folder backup Preference-->
-<<<<<<< HEAD
-  <!--action-->
-  <!--share link-->
-</resources>
-=======
 </resources>
 
 
@@ -618,4 +600,3 @@
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

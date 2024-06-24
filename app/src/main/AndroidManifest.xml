@@ -1,72 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-<<<<<<< HEAD
-    package="com.seafile.seadroid2">
-
-    <uses-sdk tools:overrideLibrary="us.feras.mdv" />
-
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.CAMERA" />
-
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="false" />
-
-    <!-- to start monitor services during boot -->
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
-    <!-- to modify Seadroid's own account sync settings -->
-    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
-    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
-
-    <!-- get list of Seadroid accounts -->
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-
-    <!--Set/Get the auth token from the account manager -->
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
-
-    <!-- Add/Remove/Update Seafile accounts -->
-    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
-
-    <!--<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
-
-    <!--android 9.0  FOREGROUND_SERVICE -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-
-    <uses-permission
-        android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <uses-permission
-        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
-        tools:ignore="ScopedStorage" />
-
-    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
-
-    <!--    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />-->
-
-
-    <!-- Apps that target Android 9 (API level 28) or higher and use foreground services
-    must request the FOREGROUND_SERVICE permission -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-
-    <!-- Runtime permissions introduced in Android 13 (API level 33) -->
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
-
-    <!-- To handle the reselection within the app on devices running Android 14
-         or higher if your app targets Android 14 (API level 34) or higher.  -->
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
-
-    <application
-        android:name=".SeadroidApplication"
-=======
     package="com.ateneacloud.drive">
 
     <uses-sdk tools:overrideLibrary="us.feras.mdv" />
@@ -97,85 +31,11 @@
 
     <application
         android:name="com.ateneacloud.drive.SeadroidApplication"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
         android:requestLegacyExternalStorage="true"
-<<<<<<< HEAD
-        android:theme="@style/AppTheme.Material3">
-
-        <!--        <provider-->
-        <!--            android:name="androidx.startup.InitializationProvider"-->
-        <!--            android:authorities="${applicationId}.androidx-startup"-->
-        <!--            android:exported="false"-->
-        <!--            tools:node="merge">-->
-        <!--            &lt;!&ndash; This entry makes ExampleLoggerInitializer discoverable. &ndash;&gt;-->
-        <!--            <meta-data  android:name="com.example.ExampleLoggerInitializer"-->
-        <!--                android:value="androidx.startup" />-->
-        <!--        </provider>-->
-
-        <!--        <provider-->
-        <!--            android:name="androidx.startup.InitializationProvider"-->
-        <!--            android:authorities="${applicationId}.androidx-startup"-->
-        <!--            android:exported="false"-->
-        <!--            tools:node="merge">-->
-        <!--            &lt;!&ndash; If you are using androidx.startup to initialize other components &ndash;&gt;-->
-        <!--            <meta-data-->
-        <!--                android:name="androidx.work.WorkManagerInitializer"-->
-        <!--                android:value="androidx.startup"-->
-        <!--                tools:node="remove" />-->
-        <!--        </provider>-->
-
-        <meta-data
-            android:name=".util.GlideCache"
-            android:value="AppGlideModule" />
-
-        <activity
-            android:name=".ui.SplashActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:name=".ui.account.AccountsActivity"
-            android:launchMode="singleTop" />
-
-        <activity android:name=".ui.account.SingleSignOnActivity" />
-
-        <activity android:name=".ui.account.SingleSignOnAuthorizeActivity" />
-
-        <activity android:name=".ui.settings.SettingsActivity" />
-
-        <activity
-            android:name=".ui.main.MainActivity"
-            android:configChanges="uiMode|orientation|screenSize"
-            android:exported="false"
-            android:launchMode="singleTop" />
-
-        <activity
-            android:name=".ui.gesture.UnlockGesturePasswordActivity"
-            android:launchMode="singleTop"
-            android:screenOrientation="portrait" />
-
-        <activity
-            android:name=".ui.gesture.CreateGesturePasswordActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-
-        <activity android:name=".ui.markdown.MarkdownActivity" />
-
-        <activity
-            android:name=".ui.account.AccountDetailActivity"
-            android:parentActivityName=".ui.account.AccountsActivity" />
-
-        <activity
-            android:name=".ui.share.ShareToSeafileActivity"
-=======
         android:theme="@style/AppTheme">
         <activity
             android:name="com.ateneacloud.drive.ui.activity.SyncsActivity"
@@ -223,86 +83,17 @@
             android:theme="@style/AppTheme.Multiple" />
         <activity
             android:name="com.ateneacloud.drive.ui.activity.ShareToSeafileActivity"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:excludeFromRecents="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
-<<<<<<< HEAD
-                <category android:name="android.intent.category.DEFAULT" />
-=======
 
                 <category android:name="android.intent.category.DEFAULT" />
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
                 <data android:mimeType="*/*" />
             </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.SEND_MULTIPLE" />
-<<<<<<< HEAD
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="*/*" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".ui.file.FileActivity" />
-
-        <activity
-            android:name=".ui.account.SeafileAuthenticatorActivity"
-            android:parentActivityName=".ui.account.AccountsActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.account.AccountsActivity" />
-        </activity>
-
-
-        <activity
-            android:name=".ui.camera_upload.CameraUploadConfigActivity"
-            android:configChanges="uiMode" />
-        <activity
-            android:name=".ui.folder_backup.FolderBackupConfigActivity"
-            android:configChanges="uiMode" />
-
-        <activity
-            android:name=".ui.editor.EditorActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Editor" />
-
-        <provider
-            android:name=".ui.search.RecentSearchSuggestionsProvider"
-            android:authorities="${applicationId}.ui.search.RecentSearchSuggestionsProvider" />
-
-        <activity
-            android:name=".ui.search.Search2Activity"
-            android:configChanges="uiMode"
-            android:exported="true"
-            android:launchMode="singleTop"
-            android:voiceSearchMode="showVoiceSearchButton|launchRecognizer">
-            <intent-filter>
-                <action android:name="android.intent.action.SEARCH" />
-            </intent-filter>
-            <meta-data
-                android:name="android.app.searchable"
-                android:resource="@xml/searchable" />
-        </activity>
-
-        <activity android:name=".ui.folder_backup.FolderBackupSelectedPathActivity" />
-
-        <activity
-            android:name=".ui.media.player.exoplayer.CustomExoVideoPlayerActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:screenOrientation="sensor" />
-
-        <activity android:name=".ui.webview.SeaWebViewActivity" />
-        <activity android:name=".ui.data_migrate.DataMigrationActivity" />
-        <activity android:name=".ui.selector.ObjSelectorActivity" />
-        <activity android:name=".ui.media.image_preview.ImagePreviewActivity" />
-        <activity android:name=".ui.transfer_list.TransferActivity" />
-        <activity android:name=".ui.BugHandlerActivity" />
-
-        <provider
-            android:name=".provider.SeafileProvider"
-=======
 
                 <category android:name="android.intent.category.DEFAULT" />
 
@@ -350,7 +141,6 @@
 
         <provider
             android:name="com.ateneacloud.drive.provider.SeafileProvider"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:authorities="${applicationId}.documents"
             android:enabled="@bool/atLeastKitKat"
             android:exported="true"
@@ -361,10 +151,6 @@
             </intent-filter>
         </provider>
 
-<<<<<<< HEAD
-        <provider
-            android:name=".ui.camera_upload.StubContentProvider"
-=======
         <service android:name="com.ateneacloud.drive.transfer.TransferService" />
         <!--<service android:name=".folderbackup.FolderBackupService" />
         <service android:name=".monitor.FileMonitorService" />
@@ -372,21 +158,13 @@
 
         <provider
             android:name="com.ateneacloud.drive.cameraupload.StubContentProvider"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:authorities="${applicationId}.cameraupload.provider"
             android:exported="false"
             android:label="@string/sync_provider_camera_upload"
             android:syncable="true" />
-<<<<<<< HEAD
-
-        <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
-=======
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -395,63 +173,34 @@
         </provider>
 
         <service
-<<<<<<< HEAD
-            android:name=".account.AuthenticatorService"
-=======
             android:name="com.ateneacloud.drive.account.AuthenticatorService"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:exported="true">
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator" />
             </intent-filter>
-<<<<<<< HEAD
-=======
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             <meta-data
                 android:name="android.accounts.AccountAuthenticator"
                 android:resource="@xml/authenticator" />
         </service>
-<<<<<<< HEAD
-
-        <service
-            android:name=".ui.camera_upload.CameraSyncService"
-=======
         <service
             android:name="com.ateneacloud.drive.cameraupload.CameraSyncService"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.content.SyncAdapter" />
             </intent-filter>
-<<<<<<< HEAD
-=======
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             <meta-data
                 android:name="android.content.SyncAdapter"
                 android:resource="@xml/cameraadapter" />
         </service>
-<<<<<<< HEAD
-
-        <!--        <service-->
-        <!--            android:name=".ui.camera_upload.MediaSchedulerService"-->
-        <!--            android:permission="android.permission.BIND_JOB_SERVICE" />-->
-        <service
-            android:name=".framework.worker.FileSyncService"
-            android:exported="false" />
-
-        <receiver
-            android:name=".BootAutostart"
-=======
         <!--<service
             android:name=".cameraupload.MediaSchedulerService"
             android:permission="android.permission.BIND_JOB_SERVICE" />-->
 
         <receiver
             android:name="com.ateneacloud.drive.BootAutostart"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -461,14 +210,5 @@
             </intent-filter>
         </receiver>
     </application>
-<<<<<<< HEAD
-    <queries>
-        <intent>
-            <action android:name="android.intent.action.MAIN" />
-        </intent>
-    </queries>
-</manifest>
-=======
 
 </manifest>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

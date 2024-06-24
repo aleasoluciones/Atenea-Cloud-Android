@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Seafile にようこそ</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'>プライバシーポリシ</string>
@@ -99,7 +96,6 @@
   <string name='deny'>拒否</string>
   <string name='allow'>許可する</string>
   <string name="welcome_to_seafile">いらっしゃいませ</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">アカウントを選択して始めましょう</string>
   <string name="edit_account">編集</string>
   <string name="delete_account">削除</string>
@@ -361,10 +357,7 @@
   <string name="settings_account_info_title">ユーザー情報</string>
   <string name="settings_account_info_load_data">読み込み中…</string>
   <string name="settings_account_space_title">容量使用</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">当前计划</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">サインアウト</string>
   <string name="settings_account_sign_out_hint">クリックするとサインアウト</string>
   <string name="settings_account_sign_out_confirm">サインアウトしますか?</string>
@@ -471,8 +464,6 @@
   <string name="settings_about_title">アプリについて</string>
   <string name="settings_about_version_title">アプリ バージョン</string>
   <string name="settings_about_author_title">作者について</string>
-<<<<<<< HEAD
-=======
 
   <string name="settings_about_author_info">
      <![CDATA[
@@ -484,7 +475,6 @@
      ]]>
     </string>
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">高度な機能</string>
   <string name="settings_storage_title">キャッシュストレージ</string>
   <string name="settings_cache_title">キャッシュサイズ</string>
@@ -589,10 +579,7 @@
   <string name="action_mode_no_items_selected">アイテムが選択されていません</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
-<<<<<<< HEAD
-=======
   <string name="permission_read_exteral_storage_rationale">ファイルを処理するには、ファイルにアクセスするストレージのアクセス許可が必要です。</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">連絡先を処理するには、連絡先へのアクセス許可が必要です。</string>
   <string name="permission_not_granted">アクセス許可が付与されていません</string>
   <string name="history_change_title">更新の詳細</string>
@@ -645,11 +632,6 @@
   <string name="is_uploading">アップロードしています</string>
   <string name="network_unavailable">ネットワークが利用できません</string>
   <!--Folder backup Preference-->
-<<<<<<< HEAD
-  <!--action-->
-  <!--share link-->
-</resources>
-=======
 </resources>
 
 
@@ -657,4 +639,3 @@
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

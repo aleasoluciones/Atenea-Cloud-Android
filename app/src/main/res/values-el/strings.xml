@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Καλωσήρθατε στο Seafile</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'> Πολιτική Απορρήτου</string>
@@ -99,7 +96,6 @@
   <string name='deny'>Αρνούμαι</string>
   <string name='allow'>Επιτρέπω</string>
   <string name="welcome_to_seafile">Καλώς ήρθατε</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Επιλέξτε ένα λογαριασμό για να ξεκινήσετε</string>
   <string name="edit_account">Επεξεργασία</string>
   <string name="delete_account">Διαγραφή</string>
@@ -278,12 +274,9 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
-<<<<<<< HEAD
-=======
 
 
 
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

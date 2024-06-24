@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-=======
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/sort"
-<<<<<<< HEAD
-        android:icon="@drawable/baseline_sort_24"
-=======
         android:icon="@drawable/sort"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         android:title="@string/sort_menu_item"
         android:visible="true"
         app:showAsAction="always" />
 
     <item
         android:id="@+id/search"
-<<<<<<< HEAD
-        android:icon="@drawable/baseline_search_24"
-=======
         android:icon="@drawable/search"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         android:title="@string/search_menu_item"
         android:visible="true"
         app:showAsAction="always" />
@@ -31,16 +20,9 @@
     <!-- More -->
     <item
         android:id="@+id/menu_overflow"
-<<<<<<< HEAD
-        android:icon="@drawable/baseline_more_vert_24"
-        android:title="More"
-        app:showAsAction="ifRoom">
-
-=======
         android:icon="@drawable/ic_action_overflow"
         android:title="More"
         app:showAsAction="always">
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         <menu>
             <item
                 android:id="@+id/create_repo"
@@ -61,15 +43,12 @@
                 app:showAsAction="never" />
 
             <item
-<<<<<<< HEAD
-=======
                 android:id="@+id/clear_trash_repo"
                 android:title="@string/clean_trash_repo"
                 android:visible="true"
                 app:showAsAction="never" />
 
             <item
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
                 android:id="@+id/transfer_tasks"
                 android:title="@string/transfer_tasks"
                 android:visible="true"
@@ -81,10 +60,7 @@
                 android:visible="true"
                 app:showAsAction="never" />
 
-<<<<<<< HEAD
-=======
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             <item
                 android:id="@+id/settings"
                 android:title="@string/settings"

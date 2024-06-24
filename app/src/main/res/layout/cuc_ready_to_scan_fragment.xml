@@ -11,48 +11,25 @@
         android:layout_marginLeft="@dimen/tv_title_margin_left"
         android:layout_marginTop="@dimen/tv_title_margin_top"
         android:text="@string/settings_cuc_finish_title"
-<<<<<<< HEAD
-        android:textColor="@color/fancy_orange"
-        android:textSize="@dimen/tv_title_txt_size" />
-=======
         android:textSize="@dimen/tv_title_txt_size"
         android:textColor="@color/fancy_blue" />
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
     <TextView
         android:id="@+id/cuc_ready_info_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_below="@+id/cuc_ready_title_tv"
-        android:layout_alignLeft="@+id/cuc_ready_title_tv"
-        android:layout_marginTop="@dimen/section_margin_top"
-        android:layout_marginRight="30dp"
-        android:text="@string/settings_cuc_ready"
-        android:textColor="@color/fancy_gray"
-=======
         android:layout_alignLeft="@+id/cuc_ready_title_tv"
         android:layout_below="@+id/cuc_ready_title_tv"
         android:layout_marginTop="@dimen/section_margin_top"
         android:text="@string/settings_cuc_ready"
         android:textColor="@color/fancy_gray"
         android:layout_marginRight="30dp"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         android:textSize="@dimen/tv_subtitle_txt_size" />
 
     <TextView
         android:id="@+id/cuc_click_to_finish_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
-        android:layout_below="@+id/cuc_ready_info_tv"
-        android:layout_alignLeft="@+id/cuc_ready_info_tv"
-        android:layout_marginTop="@dimen/tv_subtitle_margin_top"
-        android:text="@string/settings_cuc_click_btn"
-        android:textColor="@color/fancy_gray"
-        android:textSize="@dimen/tv_subtitle_txt_size" />
-
-=======
         android:layout_alignLeft="@+id/cuc_ready_info_tv"
         android:layout_below="@+id/cuc_ready_info_tv"
         android:layout_marginTop="@dimen/tv_subtitle_margin_top"
@@ -70,5 +47,4 @@
             android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="@dimen/long_btn_height"/>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 </RelativeLayout>

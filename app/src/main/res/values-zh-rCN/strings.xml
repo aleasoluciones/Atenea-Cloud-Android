@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">欢迎使用Seafile</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'> 隐私政策 </string>
@@ -99,28 +96,15 @@
   <string name='deny'>否定</string>
   <string name='allow'>允许</string>
   <string name="welcome_to_seafile">欢迎</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">请选择一个账户开始使用</string>
   <string name="edit_account">编辑帐户</string>
   <string name="delete_account">删除帐户</string>
   <string name="delete">删除</string>
-<<<<<<< HEAD
-  <string name="deleted">已删除</string>
-  <string name="delete_repo">确定要删除该资料库吗？</string>
-  <string name="delete_file">确定要删除文件或文件夹吗？</string>
-  <string name="delete_records">确定删除此条记录吗？</string>
-  <string name="delete_records_and_file">确定删除此条记录和本地已下载的文件吗？</string>
-  <string name="delete_successful">删除成功</string>
-  <string name="delete_repo_title">删除资料库</string>
-  <string name="delete_file_f">删除文件</string>
-  <string name="delete_local_file_sametime">同时删除本地文件</string>
-=======
   <string name="delete_repo">确定要删除该资料库吗？</string>
   <string name="delete_file">确定要删除文件或文件夹吗？</string>
   <string name="delete_successful">删除成功</string>
   <string name="delete_repo_title">删除资料库</string>
   <string name="delete_file_f">删除文件</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="recover_library">恢复资料库</string>
   <string name="recover_file">恢复文件</string>
   <string name="move_file">移动文件</string>
@@ -175,10 +159,6 @@
   <string name="err_token_expired">授权已过期，请重新登录</string>
   <string name="upload">上传</string>
   <string name="uploaded">已上传</string>
-<<<<<<< HEAD
-  <string name="re_upload">再次上传</string>
-=======
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="updated">已更新</string>
   <string name="download_failed">下载失败</string>
   <string name="download_waiting">等待下载</string>
@@ -249,10 +229,6 @@
   <string name="load_accounts_fail">加载Seafile账户失败</string>
   <string name="load_libraries_fail">加载资料库失败</string>
   <string name="load_dir_fail">加载此文件夹的内容失败</string>
-<<<<<<< HEAD
-  <string name="not_supported">暂未支持</string>
-=======
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="not_supported_share">不支持此类分享</string>
   <string name="edit">编辑</string>
   <string name="create_draft">创建草稿</string>
@@ -304,10 +280,6 @@
   <string name="share_dir_link">分享此文件夹的链接</string>
   <string name="share_input_password">请输入分享密码</string>
   <string name="generating_link">生成链接中. . .</string>
-<<<<<<< HEAD
-  <string name="generating_link_title">生成链接</string>
-=======
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="link_ready_to_be_pasted">此链接已被复制到剪贴板。</string>
   <string name="rename_repo">重命名资料库</string>
   <string name="rename_file">重命名文件</string>
@@ -319,20 +291,12 @@
     <item>账户</item>
     <item>相册备份</item>
   </string-array>
-<<<<<<< HEAD
-  <string name="navigate_to_directory">定位到目录</string>
-=======
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="no_starred_file">无星标文件</string>
   <string name="added_to_upload_tasks">开始上传</string>
   <string name="added_photo_to_upload_tasks">图片开始上传</string>
   <string name="take_photo_successfully">拍照成功</string>
   <string name="tabs_library">资料库</string>
-<<<<<<< HEAD
-  <string name="tabs_activity">文件活动</string>
-=======
   <string name="tabs_activity">最近修改</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="tabs_starred">星标文件</string>
   <string name="provide_password">请提供资料库\"%s\"的密码</string>
   <string name="upload_waiting">等待上传</string>
@@ -394,10 +358,7 @@
   <string name="settings_account_info_title">账户信息</string>
   <string name="settings_account_info_load_data">加载中...</string>
   <string name="settings_account_space_title">已使用空间</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">当前计划</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">退出登录</string>
   <string name="settings_account_sign_out_hint">点击退出</string>
   <string name="settings_account_sign_out_confirm">你想退出登录吗？</string>
@@ -506,22 +467,6 @@
   <string name="settings_about_version_title">应用版本号</string>
   <string name="settings_about_author_title">关于我们</string>
   <string name="settings_about_author_info">
-<<<<<<< HEAD
-<![CDATA[
-<h2>Seafile Android Client</h2>
-<p>%s</p>
-<h5>联系我们</h5>
-<p>
-Twitter: Seafile<br>
-Email: support@seafile.com<br>
-</p>
-<h5>贡献</h5>
-<p>https://github.com/haiwen/seadroid.git</P>
-<h5>备案编号</h5>
-<p>京ICP备12015883号-10A</p>
-<h5>Copyright ©2013-2023 Seafile Ltd.</h5>
-]]></string>
-=======
     <![CDATA[
         <p>
             E-mail:  info@ateneacloud.com<br><br>
@@ -530,7 +475,6 @@ Email: support@seafile.com<br>
         </p>
     ]]>
   </string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">高级特性</string>
   <string name="settings_storage_title">缓存存储</string>
   <string name="settings_cache_title">缓存大小</string>
@@ -635,15 +579,8 @@ Email: support@seafile.com<br>
   <string name="action_mode_no_items_selected">未选中任何文件</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
-<<<<<<< HEAD
-  <string name="permission_manage_external_storage_rationale">请授权允许管理外部存储权限</string>
-  <string name="permission_read_external_storage_rationale">请授权允许访问存储权限</string>
-  <string name="permission_read_contacts_storage_rationale">在处理通讯录之前，请允许本应用获取通讯录权限</string>
-  <string name="permission_camera">请授权允许访问相机权限</string>
-=======
   <string name="permission_read_exteral_storage_rationale">在处理文件之前，请允许应用获取存储权限</string>
   <string name="permission_read_contacts_storage_rationale">在处理通讯录之前，请允许本应用获取通讯录权限</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_not_granted">未获得权限</string>
   <string name="history_change_title">修改详情</string>
   <string name="no_more_activities">没有更多活动了</string>
@@ -687,11 +624,6 @@ Email: support@seafile.com<br>
   <string name="channel_name_error">错误信息</string>
   <string name="channel_name_upload">文件上传</string>
   <string name="channel_name_download">文件下载</string>
-<<<<<<< HEAD
-  <string name="channel_name_album_backup">相册备份</string>
-  <string name="channel_name_transfer">文件传输</string>
-=======
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="above_quota">空间超额</string>
   <string name="camera_upload_state">上传信息显示</string>
   <string name="waiting_state">上传等待中</string>
@@ -731,37 +663,10 @@ Email: support@seafile.com<br>
   <string name="folder_backup_select_repo_update">已更新备份资料库</string>
   <string name="UncaughtExceptionHandler_err">应用已停止运行</string>
   <!--action-->
-<<<<<<< HEAD
-  <string name="pause">暂停</string>
-  <string name="paused">已暂停</string>
-  <string name="waiting">等待中</string>
-=======
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="add">添加</string>
   <string name="modify">修改</string>
   <string name="update">更新</string>
   <string name="clear">清除</string>
-<<<<<<< HEAD
-  <string name="close">关闭</string>
-  <string name="clear_all">清除所有</string>
-  <string name="done">完成</string>
-  <string name="success">成功</string>
-  <string name="failed">失败</string>
-  <string name="uploading">上传中</string>
-  <string name="downloading">下载中</string>
-  <string name="replace_all">替换所有</string>
-  <string name="replace">替换</string>
-  <string name="replace_local_file">替换本地文件</string>
-  <string name="replace_remote_file">替换远程文件</string>
-  <string name="do_not_replace">不要替换</string>
-  <string name="keep_both">保持两者</string>
-  <!--share link-->
-  <string name="link_permission_set_permission">设置权限</string>
-  <string name="link_permission_preview_and_download">预览和下载</string>
-  <string name="link_permission_preview_only">仅预览</string>
-  <string name="link_permission_download_and_upload">下载和上传</string>
-</resources>
-=======
   <string name="clear_all">清除所有</string>
 </resources>
 
@@ -770,4 +675,3 @@ Email: support@seafile.com<br>
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

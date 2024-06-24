@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Bem vindo ao Seafile</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'>Política de Privacidade</string>
@@ -99,7 +96,6 @@
   <string name='deny'>Negar</string>
   <string name='allow'>Permitir</string>
   <string name="welcome_to_seafile">Bem-vindo</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Escolha uma conta para começar</string>
   <string name="edit_account">Editar</string>
   <string name="delete_account">Deletar</string>
@@ -276,10 +272,7 @@
   <string name="settings_account_info_title">Informação do Usuario</string>
   <string name="settings_account_info_load_data">Carregando...</string>
   <string name="settings_account_space_title">Espaço usado</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">Plano atual</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Sair</string>
   <string name="settings_account_sign_out_hint">Clique para sair</string>
   <string name="settings_account_sign_out_confirm">Voce deseja sair?</string>
@@ -435,12 +428,9 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
-<<<<<<< HEAD
-=======
 
 
 
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

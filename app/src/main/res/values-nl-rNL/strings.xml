@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Welkom bij Seafile</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'>Privacybeleid</string>
@@ -99,7 +96,6 @@
   <string name='deny'>Ontkennen</string>
   <string name='allow'>Toestaan</string>
   <string name="welcome_to_seafile">Welkom</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Kies een account om te beginnen</string>
   <string name="edit_account">Bewerken</string>
   <string name="delete_account">Verwijderen</string>
@@ -331,10 +327,7 @@
   <string name="settings_account_info_title">Gebruikersinfo</string>
   <string name="settings_account_info_load_data">Laden...</string>
   <string name="settings_account_space_title">Gebruikte ruimte</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">Huidig plan</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Afmelden</string>
   <string name="settings_account_sign_out_hint">Klik om af te melden</string>
   <string name="settings_account_sign_out_confirm">Wil je afmelden?</string>
@@ -534,10 +527,7 @@
   <string name="action_mode_no_items_selected">Geen items geselecteerd</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
-<<<<<<< HEAD
-=======
   <string name="permission_read_exteral_storage_rationale">Om de bestanden te kunnen verwerken zijn voldoende leesrechten noodzakelijk</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_not_granted">Toestemming is niet verleend</string>
   <string name="history_change_title">Details over de wijzigingen</string>
   <string name="no_more_activities">Geen acties meer over</string>
@@ -557,12 +547,6 @@
   <!--Home list title-->
   <string name="shared_with_all">Gedeeld met iedereen</string>
   <!--editor-->
-<<<<<<< HEAD
-  <!--Folder backup Preference-->
-  <!--action-->
-  <!--share link-->
-</resources>
-=======
 </resources>
 
 
@@ -570,4 +554,3 @@
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

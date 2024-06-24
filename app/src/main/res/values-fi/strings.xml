@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Tervetuloa Seafileen</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'>Tietosuojakäytäntö</string>
@@ -99,7 +96,6 @@
   <string name='deny'>Kieltää</string>
   <string name='allow'>Sallia</string>
   <string name="welcome_to_seafile">Tervetuloa</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Valitse tili aloittaaksesi</string>
   <string name="edit_account">Muokkaa</string>
   <string name="delete_account">Poista</string>
@@ -350,10 +346,7 @@
   <string name="settings_account_info_title">Käyttäjätiedot</string>
   <string name="settings_account_info_load_data">Ladataan...</string>
   <string name="settings_account_space_title">Tilaa käytetty</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">Nykyinen suunnitelma</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Kirjaudu ulos</string>
   <string name="settings_account_sign_out_hint">Klikkaa kirjautuaksesi ulos</string>
   <string name="settings_account_sign_out_confirm">Haluatko kirjautua ulos?</string>
@@ -463,8 +456,6 @@
   <string name="settings_about_title">TIETOA</string>
   <string name="settings_about_version_title">Sovellusversio</string>
   <string name="settings_about_author_title">Tietoa tekijästä</string>
-<<<<<<< HEAD
-=======
 
   <string name="settings_about_author_info">
     <![CDATA[
@@ -476,7 +467,6 @@
     ]]>
   </string>
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">EDISTYNEET OMINAISUUDET</string>
   <string name="settings_storage_title">VÄLIMUISTIN TALLENNUSTILA</string>
   <string name="settings_cache_title">Välimuistin koko</string>
@@ -585,10 +575,7 @@
   <string name="action_mode_no_items_selected">Ei kohteita valittuna</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
-<<<<<<< HEAD
-=======
   <string name="permission_read_exteral_storage_rationale">Prosessoidaksesi tiedostoja sinun pitää antaa tallennustilalle lupa avata ne.</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">Prosessoidaksesi kontakteja sinun pitää antaa kontakteille lupa avata ne.</string>
   <string name="permission_not_granted">Oikeuksia ei myönnetty</string>
   <string name="history_change_title">Muokkauksen Yksityiskohdat</string>
@@ -630,11 +617,6 @@
   <string name="redo">tee uudelleen</string>
   <string name="link">Linkki</string>
   <!--Folder backup Preference-->
-<<<<<<< HEAD
-  <!--action-->
-  <!--share link-->
-</resources>
-=======
 </resources>
 
 
@@ -642,4 +624,3 @@
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

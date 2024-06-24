@@ -7,12 +7,8 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-<<<<<<< HEAD
-        android:layout_height="wrap_content">
-=======
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme">
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
         <include layout="@layout/toolbar_actionbar" /> <!-- placeholder, empty except on L -->
     </com.google.android.material.appbar.AppBarLayout>
@@ -25,13 +21,8 @@
         <br.tiagohm.markdownview.MarkdownView
             android:id="@+id/markdownView"
             android:layout_width="match_parent"
-<<<<<<< HEAD
-            android:layout_height="wrap_content"
-            android:gravity="start|top"
-=======
             android:layout_height="match_parent"
             android:gravity="left|top"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:lineSpacingExtra="3dp"
             android:textColor="#333333"
             app:escapeHtml="false" />

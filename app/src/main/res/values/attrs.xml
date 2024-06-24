@@ -53,14 +53,11 @@
         <attr name="aspect" format="string" />
    </declare-styleable>
 
-<<<<<<< HEAD
-=======
   <style name="dialog_light" parent="@android:style/Theme.Dialog">
     <item name="android:windowBackground">@color/whitegrey</item>
     <item name="android:textColor">@color/black</item>
   </style>
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <declare-styleable name="BaseTheme">
     <attr name="actionBarInsetStart" format="dimension" />
   </declare-styleable>
@@ -69,10 +66,4 @@
     <attr name="border_width" format="dimension" />
     <attr name="border_color" format="color" />
   </declare-styleable>
-<<<<<<< HEAD
-
-  <attr name="catalogToolbarWithCloseButtonStyle" format="reference"/>
-
-=======
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 </resources>

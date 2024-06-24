@@ -1,8 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<<<<<<< HEAD
-  <string name="welcome_to_seafile">Willkommen bei Seafile</string>
-=======
     <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
     <string name='policy_privacy'>Datenschutzrichtlinie</string>
@@ -99,7 +96,6 @@
   <string name='deny'>Leugnen</string>
   <string name='allow'>Erlauben</string>
   <string name="welcome_to_seafile">Willkommen</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Bitte wählen Sie ein Konto aus</string>
   <string name="edit_account">Bearbeiten</string>
   <string name="delete_account">Löschen</string>
@@ -365,10 +361,7 @@ Zum Aktualisieren einmal antippen</string>
   <string name="settings_account_info_title">Benutzerinformation</string>
   <string name="settings_account_info_load_data">Ladevorgang …</string>
   <string name="settings_account_space_title">Benutzter Speicherplatz</string>
-<<<<<<< HEAD
-=======
   <string name="settings_account_plan_title">Aktueller Plan</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Abmelden</string>
   <string name="settings_account_sign_out_hint">Zum Abmelden klicken</string>
   <string name="settings_account_sign_out_confirm">Möchten Sie sich wirklich abmelden?</string>
@@ -586,10 +579,7 @@ Zum Aktualisieren einmal antippen</string>
   <string name="action_mode_no_items_selected">Es wurden keine Objekte ausgewählt</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
-<<<<<<< HEAD
-=======
   <string name="permission_read_exteral_storage_rationale">Um Dateien zu bearbeiten bitte Speicherrechte erteilen.</string>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">Um Kontakte zu bearbeiten bitte Rechte erteilen.</string>
   <string name="permission_not_granted">Berechtigung wurde nicht erteilt</string>
   <string name="history_change_title">Änderungsinformationen</string>
@@ -644,11 +634,6 @@ Zum Aktualisieren einmal antippen</string>
   <string name="required_password">Passwort erforderlich.</string>
   <string name="weak_password">Passwort ist zu schwach.</string>
   <!--Folder backup Preference-->
-<<<<<<< HEAD
-  <!--action-->
-  <!--share link-->
-</resources>
-=======
 </resources>
 
 
@@ -656,4 +641,3 @@ Zum Aktualisieren einmal antippen</string>
 
 
 
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

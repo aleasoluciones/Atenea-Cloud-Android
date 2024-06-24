@@ -58,11 +58,7 @@
 
     <dimen name="rb_margin_top">10dp</dimen> <!-- RadioButton -->
 
-<<<<<<< HEAD
-    <dimen name="et_txt_size">22sp</dimen>
-=======
     <dimen name="et_txt_size">22dp</dimen>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     <dimen name="et_margin_bottom">10dp</dimen>
     <dimen name="clearable_et_btn_width">30dp</dimen>
     <dimen name="clearable_et_btn_height">30dp</dimen>

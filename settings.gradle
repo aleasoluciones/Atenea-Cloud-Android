@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-=======
 rootProject.name = "drive"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 include ':app'

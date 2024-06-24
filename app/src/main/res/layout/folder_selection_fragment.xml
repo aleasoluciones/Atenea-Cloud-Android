@@ -1,24 +1,12 @@
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-=======
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
     <LinearLayout
         android:id="@+id/linl_main_layout_view"
         android:layout_width="match_parent"
-<<<<<<< HEAD
-        android:layout_height="0dp"
-        android:layout_weight="1"
-=======
         android:layout_height="match_parent"
         android:layout_above="@+id/bt_dir_click_to_finish"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         android:orientation="vertical">
 
         <TextView
@@ -30,11 +18,7 @@
             android:layout_marginLeft="@dimen/tv_title_margin_left"
             android:layout_marginTop="@dimen/tv_title_margin_top"
             android:text="@string/settings_select_backup_folder_title"
-<<<<<<< HEAD
-            android:textColor="@color/fancy_orange"
-=======
             android:textColor="@color/fancy_blue"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:textSize="@dimen/tv_title_txt_size" />
 
         <FrameLayout
@@ -47,11 +31,7 @@
             android:id="@+id/linl_path_statusbar"
             android:layout_width="match_parent"
             android:layout_height="36dp"
-<<<<<<< HEAD
-            android:background="@color/fancy_orange"
-=======
             android:background="@color/fancy_blue"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:orientation="horizontal">
 
             <androidx.recyclerview.widget.RecyclerView
@@ -71,21 +51,13 @@
         android:id="@+id/bt_dir_click_to_finish"
         android:layout_width="match_parent"
         android:layout_height="@dimen/long_btn_height"
-<<<<<<< HEAD
-        android:layout_marginHorizontal="16dp"
-=======
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="@dimen/long_btn_margin_left"
         android:layout_marginRight="@dimen/long_btn_margin_right"
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         android:layout_marginBottom="@dimen/margin_normal"
         android:text="@string/confirm"
         android:textColor="@color/white"
         android:textSize="@dimen/long_btn_txt_size"
         android:visibility="gone" />
 
-<<<<<<< HEAD
-</LinearLayout>
-=======
 </RelativeLayout>
->>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
