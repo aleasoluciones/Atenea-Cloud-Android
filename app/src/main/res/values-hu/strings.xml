@@ -1,6 +1,104 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Üdvözlöm a Seafile-ban</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Adatvédelmi irányelv</string>
+    <string name='accept'>Elfogad</string>
+  <string name='hours'>órák</string>
+  <string name='hour'>óra</string>
+  <string name='minutes'>perc</string>
+  <string name='synchronization_frequency'>Szinkronizálás gyakorisága</string>
+  <string name='password_not_meet_requirements'>A jelszó nem felel meg a követelményeknek</string>
+  <string name='password_sharing_rules'>Jelszó (legalább %d karakterből kell állnia, és tartalmaznia kell legalább egy szimbólumot, nagybetűt, kisbetűt vagy számot)</string>
+  <string name='repeat_password_hint'>Jelszó ismétlése</string>
+  <string name='password_not_match'>A jelszavak nem egyeznek meg</string>
+  <string name='exists_files_in_recycle_bin'>Ugyanazzal a névvel már létező elemek vannak a kukában.\nFolytatja?</string>
+  <string name='exists_file_in_recycle_bin'>Ugyanazzal a névvel már létezik egy elem a kukában.\nFolytatja?</string>
+  <string name='delete_sync_configuration'>Törölni ezt a konfigurációt?</string>
+  <string name='settings_select_origin'>Válasszon forrást</string>
+  <string name='settings_select_destination'>Válasszon célt</string>
+  <string name='exists_same_source_target'>Azonos forrás- és célmappa már létezik másik biztonsági mentési beállításban</string>
+  <string name='delete_files_finalize'>Fájlok törlése befejezéskor</string>
+  <string name='maintain_files'>Fájlok karbantartása</string>
+  <string name='synchronization_type'>Szinkronizáció típusa</string>
+  <string name='synchronization_enabled'>Szinkronizáció engedélyezve</string>
+  <string name='synchronization_disabled'>Szinkronizáció letiltva</string>
+  <string name='feature_unavailable'>A funkció nem érhető el ebben a tervben</string>
+  <string name='permanent'>Állandó</string>
+  <string name='temporary'>Ideiglenes</string>
+  <string name='years'>Évek</string>
+  <string name='months'>Hónapok</string>
+  <string name='weeks'>Hetek</string>
+  <string name='days'>Napok</string>
+  <string name='sync_status_view'>Szinkronizációs állapot</string>
+  <string name='backup_expirations'>Biztonsági mentés lejáratai</string>
+  <string name='customized'>személyre szabott</string>
+  <string name='indefinite'>Határozatlan</string>
+  <string name='one_year'>1 év</string>
+  <string name='one_month'>1 hónap</string>
+  <string name='one_week'>1 hét</string>
+  <string name='select_album_sync'>Válassza ki az albumot</string>
+  <string name='edit_sync'>Szinkronizálás szerkesztése</string>
+  <string name='general_update'>Frissít</string>
+  <string name='save'>Tart</string>
+  <string name='sync_management_target_folder'>Cél mappa</string>
+  <string name='sync_management_active_until'>Aktív</string>
+  <string name='sync_management_expire_date'>Lejárati dátum</string>
+  <string name='sync_management_mode'>Mód</string>
+  <string name='sync_management_upload_video'>Töltsön fel egy videót</string>
+  <string name='sync_mode_increased'>Járulékos</string>
+  <string name='sync_mode_full'>teljes</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Hiba nem létezik a tárolóban</string>
+  <string name='sync_status_error_not_exist_local_folder'>Hiba nem létezik a mappa</string>
+  <string name='sync_status_error_not_valid_files'>Hiba, vannak nem -valid fájlok</string>
+  <string name='sync_status_error_out_space'>Hiba hely nélkül</string>
+  <string name='sync_status_error'>Hiba</string>
+  <string name='sync_status_running'>Akcióban</string>
+  <string name='sync_status_pending'>Fülbevaló</string>
+  <string name='sync_status_complete'>teljes</string>
+  <string name='sync_management_backup_settings'>Másolás konfigurációja</string>
+  <string name='sync_management_source_and_target'>Forrás és cél</string>
+  <string name='sync_management_new_sync'>Hozzon létre új szinkronizálást</string>
+  <string name='sync_current_syncs'>Jelenlegi szinkronizációk</string>
+  <string name='sync_status'>Állapot:\u0020</string>
+  <string name='sync_last_execution'>Utolsó kivégzés:\u0020</string>
+  <string name='sync_target'>Rendeltetési hely:\u0020</string>
+  <string name='sync_source'>Szökőkút:\u0020</string>
+  <string name='folder'>Irat</string>
+  <string name='album'>Album</string>
+  <string name='gallery'>Képtár</string>
+  <string name='synchronizations'>Szinkronizálások</string>
+  <string name='enabled_syncs'>Aktivált szinkronizációk</string>
+  <string name='disabled_syncs'>Fogyatékossággal élő szinkronizációk</string>
+  <string name='control_syncs'>Szinkronizációs szabályozás</string>
+  <string name='config_sync'>Szinkronizálási konfiguráció</string>
+  <string name='synchronization'>Szinkronizálás</string>
+  <string name='not_allowed_file'>Non -Valid fájl a tervhez.</string>
+  <string name='not_allowed_image'>A kép nem érvényes a tervhez.</string>
+  <string name='file_download'>Fájlok letöltése</string>
+  <string name='continue_downloading_files'>Folytatni akarja a letöltést?</string>
+  <string name="file_upload">Fájlok feltöltése</string>
+  <string name="continue_uploading_files">Folytatni akarja a fájlok feltöltését?</string>
+  <string name="error_not_account_info">Hiba a számlainformációk helyreállításakor</string>
+  <string name='recycle_bin'>Kuka</string>
+  <string name='clean_trash_repo'>Ürítse ki a kukát</string>
+  <string name='recover'>Visszaszerez</string>
+  <string name='deleted_files'>Törölt fájlok</string>
+  <string name='deleted_repositories'>Törölt könyvtárak</string>
+  <string name="plan_change">Változtatási terv</string>
+  <string name="want_plan_change">Meg szeretné változtatni a tervét?</string>
+  <string name='not_support_4k'>Nem reprodukálhatja ezt a videót a jelenlegi tervével.</string>
+  <string name="not_allowed_files">Vannak példátlan fájlok a tervhez.</string>
+  <string name="without_storage">Nincs elég tárhelye.</string>
+  <string name='storage_access_request'>A fájlok feldolgozásához az alkalmazásnak hozzáférnie kell a tároláshoz.</string>
+  <string name='storage_access'>Hozzáférés a tároláshoz</string>
+  <string name='deny'>Tagadni</string>
+  <string name='allow'>Lehetővé teszi</string>
+  <string name="welcome_to_seafile">Üdvözöljük</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Válasszon egy fiókot</string>
   <string name="edit_account">Szerkeszt</string>
   <string name="delete_account">Töröl</string>
@@ -239,6 +337,10 @@
   <string name="settings_account_info_title">Felhasználói információ</string>
   <string name="settings_account_info_load_data">betöltés...</string>
   <string name="settings_account_space_title">Felhasznált hely</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Jelenlegi terv</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Kijelentkezés</string>
   <string name="settings_account_sign_out_hint">Koppintson a kilépéshez</string>
   <string name="settings_account_sign_out_confirm">Ki szeretne lépni?</string>
@@ -348,6 +450,20 @@
   <string name="settings_about_title">Névjegy</string>
   <string name="settings_about_version_title">Alkalmazás verzió</string>
   <string name="settings_about_author_title">Névjegy</string>
+<<<<<<< HEAD
+=======
+
+  <string name="settings_about_author_info">
+    <![CDATA[
+        <p>
+            E-mail:  info@ateneacloud.com<br><br>
+            Website: www.ateneacloud.com<br><br>
+            Phone:   911 87 90 07<br><br>
+        </p>
+    ]]>
+  </string>
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">HALADÓ BEÁLLÍTÁSOK</string>
   <string name="settings_storage_title">GYORSÍTÓTÁR</string>
   <string name="settings_cache_title">Gyorsítótár mérete</string>
@@ -454,6 +570,10 @@
   <string name="action_mode_no_items_selected">Nincs kiválasztott elem</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">A fájlok kezeléséhez engedélyezze a tárhely elérését.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">A névjegyek kezeléséhez engedélyezd a névjegyekhez való hozzáférést.</string>
   <string name="permission_not_granted">Engedély nem lett megadva</string>
   <string name="history_change_title">Változtatás részletei</string>
@@ -486,6 +606,16 @@
   <string name="input_auto_expiration">Adja meg a lejárati időt</string>
   <!--editor-->
   <!--Folder backup Preference-->
+<<<<<<< HEAD
   <!--action-->
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

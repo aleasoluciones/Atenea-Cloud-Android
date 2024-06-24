@@ -3,10 +3,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+<<<<<<< HEAD
     <item
         android:id="@+id/edit_markdown"
         android:icon="@drawable/baseline_edit_24"
         android:title="@string/edit"
         android:visible="true"
         app:showAsAction="always" />
+=======
+    <item android:id="@+id/edit_markdown"
+        android:visible="true"
+        android:title="Edit"
+        android:icon="@drawable/action_rename"
+        app:showAsAction="always"/>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 </menu>

@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Tervetuloa Seafileen</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Tietosuojakäytäntö</string>
+    <string name='accept'>Hyväksyä</string>
+  <string name='hours'>tunnit</string>
+  <string name='hour'>tunti</string>
+  <string name='minutes'>minuutit</string>
+  <string name='synchronization_frequency'>Synkronointitaajuus</string>
+  <string name='password_not_meet_requirements'>Salasana ei täytä vaatimuksia</string>
+  <string name='password_sharing_rules'>Salasana (pitää olla %d merkkiä ja sisältää vähintään yhden symbolin, ison kirjaimen, pienen kirjaimen tai numeron)</string>
+  <string name='repeat_password_hint'>Toista salasana</string>
+  <string name='password_not_match'>Salasanat eivät ole samat</string>
+  <string name='exists_files_in_recycle_bin'>Roskakorissa on kohteita, joilla on sama nimi.\nHaluatko jatkaa?</string>
+  <string name='exists_file_in_recycle_bin'>Roskakorissa on jo samanniminen kohde.\nHaluatko jatkaa?</string>
+  <string name='delete_sync_configuration'>Poista tämä asetus?</string>
+  <string name='settings_select_origin'>Valitse lähde</string>
+  <string name='settings_select_destination'>Valitse kohde</string>
+  <string name='exists_same_source_target'>Sama lähde- ja kohdehakemisto on jo olemassa toisessa varmuuskopiointiasetuksessa</string>
+  <string name='delete_files_finalize'>Poista tiedostot lopetettaessa</string>
+  <string name='maintain_files'>Ylläpitää tiedostoja</string>
+  <string name='synchronization_type'>Synkronointityyppi</string>
+  <string name='synchronization_enabled'>Synkronointi käytössä</string>
+  <string name='synchronization_disabled'>Synkronointi on poistettu käytöstä</string>
+  <string name='feature_unavailable'>Ominaisuus ei ole käytettävissä tässä suunnitelmassa</string>
+  <string name='permanent'>Pysyvä</string>
+  <string name='temporary'>Väliaikainen</string>
+  <string name='years'>Vuodet</string>
+  <string name='months'>Kuukaudet</string>
+  <string name='weeks'>Viikot</string>
+  <string name='days'>Päivät</string>
+  <string name='sync_status_view'>Synkronointitila</string>
+  <string name='backup_expirations'>Varmuuskopion vanhentumiset</string>
+  <string name='customized'>henkilökohtainen</string>
+  <string name='indefinite'>Määrittelemätön</string>
+  <string name='one_year'>1 vuosi</string>
+  <string name='one_month'>1 kuukausi</string>
+  <string name='one_week'>1 viikko</string>
+  <string name='select_album_sync'>Valitse albumi</string>
+  <string name='edit_sync'>Muokkaa synkronointia</string>
+  <string name='general_update'>Päivittää</string>
+  <string name='save'>Pitää</string>
+  <string name='sync_management_target_folder'>Kohdekansio</string>
+  <string name='sync_management_active_until'>Aktivoida</string>
+  <string name='sync_management_expire_date'>Viimeinen käyttöpäivä</string>
+  <string name='sync_management_mode'>Tila</string>
+  <string name='sync_management_upload_video'>Lataa video</string>
+  <string name='sync_management_only_wifi'>Vain wifi</string>
+  <string name='sync_mode_increased'>Aalto-</string>
+  <string name='sync_mode_full'>Saattaa loppuun</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Virhettä ei ole arkistossa</string>
+  <string name='sync_status_error_not_exist_local_folder'>Virhettä ei ole kansiossa</string>
+  <string name='sync_status_error_not_valid_files'>Virhe on ei -valid -tiedostoja</string>
+  <string name='sync_status_error_out_space'>Virhe ilman tilaa</string>
+  <string name='sync_status_error'>Virhe</string>
+  <string name='sync_status_running'>Toiminnassa</string>
+  <string name='sync_status_pending'>Korvarengas</string>
+  <string name='sync_status_complete'>Saattaa loppuun</string>
+  <string name='sync_management_backup_settings'>Kopioi kokoonpano</string>
+  <string name='sync_management_source_and_target'>Lähde</string>
+  <string name='sync_management_new_sync'>Luo uusi synkronointi</string>
+  <string name='sync_current_syncs'>Nykyiset synkronoinnit</string>
+  <string name='sync_status'>Osavaltio:\u0020</string>
+  <string name='sync_last_execution'>Viimeinen teloitus:\u0020</string>
+  <string name='sync_target'>Kohde:\u0020</string>
+  <string name='sync_source'>Suihkulähde:\u0020</string>
+  <string name='folder'>Tiedosto</string>
+  <string name='album'>Albumi</string>
+  <string name='gallery'>Galleria</string>
+  <string name='synchronizations'>Synkronoinnit</string>
+  <string name='enabled_syncs'>Aktivoidut synkronoinnit</string>
+  <string name='disabled_syncs'>Vammaiset synkronoinnit</string>
+  <string name='control_syncs'>Synkronoinnin hallinta</string>
+  <string name='config_sync'>Synkronointikonfiguraatio</string>
+  <string name='synchronization'>Synkronointi</string>
+  <string name='not_allowed_file'>Ei -valid -tiedosto suunnitelmallesi.</string>
+  <string name='not_allowed_image'>Kuva, joka ei ole kelvollinen suunnitelmallesi.</string>
+  <string name='file_download'>Lataa tiedostot</string>
+  <string name='continue_downloading_files'>Haluatko jatkaa latausta?</string>
+  <string name="file_upload">Lataa tiedostoja</string>
+  <string name="continue_uploading_files">Haluatko jatkaa tiedostojen lähettämistä?</string>
+  <string name="error_not_account_info">Virhe tilitietojen palauttamisessa</string>
+  <string name='recycle_bin'>Roskakori</string>
+  <string name='clean_trash_repo'>Tyhjennä roskakori</string>
+  <string name='recover'>Toipua</string>
+  <string name='deleted_files'>Poistetut tiedostot</string>
+  <string name='deleted_repositories'>Poistettuja kirjastoja</string>
+  <string name="plan_change">Muutossuunnitelma</string>
+  <string name="want_plan_change">Haluatko muuttaa suunnitelmaasi?</string>
+  <string name='not_support_4k'>Et voi toistaa tätä videota nykyisellä suunnitelmallasi.</string>
+  <string name="not_allowed_files">Suunnitelmasi on ennennäkemättömiä tiedostoja.</string>
+  <string name="without_storage">Sinulla ei ole tarpeeksi tallennustilaa.</string>
+  <string name='storage_access_request'>Tiedostojen käsittelemiseksi sovelluksen on käytettävä tallennustilaa.</string>
+  <string name='storage_access'>Varastointi</string>
+  <string name='deny'>Kieltää</string>
+  <string name='allow'>Sallia</string>
+  <string name="welcome_to_seafile">Tervetuloa</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Valitse tili aloittaaksesi</string>
   <string name="edit_account">Muokkaa</string>
   <string name="delete_account">Poista</string>
@@ -251,6 +350,10 @@
   <string name="settings_account_info_title">Käyttäjätiedot</string>
   <string name="settings_account_info_load_data">Ladataan...</string>
   <string name="settings_account_space_title">Tilaa käytetty</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Nykyinen suunnitelma</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Kirjaudu ulos</string>
   <string name="settings_account_sign_out_hint">Klikkaa kirjautuaksesi ulos</string>
   <string name="settings_account_sign_out_confirm">Haluatko kirjautua ulos?</string>
@@ -360,6 +463,20 @@
   <string name="settings_about_title">TIETOA</string>
   <string name="settings_about_version_title">Sovellusversio</string>
   <string name="settings_about_author_title">Tietoa tekijästä</string>
+<<<<<<< HEAD
+=======
+
+  <string name="settings_about_author_info">
+    <![CDATA[
+        <p>
+        Sähköposti: info@ateneacloud.com<br><br>
+        Website:    www.ateneacloud.com<br><br>
+        Phone:      911 87 90 07<br><br>
+        </p>
+    ]]>
+  </string>
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">EDISTYNEET OMINAISUUDET</string>
   <string name="settings_storage_title">VÄLIMUISTIN TALLENNUSTILA</string>
   <string name="settings_cache_title">Välimuistin koko</string>
@@ -468,6 +585,10 @@
   <string name="action_mode_no_items_selected">Ei kohteita valittuna</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">Prosessoidaksesi tiedostoja sinun pitää antaa tallennustilalle lupa avata ne.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">Prosessoidaksesi kontakteja sinun pitää antaa kontakteille lupa avata ne.</string>
   <string name="permission_not_granted">Oikeuksia ei myönnetty</string>
   <string name="history_change_title">Muokkauksen Yksityiskohdat</string>
@@ -509,6 +630,16 @@
   <string name="redo">tee uudelleen</string>
   <string name="link">Linkki</string>
   <!--Folder backup Preference-->
+<<<<<<< HEAD
   <!--action-->
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Bem vindo ao Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Política de Privacidade</string>
+    <string name='accept'>Aceitar</string>
+  <string name='hours'>horas</string>
+  <string name='hour'>hora</string>
+  <string name='minutes'>minutos</string>
+  <string name='synchronization_frequency'>Frequência de sincronização</string>
+  <string name='password_not_meet_requirements'>A senha não atende aos requisitos</string>
+  <string name='password_sharing_rules'>Senha (deve ter %d caracteres e incluir pelo menos um símbolo, letra maiúscula, letra minúscula ou número)</string>
+  <string name='repeat_password_hint'>Repetir senha</string>
+  <string name='password_not_match'>As senhas não coincidem</string>
+  <string name='exists_files_in_recycle_bin'>Existem itens com o mesmo nome na Lixeira.\nDeseja continuar?</string>
+  <string name='exists_file_in_recycle_bin'>Já existe um item com o mesmo nome na Lixeira.\nDeseja continuar?</string>
+  <string name='delete_sync_configuration'>Apagar esta configuração?</string>
+  <string name='settings_select_origin'>Selecione uma origem</string>
+  <string name='settings_select_destination'>Selecione um destino</string>
+  <string name='exists_same_source_target'>A mesma pasta de origem e destino já existe em outra configuração de backup</string>
+  <string name='delete_files_finalize'>Excluir arquivos ao finalizar</string>
+  <string name='maintain_files'>Manter arquivos</string>
+  <string name='synchronization_type'>Tipo de sincronização</string>
+  <string name='synchronization_enabled'>Sincronização ativada</string>
+  <string name='synchronization_disabled'>Sincronização desativada</string>
+  <string name='feature_unavailable'>Recurso indisponível neste plano</string>
+  <string name='permanent'>Permanente</string>
+  <string name='temporary'>Temporário</string>
+  <string name='years'>Anos</string>
+  <string name='months'>Meses</string>
+  <string name='weeks'>Semanas</string>
+  <string name='days'>Dias</string>
+  <string name='sync_status_view'>Estado de sincronização</string>
+  <string name='backup_expirations'>Expirações de backup</string>
+  <string name='customized'>personalizado</string>
+  <string name='indefinite'>indefinido</string>
+  <string name='one_year'>1 ano</string>
+  <string name='one_month'>1 mês</string>
+  <string name='one_week'>1 semana</string>
+  <string name='select_album_sync'>Selecione Álbum</string>
+  <string name='edit_sync'>Editar sincronização</string>
+  <string name='general_update'>Atualizar</string>
+  <string name='save'>Manter</string>
+  <string name='sync_management_target_folder'>Pasta de destino</string>
+  <string name='sync_management_active_until'>Ativo up</string>
+  <string name='sync_management_expire_date'>Data de expiração</string>
+  <string name='sync_management_mode'>Modo</string>
+  <string name='sync_management_upload_video'>Faça upload de um vídeo</string>
+  <string name='sync_management_only_wifi'>Apenas wifi</string>
+  <string name='sync_mode_increased'>Incremental</string>
+  <string name='sync_mode_full'>Completo</string>
+  <string name='sync_status_error_not_exist_repo_dir'>O erro não existe no repositório</string>
+  <string name='sync_status_error_not_exist_local_folder'>O erro não existe a pasta</string>
+  <string name='sync_status_error_not_valid_files'>Erro, existem arquivos não validos</string>
+  <string name='sync_status_error_out_space'>Erro sem espaço</string>
+  <string name='sync_status_error'>Erro</string>
+  <string name='sync_status_running'>Em execução</string>
+  <string name='sync_status_pending'>Brinco</string>
+  <string name='sync_status_complete'>Completo</string>
+  <string name='sync_management_backup_settings'>Copie a configuração</string>
+  <string name='sync_management_source_and_target'>Fonte e destino</string>
+  <string name='sync_management_new_sync'>Crie nova sincronização</string>
+  <string name='sync_current_syncs'>Sincronizações atuais</string>
+  <string name='sync_status'>Estado:\u0020</string>
+  <string name='sync_last_execution'>Última execução:\u0020</string>
+  <string name='sync_target'>Destino:\u0020</string>
+  <string name='sync_source'>Fonte:\u0020</string>
+  <string name='folder'>Arquivo</string>
+  <string name='album'>Álbum</string>
+  <string name='gallery'>Galeria</string>
+  <string name='synchronizations'>Sincronizações</string>
+  <string name='enabled_syncs'>Sincronizações ativadas</string>
+  <string name='disabled_syncs'>Sincronizações desativadas</string>
+  <string name='control_syncs'>Controle de sincronização</string>
+  <string name='config_sync'>Configuração de sincronização</string>
+  <string name='synchronization'>Sincronização</string>
+  <string name='not_allowed_file'>Arquivo não valido para o seu plano.</string>
+  <string name='not_allowed_image'>Imagem não é válida para o seu plano.</string>
+  <string name='file_download'>Baixar arquivos</string>
+  <string name='continue_downloading_files'>Você quer continuar com o download?</string>
+  <string name="file_upload">Fazer upload de arquivos</string>
+  <string name="continue_uploading_files">Deseja continuar com o upload dos arquivos?</string>
+  <string name="error_not_account_info">Erro ao recuperar informações da conta</string>
+  <string name='recycle_bin'>Lixeira</string>
+  <string name='clean_trash_repo'>Esvaziar a lixeira</string>
+  <string name='recover'>Recuperar</string>
+  <string name='deleted_files'>Arquivos excluídos</string>
+  <string name='deleted_repositories'>Bibliotecas excluídas</string>
+  <string name="plan_change">Alterar Plano</string>
+  <string name="want_plan_change">Deseja alterar o seu plano?</string>
+  <string name='not_support_4k'>Você não pode reproduzir este vídeo com seu plano atual.</string>
+  <string name="not_allowed_files">Existem arquivos sem precedentes para o seu plano.</string>
+  <string name="without_storage">Você não tem espaço de armazenamento suficiente.</string>
+  <string name='storage_access_request'>Para processar os arquivos, o aplicativo precisa acessar o armazenamento.</string>
+  <string name='storage_access'>Acesso ao armazenamento</string>
+  <string name='deny'>Negar</string>
+  <string name='allow'>Permitir</string>
+  <string name="welcome_to_seafile">Bem-vindo</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Escolha uma conta para começar</string>
   <string name="edit_account">Editar</string>
   <string name="delete_account">Deletar</string>
@@ -177,6 +276,10 @@
   <string name="settings_account_info_title">Informação do Usuario</string>
   <string name="settings_account_info_load_data">Carregando...</string>
   <string name="settings_account_space_title">Espaço usado</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Plano atual</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Sair</string>
   <string name="settings_account_sign_out_hint">Clique para sair</string>
   <string name="settings_account_sign_out_confirm">Voce deseja sair?</string>
@@ -332,3 +435,12 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

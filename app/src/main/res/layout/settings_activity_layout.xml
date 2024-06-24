@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+<<<<<<< HEAD
     <include layout="@layout/toolbar_actionbar" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -20,5 +21,13 @@
             android:layout_weight="1" />
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+=======
+    <include layout="@layout/toolbar_actionbar" /> <!-- placeholder, empty except on L -->
+
+    <FrameLayout
+        android:id="@+id/settings_fragment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
 </LinearLayout>

@@ -4,6 +4,7 @@
 
     <item
         android:id="@+id/transfer_overflow_menu"
+<<<<<<< HEAD
         android:icon="@drawable/baseline_more_vert_24"
         android:title="@string/transfer_tasks"
         app:showAsAction="ifRoom">
@@ -18,6 +19,26 @@
                 android:title="@string/transfer_list_clear_all_tasks"
                 android:visible="true"
                 app:showAsAction="ifRoom" />
+=======
+        android:icon="@drawable/ic_action_overflow"
+        app:showAsAction="always"
+        android:title="@string/transfer_tasks">
+        <menu>
+            <item
+                android:id="@+id/cancel_transfer_tasks"
+                app:showAsAction="ifRoom"
+                android:title="@string/transfer_list_cancel_all"
+                android:visible="true">
+            Cancel all tasks
+            </item>
+            <item
+                android:id="@+id/clear_all_transfer_tasks"
+                app:showAsAction="ifRoom"
+                android:title="@string/transfer_list_clear_all_tasks"
+                android:visible="true">
+            Clear all tasks
+            </item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
         </menu>
     </item>
 </menu>

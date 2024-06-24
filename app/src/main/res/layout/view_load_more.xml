@@ -10,7 +10,11 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
+<<<<<<< HEAD
         android:visibility="gone">
+=======
+        android:visibility="visible">
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
         <ProgressBar
             android:id="@+id/loading_progress"
@@ -20,6 +24,17 @@
             android:layout_marginEnd="4dp"
             android:indeterminateDrawable="@drawable/brvah_sample_footer_loading_progress" />
 
+<<<<<<< HEAD
+=======
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/brvah_loading"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     </LinearLayout>
 
     <FrameLayout
@@ -34,7 +49,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/brvah_load_failed"
+<<<<<<< HEAD
             android:textColor="@android:color/darker_gray" />
+=======
+            android:textColor="#0dddb8" />
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
     </FrameLayout>
 
@@ -58,12 +77,20 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="horizontal"
+<<<<<<< HEAD
         android:visibility="gone">
+=======
+        android:visibility="visible">
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="36dp"
             android:layout_height="1dp"
+<<<<<<< HEAD
             app:dividerColor="@color/divider_color" />
+=======
+            app:dividerColor="@color/light_gray" />
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,13 +98,21 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="16dp"
             android:text="·"
+<<<<<<< HEAD
             android:textColor="@color/divider_color"
+=======
+            android:textColor="@color/light_gray"
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
             android:textSize="20sp" />
 
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="36dp"
             android:layout_height="1dp"
+<<<<<<< HEAD
             app:dividerColor="@color/divider_color" />
+=======
+            app:dividerColor="@color/light_gray" />
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
     </LinearLayout>
 </FrameLayout>

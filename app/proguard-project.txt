@@ -135,9 +135,15 @@
 }
 -dontwarn com.google.**
 
+<<<<<<< HEAD
 -keep class com.seafile.seadroid2.**
 -keepclassmembers class com.seafile.seadroid2.** { *; }
 -keepclassmembers class com.seafile.seadroid2.** { public <init>(...); }
+=======
+-keep class com.ateneacloud.drive.**
+-keepclassmembers class com.ateneacloud.drive.** { *; }
+-keepclassmembers class com.ateneacloud.drive.** { public <init>(...); }
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 -keepclassmembers class * extends com.actionbarsherlock.ActionBarSherlock { public <init>(...); }
 
 -keep class tv.danmaku.ijk.** { *; }

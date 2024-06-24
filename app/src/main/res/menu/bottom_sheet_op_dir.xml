@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+<<<<<<< HEAD
         android:id="@+id/star"
         android:icon="@drawable/star_normal"
         android:title="@string/file_action_star" />
@@ -14,6 +15,11 @@
         android:id="@+id/share"
         android:icon="@drawable/action_share"
         android:title="@string/file_share" />
+=======
+        android:id="@+id/share"
+        android:icon="@drawable/action_share"
+        android:title="@string/file_share"/>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
     <item
         android:id="@+id/rename"

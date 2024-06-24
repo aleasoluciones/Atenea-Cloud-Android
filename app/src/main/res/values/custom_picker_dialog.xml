@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomPickerDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Se corresponde con el color del fondo del header y de los botones -->
+        <item name="colorAccent">@color/fancy_blue</item>
+
+        <!-- Se corresponde con el color del dia mes y numero del dia en el header-->
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+
+        <!-- Se corresponde con el año de header-->
+        <item name="android:textColorSecondaryInverse">@color/white</item>
+
+        <!-- Se corresponde con el color de la animacion de cambio de mes y seleccion de dia-->
+        <item name="android:colorControlHighlight">@color/fancy_blue</item>
+
+        <!-- Se corresponde con el color de fondo del dia seleccionado-->
+        <item name="android:colorControlActivated">@color/fancy_blue</item>
+    </style>
+
+
+</resources>

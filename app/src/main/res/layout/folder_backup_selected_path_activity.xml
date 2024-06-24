@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto"
+=======
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -14,10 +17,18 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
+<<<<<<< HEAD
+=======
+    <include
+        layout="@layout/search_empty"
+        android:visibility="gone" />
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     <TextView
         android:id="@+id/add_backup_folder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:background="@drawable/shape_divider_top"
         android:drawablePadding="8dp"
         android:foreground="?selectableItemBackground"
@@ -27,4 +38,15 @@
         android:textSize="16sp"
         app:drawableStartCompat="@drawable/baseline_add_24"
         app:drawableTint="@color/light_black" />
+=======
+        android:foreground="?selectableItemBackground"
+        android:background="@drawable/shape_divider_top"
+        android:drawableStart="@drawable/baseline_add_24"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/light_black"
+        android:padding="16dp"
+        android:text="@string/folder_backup_add"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 </LinearLayout>

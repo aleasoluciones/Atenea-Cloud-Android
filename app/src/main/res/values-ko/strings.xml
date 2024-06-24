@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">환영합니다. Seafile입니다.</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>개인정보 보호 정책</string>
+    <string name='accept'>수락하다 </string>
+  <string name='hours'>시간</string>
+  <string name='hour'>시간</string>
+  <string name='minutes'>분</string>
+  <string name='synchronization_frequency'>동기화 빈도</string>
+  <string name='password_not_meet_requirements'>비밀번호가 요구 사항을 충족하지 않습니다</string>
+  <string name='password_sharing_rules'>비밀번호 ( %d 자이어야하며 적어도 하나의 기호, 대문자, 소문자 또는 숫자를 포함해야 함)</string>
+  <string name='repeat_password_hint'>비밀번호 재입력</string>
+  <string name='password_not_match'>비밀번호가 일치하지 않습니다</string>
+  <string name='exists_files_in_recycle_bin'>휴지통에 동일한 이름의 항목이 있습니다.\n계속 진행 하시겠습니까?</string>
+  <string name='exists_file_in_recycle_bin'>휴지통에 동일한 이름의 항목이 있습니다.\n계속 진행 하시겠습니까?</string>
+  <string name='delete_sync_configuration'>이 설정을 삭제하시겠습니까?</string>
+  <string name='settings_select_origin'>소스 선택</string>
+  <string name='settings_select_destination'>대상 선택</string>
+  <string name='exists_same_source_target'>동일한 원본 및 대상 폴더가 이미 다른 백업 설정에 존재합니다</string>
+  <string name='delete_files_finalize'>완료시 파일 삭제</string>
+  <string name='maintain_files'>파일 유지</string>
+  <string name='synchronization_type'>동기화 유형</string>
+  <string name='synchronization_enabled'>동기화 활성화됨</string>
+  <string name='synchronization_disabled'>동기화 비활성화됨</string>
+  <string name='feature_unavailable'>이 계획에서는 사용할 수 없습니다</string>
+  <string name='permanent'>영구적인</string>
+  <string name='temporary'>임시</string>
+  <string name='years'>년</string>
+  <string name='months'>개월</string>
+  <string name='weeks'>주</string>
+  <string name='days'>일</string>
+  <string name='sync_status_view'>동기화 상태</string>
+  <string name='backup_expirations'>백업 만료</string>
+  <string name='customized'>개인화</string>
+  <string name='indefinite'>한정되지 않은</string>
+  <string name='one_year'>일년</string>
+  <string name='one_month'>1 개월</string>
+  <string name='one_week'>일주</string>
+  <string name='select_album_sync'>앨범을 선택하십시오</string>
+  <string name='edit_sync'>동기화 편집</string>
+  <string name='general_update'>업데이트</string>
+  <string name='save'>유지하다</string>
+  <string name='sync_management_target_folder'>대상 폴더</string>
+  <string name='sync_management_active_until'>활성화</string>
+  <string name='sync_management_expire_date'>만료일</string>
+  <string name='sync_management_mode'>방법</string>
+  <string name='sync_management_upload_video'>비디오를 업로드하십시오</string>
+  <string name='sync_management_only_wifi'>Wi -Fi 만</string>
+  <string name='sync_mode_increased'>증분</string>
+  <string name='sync_mode_full'>완벽한</string>
+  <string name='sync_status_error_not_exist_repo_dir'>저장소에는 오류가 존재하지 않습니다</string>
+  <string name='sync_status_error_not_exist_local_folder'>폴더는 오류가 없습니다</string>
+  <string name='sync_status_error_not_valid_files'>오류가 아닌 파일이 있습니다</string>
+  <string name='sync_status_error_out_space'>공간이없는 오류</string>
+  <string name='sync_status_error'>실수</string>
+  <string name='sync_status_running'>행동 중</string>
+  <string name='sync_status_pending'>귀걸이</string>
+  <string name='sync_status_complete'>완벽한</string>
+  <string name='sync_management_backup_settings'>구성 복사</string>
+  <string name='sync_management_source_and_target'>소스와 목적지</string>
+  <string name='sync_management_new_sync'>새 동기화를 만듭니다</string>
+  <string name='sync_current_syncs'>현재 동기화</string>
+  <string name='sync_status'>상태:\u0020</string>
+  <string name='sync_last_execution'>마지막 실행:\u0020</string>
+  <string name='sync_target'>목적지:\u0020</string>
+  <string name='sync_source'>분수:\u0020</string>
+  <string name='folder'>파일</string>
+  <string name='album'>앨범</string>
+  <string name='gallery'>갤러리</string>
+  <string name='synchronizations'>동기화</string>
+  <string name='enabled_syncs'>활성화 된 동기화</string>
+  <string name='disabled_syncs'>비활성화 된 동기화</string>
+  <string name='control_syncs'>동기화 제어</string>
+  <string name='config_sync'>동기화 구성</string>
+  <string name='synchronization'>동기화</string>
+  <string name='not_allowed_file'>플랜에 대한 비 valid 파일.</string>
+  <string name='not_allowed_image'>계획에 유효하지 않은 이미지.</string>
+  <string name='file_download'>파일 다운로드</string>
+  <string name='continue_downloading_files'>다운로드를 계속 하시겠습니까?</string>
+  <string name="file_upload">파일 업로드하다</string>
+  <string name="continue_uploading_files">파일 업로드를 계속 하시겠습니까?</string>
+  <string name="error_not_account_info">계정 정보를 복구 할 때 오류</string>
+  <string name='recycle_bin'>휴지통</string>
+  <string name='clean_trash_repo'>휴지통 비우기</string>
+  <string name='recover'>다시 덮다</string>
+  <string name='deleted_files'>삭제 된 파일</string>
+  <string name='deleted_repositories'>삭제 된 라이브러리</string>
+  <string name="plan_change">요금제 변경</string>
+  <string name="want_plan_change">요금제를 변경하고 싶으신가요?</string>
+  <string name='not_support_4k'>현재 계획 으로이 비디오를 재현 할 수 없습니다.</string>
+  <string name="not_allowed_files">계획에 전례없는 파일이 있습니다.</string>
+  <string name="without_storage">저장 공간이 충분하지 않습니다.</string>
+  <string name='storage_access_request'>파일을 처리하려면 응용 프로그램이 스토리지에 액세스해야합니다.</string>
+  <string name='storage_access'>스토리지 액세스</string>
+  <string name='deny'>부인하다</string>
+  <string name='allow'>허용하다</string>
+  <string name="welcome_to_seafile">환영</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">시작할 계정을 선택하세요</string>
   <string name="edit_account">편집</string>
   <string name="delete_account">삭제</string>
@@ -180,7 +279,10 @@
   <string name="no_download_tasks">다운로드 작업이 없습니다</string>
   <string name="seahub_url_hint">참고: 서버 주소에 포트를 적어야 합니다. 예, www.example.com:8000</string>
   <string name="copy_link">링크 복사</string>
+<<<<<<< HEAD
   <string name="share_link_no_permission">이 동작을 수행할 권한이 없습니다.</string>
+=======
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="share_file_link">이 파일 링크 공유</string>
   <string name="share_dir_link">이 폴더 링크 공유</string>
   <string name="share_input_password">공유 암호를 입력하세요</string>
@@ -263,6 +365,10 @@
   <string name="settings_account_info_title">사용자 정보</string>
   <string name="settings_account_info_load_data">불러오는 중...</string>
   <string name="settings_account_space_title">사용 공간</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">현재 계획</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">로그아웃</string>
   <string name="settings_account_sign_out_hint">로그아웃 하려면 클릭</string>
   <string name="settings_account_sign_out_confirm">로그아웃할까요?</string>
@@ -367,6 +473,7 @@
   <string name="camera_sync_notification_auth_error_failed">인증 오류.</string>
   <string name="camera_sync_rename_file">%s (Seafile에서 이름 바꿈)</string>
   <string name="settings_about_title">정보</string>
+<<<<<<< HEAD
   <string name="settings_about_privacy_policy">개인정보 보호 정책</string>
   <string name="settings_about_version_title">앱 버전</string>
   <string name="settings_about_author_title">저작자 정보</string>
@@ -384,6 +491,22 @@
         <h5>Copyright ©2013-2023 Seafile Ltd.</h5>
         ]]>
     </string>
+=======
+  <string name="settings_about_version_title">앱 버전</string>
+  <string name="settings_about_author_title">저작자 정보</string>
+
+  <string name="settings_about_author_info">
+    <![CDATA[
+        <p>
+            전자메일:  info@ateneacloud.com<br><br>
+            Website: www.ateneacloud.com<br><br>
+            Phone:   911 87 90 07<br><br>
+
+        </p>
+    ]]>
+  </string>
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">고급 기능</string>
   <string name="settings_storage_title">캐시 저장소</string>
   <string name="settings_cache_title">캐시 크기</string>
@@ -488,6 +611,10 @@
   <string name="action_mode_no_items_selected">선택한 항목이 없습니다</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">파일을 처리하려면, 파일에 접근할 저장소 권한이 필요합니다.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">연락처를 처리하려면, 연락처에 접근할 권한이 필요합니다.</string>
   <string name="permission_not_granted">권한을 부여하지 않음</string>
   <string name="history_change_title">자세한 수정 내역</string>
@@ -542,6 +669,7 @@
   <string name="required_password">암호가 필요합니다.</string>
   <string name="weak_password">암호가 매우 단순합니다.</string>
   <!--Folder backup Preference-->
+<<<<<<< HEAD
   <string name="settings_folder_backup_info_title">백업 폴더</string>
   <string name="settings_folder_backup_switch_title">폴더 백업 켜기</string>
   <string name="settings_folder_backup_service_started">백업 서비스를 시작했습니다</string>
@@ -578,3 +706,12 @@
   <string name="clear_all">모두 지우기</string>
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

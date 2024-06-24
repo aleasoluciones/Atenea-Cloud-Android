@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Добро пожаловать в Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Политика конфиденциальности</string>
+    <string name='accept'>Принимать</string>
+  <string name='hours'>часы</string>
+  <string name='hour'>час</string>
+  <string name='minutes'>минуты</string>
+  <string name='synchronization_frequency'>Частота синхронизации</string>
+  <string name='password_not_meet_requirements'>Пароль не соответствует требованиям</string>
+  <string name='password_sharing_rules'>Пароль (должен содержать %d символов и включать хотя бы один символ, заглавную букву, строчную букву или цифру)</string>
+  <string name='repeat_password_hint'>Повторите пароль</string>
+  <string name='password_not_match'>Пароли не совпадают</string>
+  <string name='exists_files_in_recycle_bin'>В корзине уже есть элементы с таким же именем.\nВы хотите продолжить?</string>
+  <string name='exists_file_in_recycle_bin'>В корзине уже есть элемент с таким же именем.\nВы хотите продолжить?</string>
+  <string name='delete_sync_configuration'>Удалить эту конфигурацию?</string>
+  <string name='settings_select_origin'>Выберите источник</string>
+  <string name='settings_select_destination'>Выберите пункт назначения</string>
+  <string name='exists_same_source_target'>Та же исходная и целевая папка уже существует в других настройках резервного копирования</string>
+  <string name='delete_files_finalize'>Удалить файлы при завершении</string>
+  <string name='maintain_files'>Обслуживание файлов</string>
+  <string name='synchronization_type'>Тип синхронизации</string>
+  <string name='synchronization_enabled'>Синхронизация включена</string>
+  <string name='synchronization_disabled'>Синхронизация отключена</string>
+  <string name='feature_unavailable'>Функция недоступна в этом плане</string>
+  <string name='permanent'>Постоянный</string>
+  <string name='temporary'>Временный</string>
+  <string name='years'>Года</string>
+  <string name='months'>Месяцы</string>
+  <string name='weeks'>Недели</string>
+  <string name='days'>Дни</string>
+  <string name='sync_status_view'>Состояние синхронизации</string>
+  <string name='backup_expirations'>Срок действия резервного копирования истек</string>
+  <string name='customized'>персонализированный</string>
+  <string name='indefinite'>Неопределенный</string>
+  <string name='one_year'>1 год</string>
+  <string name='one_month'>1 месяц</string>
+  <string name='one_week'>1 неделя</string>
+  <string name='select_album_sync'>Выберите альбом</string>
+  <string name='edit_sync'>Редактировать синхронизацию</string>
+  <string name='general_update'>Обновлять</string>
+  <string name='save'>Держать</string>
+  <string name='sync_management_target_folder'>Папка назначения</string>
+  <string name='sync_management_active_until'>Активен</string>
+  <string name='sync_management_expire_date'>Дата окончания срока</string>
+  <string name='sync_management_mode'>Режим</string>
+  <string name='sync_management_upload_video'>Загрузите видео</string>
+  <string name='sync_management_only_wifi'>Только Wi -Fi</string>
+  <string name='sync_mode_increased'>Постепенный</string>
+  <string name='sync_mode_full'>Полный</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Ошибка не существует в репозитории</string>
+  <string name='sync_status_error_not_exist_local_folder'>Ошибка не существует папки</string>
+  <string name='sync_status_error_not_valid_files'>Ошибка существует невластные файлы</string>
+  <string name='sync_status_error_out_space'>Ошибка без места</string>
+  <string name='sync_status_error'>Ошибка</string>
+  <string name='sync_status_running'>В бою</string>
+  <string name='sync_status_pending'>Серьга</string>
+  <string name='sync_status_complete'>Полный</string>
+  <string name='sync_management_backup_settings'>Копировать конфигурацию</string>
+  <string name='sync_management_source_and_target'>Источник и пункт назначения</string>
+  <string name='sync_management_new_sync'>Создать новую синхронизацию</string>
+  <string name='sync_current_syncs'>Текущие синхронизации</string>
+  <string name='sync_status'>Состояние:\u0020</string>
+  <string name='sync_last_execution'>Последнее исполнение:\u0020</string>
+  <string name='sync_target'>Место назначения:\u0020</string>
+  <string name='sync_source'>Фонтан:\u0020</string>
+  <string name='folder'>Файл</string>
+  <string name='album'>Альбом</string>
+  <string name='gallery'>Галерея</string>
+  <string name='synchronizations'>Синхронизации</string>
+  <string name='enabled_syncs'>Активированные синхронизации</string>
+  <string name='disabled_syncs'>Отключенные синхронизации</string>
+  <string name='control_syncs'>Контроль синхронизации</string>
+  <string name='config_sync'>Конфигурация синхронизации</string>
+  <string name='synchronization'>Синхронизация</string>
+  <string name='not_allowed_file'>Не -Valid File для вашего плана.</string>
+  <string name='not_allowed_image'>Изображение не действует для вашего плана.</string>
+  <string name='file_download'>Скачать файлы</string>
+  <string name='continue_downloading_files'>Вы хотите продолжить загрузку?</string>
+  <string name="file_upload">Загрузить файлы</string>
+  <string name="continue_uploading_files">Вы хотите продолжить загрузку файлов?</string>
+  <string name="error_not_account_info">Ошибка при восстановлении информации учетной записи</string>
+  <string name='recycle_bin'>Корзина</string>
+  <string name='clean_trash_repo'>Очистить корзину</string>
+  <string name='recover'>Восстанавливаться</string>
+  <string name='deleted_files'>Удаленные файлы</string>
+  <string name='deleted_repositories'>Удаленные библиотеки</string>
+  <string name="plan_change">План изменений</string>
+  <string name="want_plan_change">Хотите ли вы изменить тарифный план?</string>
+  <string name='not_support_4k'>Вы не можете воспроизвести это видео с вашим текущим планом.</string>
+  <string name="not_allowed_files">Есть беспрецедентные файлы для вашего плана.</string>
+  <string name="without_storage">У вас недостаточно места для хранения данных.</string>
+  <string name='storage_access_request'>Чтобы обработать файлы, приложение необходимо получить доступ к хранилищу.</string>
+  <string name='storage_access'>Доступ к хранению</string>
+  <string name='deny'>Отрицать</string>
+  <string name='allow'>Позволять</string>
+  <string name="welcome_to_seafile">Добро пожаловать</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Чтобы начать, выберите аккаунт</string>
   <string name="edit_account">Редактировать</string>
   <string name="delete_account">Удалить</string>
@@ -19,10 +118,17 @@
   <string name="delete_dir">Удалить папку</string>
   <string name="name_hint">Имя</string>
   <string name="server_hint">Адрес сервера</string>
+<<<<<<< HEAD
   <string name="email_hint">Эл. почта или логин</string>
   <string name="passwd_hint">Пароль</string>
   <string name="passwd_min_len_limit_hint">Пароль [не менее %d символ(-а/-ов)]</string>
   <string name="passwd_confirmation_hint">Пароль снова</string>
+=======
+  <string name="email_hint">Email или Логин</string>
+  <string name="passwd_hint">Пароль</string>
+  <string name="passwd_min_len_limit_hint">Пароль (не менее %d символов)</string>
+  <string name="passwd_confirmation_hint">Пароль еще раз</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="login">Войти</string>
   <string name="open_file">Открыть</string>
   <string name="download_file">Скачать</string>
@@ -72,8 +178,13 @@
   <string name="task_cancel">Отмена</string>
   <string name="task_retry">Повторить</string>
   <string name="task_remove">Удалить</string>
+<<<<<<< HEAD
   <string name="task_remove_all_cancelled">Удалить все отменённые задачи</string>
   <string name="task_remove_all_finished">Удалить все завершённые задачи</string>
+=======
+  <string name="task_remove_all_cancelled">Удалить все отмененные задачи</string>
+  <string name="task_remove_all_finished">Удалить все завершенные задачи</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="repo_action_delete">Удалить</string>
   <string name="repo_action_rename">Переименовать</string>
   <string name="file_action_star">Пометить</string>
@@ -111,9 +222,15 @@
   <string name="select_upload_items">Выбрать элементы для загрузки</string>
   <plurals name="n_upload_items_selected">
     <item quantity="one">%1$d элемент выбран</item>
+<<<<<<< HEAD
     <item quantity="few">%1$d элемента выбрано</item>
     <item quantity="many">%1$d элементов выбрано</item>
     <item quantity="other">%1$d элементов выбрано</item>
+=======
+    <item quantity="few">%1$d выбранных элементов</item>
+    <item quantity="many">%1$d выбранных элементов</item>
+    <item quantity="other">%1$d выбранных элементов</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   </plurals>
   <string name="repo_name_empty">Пожалуйста, введите имя библиотеки</string>
   <string name="dir_name_empty">Пожалуйста, введите имя папки</string>
@@ -177,13 +294,20 @@
   <string name="file_modified">изменено</string>
   <string name="file_size">размер файла</string>
   <string name="library_not_found">Библиотека была удалена.</string>
+<<<<<<< HEAD
   <string name="file_not_found">Файл «%s» был удалён</string>
+=======
+  <string name="file_not_found">Файл \"%s\" был удален</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="export_file">Экспортировать этот файл</string>
   <string name="no_upload_tasks">Пока нет задач на загрузку</string>
   <string name="no_download_tasks">Пока нет задач на скачивание</string>
   <string name="seahub_url_hint">Примечание: Адрес сервера должен содержать порт. Например, www.example.com:8000</string>
   <string name="copy_link">Копировать ссылку</string>
+<<<<<<< HEAD
   <string name="share_link_no_permission">У вас нет разрешения на выполнение этого действия.</string>
+=======
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="share_file_link">Поделиться ссылкой на этот файл</string>
   <string name="share_dir_link">Поделиться ссылкой на эту папку</string>
   <string name="share_input_password">пароль</string>
@@ -212,7 +336,11 @@
   <string name="upload_cancelled">Загрузка отменена</string>
   <string name="upload_failed">Загрузка не удалась</string>
   <string name="upload_file_exist">Файл уже существует</string>
+<<<<<<< HEAD
   <string name="upload_duplicate_found">Элемент с именем «%s» уже существует в этом месте.\n Вы хотите заменить его на загружаемый?</string>
+=======
+  <string name="upload_duplicate_found">Элемент с именем \"%s\" уже существует в этом месте.\n Вы хотите заменить его на загружаемый ?</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="upload_replace_all">Заменить все</string>
   <string name="upload_keep_both">Оставить оба</string>
   <string name="upload_replace">Заменить</string>
@@ -228,15 +356,25 @@
   <string name="error_selecting_file">Ошибка при выборе файла</string>
   <plurals name="n_upload_files_selected">
     <item quantity="one">%1$d файл выбран</item>
+<<<<<<< HEAD
     <item quantity="few">%1$d файла выбраны</item>
     <item quantity="many">%1$d файлов выбраны</item>
     <item quantity="other">%1$d файлов выбраны</item>
+=======
+    <item quantity="few">%1$d файлов выбраны</item>
+    <item quantity="many">%1$d файлов выбраны</item>
+    <item quantity="other">%1$d файл(ов) выбраны</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   </plurals>
   <string name="empty_folder">Пустая папка</string>
   <string name="choose_file">Выбрать файл</string>
   <string name="ssl_error">Проверка безопасности прошла неудачно</string>
   <string name="ssl_confirm">Сертификат безопасности %s недоверенный. Вы хотите продолжить?</string>
+<<<<<<< HEAD
   <string name="ssl_confirm_cert_changed">%s использует недействительный сертификат безопасности. Соединение не безопасно. Всё равно продолжить?</string>
+=======
+  <string name="ssl_confirm_cert_changed">%s использует недействительный сертификат безопасности. Соединение не безопасно. Все равно продолжить?</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="ssl_confirm_title">Недоверенное соединение</string>
   <string name="issued_to">Выдано</string>
   <string name="finger_prints">Отпечатки пальцев</string>
@@ -269,6 +407,10 @@
   <string name="settings_account_info_title">Информация о пользователе</string>
   <string name="settings_account_info_load_data">загрузка...</string>
   <string name="settings_account_space_title">Использовано пространства</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Текущий план</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Выйти</string>
   <string name="settings_account_sign_out_hint">Нажмите, чтобы выйти</string>
   <string name="settings_account_sign_out_confirm">Вы хотите выйти?</string>
@@ -284,16 +426,28 @@
   <string name="lockscreen_access_pattern_passwd_forget">Я забыл(а) пароль</string>
   <string name="lockscreen_access_pattern_failure">Не удалось 5 раз ввести пароль, пожалуйста, подождите 30 секунд, прежде чем попробовать снова</string>
   <plurals name="lockscreen_access_pattern_failure_left_try_seconds">
+<<<<<<< HEAD
     <item quantity="one">Вы можете повторить через %1$d секунду</item>
     <item quantity="few">Вы можете повторить через %1$d секунды</item>
+=======
+    <item quantity="one">Вы можете повторить через %1$d секундй</item>
+    <item quantity="few">Вы можете повторить через %1$d секунд</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     <item quantity="many">Вы можете повторить через %1$d секунд</item>
     <item quantity="other">Вы можете повторить через %1$d секунд</item>
   </plurals>
   <plurals name="lockscreen_access_pattern_failure_left_try_times">
+<<<<<<< HEAD
     <item quantity="one">Не правильный шаблон, вы можете попробовать ещё %1$d раз</item>
     <item quantity="few">Не правильный шаблон, вы можете попробовать ещё %1$d раза</item>
     <item quantity="many">Не правильный шаблон, вы можете попробовать ещё %1$d раз</item>
     <item quantity="other">Не правильный шаблон, вы можете попробовать ещё %1$d раз</item>
+=======
+    <item quantity="one">Не правильный шаблон, вы можете попробовать еще %1$d раз</item>
+    <item quantity="few">Не правильный шаблон, вы можете попробовать еще %1$d раз</item>
+    <item quantity="many">Не правильный шаблон, вы можете попробовать еще %1$d раз</item>
+    <item quantity="other">Не правильный шаблон, вы можете попробовать еще %1$d раз</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   </plurals>
   <string name="lockscreen_access_pattern_failure_not_long_enough">Соединяйте точки не так долго, попробуйте еще раз</string>
   <string name="lockpattern_retry_button_text">Повторить</string>
@@ -359,7 +513,11 @@
   <string name="settings_cuc_local_dir_title">Выбрать альбомы</string>
   <plurals name="settings_cuc_local_dir_items">
     <item quantity="one">%1$d элемент</item>
+<<<<<<< HEAD
     <item quantity="few">%1$d элемента</item>
+=======
+    <item quantity="few">%1$d элементов</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     <item quantity="many">%1$d элементов</item>
     <item quantity="other">%1$d элементов</item>
   </plurals>
@@ -369,9 +527,15 @@
   <string name="settings_cuc_upload_to_parent_folder">К родительской папке</string>
   <string name="settings_cuc_auto_scan">Автоматически определить альбомы с камеры</string>
   <string name="settings_cuc_pick_albums">Позволить мне выбрать мои фотоальбомы</string>
+<<<<<<< HEAD
   <string name="settings_cuc_remote_lib_hint">Выберите нужный аккаунт и библиотеку. \nВы можете изменить эти параметры позже в меню «Настройки».</string>
   <string name="settings_cuc_finish_title">Завершить</string>
   <string name="settings_cuc_ready">Seafile начнёт загрузку файлов из выбранных вами папок после подтверждения.\nВо время этого вы можете закрыть приложение.</string>
+=======
+  <string name="settings_cuc_remote_lib_hint">Выберите нужный аккаунт и библиотеку. \nВы можете изменить эти параметры позже в меню Настройки.</string>
+  <string name="settings_cuc_finish_title">Завершить</string>
+  <string name="settings_cuc_ready">Seafile начнет загрузку файлов из выбранных вами папок после подтверждения.\nВо время этого вы можете закрыть приложение.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_cuc_swipe_left">Проведите влево, чтобы продолжить.</string>
   <string name="settings_cuc_click_btn">Щелкните, чтобы закрыть помощник.</string>
   <string name="settings_cuc_loading">загрузка...</string>
@@ -379,6 +543,7 @@
   <string name="sync_provider_camera_upload">Фото и видео с камеры</string>
   <string name="camera_sync_notification_title_failed">Загрузка с камеры не удалась</string>
   <string name="camera_sync_notification_repo_missing_failed">Репозиторий на сервере отсутствует</string>
+<<<<<<< HEAD
   <string name="camera_sync_notification_auth_error_failed">Ошибка авторизации.</string>
   <string name="camera_sync_rename_file">%s (переименовано Seafile)</string>
   <string name="settings_about_title">О ПРИЛОЖЕНИИ</string>
@@ -399,6 +564,24 @@
         <h5>Авторское право ©2013-2023 Seafile Ltd.</h5>
         ]]>
     </string>
+=======
+  <string name="camera_sync_notification_auth_error_failed">Ошибка аутентификации.</string>
+  <string name="camera_sync_rename_file">%s (переименовано Seafile)</string>
+  <string name="settings_about_title">О ПРИЛОЖЕНИИ</string>
+  <string name="settings_about_version_title">Версия</string>
+  <string name="settings_about_author_title">Об авторе</string>
+
+  <string name="settings_about_author_info">
+    <![CDATA[
+        <p>
+            E-mail:  info@ateneacloud.com<br><br>
+            Website: www.ateneacloud.com<br><br>
+            Phone:   911 87 90 07<br><br>
+        </p>
+    ]]>
+  </string>
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">ДОПОЛНИТЕЛЬНЫЕ ФУНКЦИИ</string>
   <string name="settings_storage_title">Кэш-хранилище</string>
   <string name="settings_cache_title">Размер кэша</string>
@@ -410,7 +593,11 @@
   <string name="settings_cache_location_title">Место хранения кэша</string>
   <string name="dialog_switch_storage_info_text">Существующие файлы будут перемещены в новое место хранения. Это может занять некоторое время.</string>
   <string name="storage_manager_primary_storage">Основное место хранения</string>
+<<<<<<< HEAD
   <string name="storage_manager_secondary_storage">Дополнительное место хранения</string>
+=======
+  <string name="storage_manager_secondary_storage">Вторичное место хранения</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="storage_manager_storage_description">%1$s (%2$s свободно/%3$s всего)</string>
   <string name="storage_manager_storage_description_not_available">%1$s (недоступно)</string>
   <!--pull to refresh-->
@@ -441,6 +628,7 @@
   <string name="shib_loading">загрузка...</string>
   <!--Transfer List-->
   <string name="transfer_list_network_error">Ошибка подключения к сети, пожалуйста, повторите позже!</string>
+<<<<<<< HEAD
   <string name="transfer_list_cancel_all">Отменить все задачи</string>
   <string name="transfer_list_restart_all">Перезапустить</string>
   <string name="transfer_list_retry_failed_tasks">Повтор неудачных задач</string>
@@ -448,6 +636,15 @@
   <string name="transfer_list_clear_failed_tasks">Удалить неудачные задачи</string>
   <string name="transfer_list_clear_all_tasks">Удалить все задачи</string>
   <string name="transfer_list_clear_finished_tasks">Удалить завершённые задачи</string>
+=======
+  <string name="transfer_list_cancel_all">Отменить все задания</string>
+  <string name="transfer_list_restart_all">Перезапустить</string>
+  <string name="transfer_list_retry_failed_tasks">Повтор неудачных задач</string>
+  <string name="transfer_list_restart_cancelled_tasks">Перезапустить отмененные задания</string>
+  <string name="transfer_list_clear_failed_tasks">Удалить неудачные задания</string>
+  <string name="transfer_list_clear_all_tasks">Удалить все задания</string>
+  <string name="transfer_list_clear_finished_tasks">Удалить завершенные задания</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="transfer_tabs_downloads">Список загрузок</string>
   <string name="transfer_tabs_uploads">Список закачек</string>
   <string name="transfer_download_no_task">Все файлы были загружены</string>
@@ -493,13 +690,21 @@
   <string name="notification_upload_completed">Загрузка завершена</string>
   <plurals name="notification_upload_info">
     <item quantity="one">Загружается %1$d файл (%2$d%%)</item>
+<<<<<<< HEAD
     <item quantity="few">Загружается %1$d файла (%2$d%%)</item>
+=======
+    <item quantity="few">Загружается %1$d файлов (%2$d%%)</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     <item quantity="many">Загружается %1$d файлов (%2$d%%)</item>
     <item quantity="other">Загружается %1$d файлов (%2$d%%)</item>
   </plurals>
   <plurals name="notification_download_info">
     <item quantity="one">Скачивается %1$d файл (%2$d%%)</item>
+<<<<<<< HEAD
     <item quantity="few">Скачивается %1$d файла (%2$d%%)</item>
+=======
+    <item quantity="few">Скачивается %1$d файлов (%2$d%%)</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     <item quantity="many">Скачивается %1$d файлов (%2$d%%)</item>
     <item quantity="other">Скачивается %1$d файлов (%2$d%%)</item>
   </plurals>
@@ -515,6 +720,10 @@
   <string name="action_mode_no_items_selected">Нет выбранных элементов</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">Для обработки файлов, позволить получить доступ к их хранилищу</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">Для обработки контактов, разрешить к ним доступ.</string>
   <string name="permission_not_granted">Разрешение не было предоставлено</string>
   <string name="history_change_title">Подробности изменений</string>
@@ -531,6 +740,7 @@
   <string name="clear_password_warning">Вы хотите удалить пароль?</string>
   <string name="clear_password_auto">Автоматический сброс паролей</string>
   <!--Two factor auth-->
+<<<<<<< HEAD
   <string name="two_factor_auth_error">токен авторизации обязателен</string>
   <string name="two_factor_auth_invalid">токен авторизации недействителен</string>
   <string name="two_factor_auth_token">Токен двухфакторной авторизации</string>
@@ -539,17 +749,35 @@
   <!--Operation Exceptions-->
   <string name="op_exception_folder_deleted">Папка «%s» была удалена</string>
   <string name="op_exception_suitable_app_not_found">Не удаётся найти подходящее приложение для MIME-типа %s</string>
+=======
+  <string name="two_factor_auth_error">токен аутентификации обязателен</string>
+  <string name="two_factor_auth_invalid">токен аутентификации недействителен</string>
+  <string name="two_factor_auth_token">Токен двухфакторной аутентификации</string>
+  <string name="two_factor_auth_token_empty">Токен аутентификации не может быть пустым</string>
+  <string name="two_factor_auth_remember_phone">Запомнить это устройство</string>
+  <!--Operation Exceptions-->
+  <string name="op_exception_folder_deleted">Папка \"%s\" была удалена</string>
+  <string name="op_exception_suitable_app_not_found">Не удается найти подходящее приложение для MIME-типа %s</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="op_exception_failed_to_download_file">Не удалось скачать файл %s</string>
   <!--Home list title-->
   <string name="shared_with_all">Общие со всеми</string>
   <string name="add_password_protection">Добавить защиту паролем</string>
   <string name="expiration_dates">даты истечения срока действия</string>
+<<<<<<< HEAD
   <string name="add_auto_expiration">Добавить автоистечение срока действия</string>
+=======
+  <string name="add_auto_expiration">Добавить авто истечение срока действия</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="input_auto_expiration">Введите даты истечения срока действия</string>
   <!--editor-->
   <string name="editor_lines_error">Невозможно работать с несколькими строками</string>
   <string name="editor_file_save">Вы хотите сохранить и выйти?</string>
+<<<<<<< HEAD
   <string name="editor_file_save_success">Файл успешно сохранён</string>
+=======
+  <string name="editor_file_save_success">Файл успешно сохранен</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="editor_file_save_failed">Не удалось очистить кэш</string>
   <string name="editor_file_save_title">Сохранение файла</string>
   <string name="description">Описание</string>
@@ -569,6 +797,7 @@
   <string name="required_password">Необходим пароль.</string>
   <string name="weak_password">Пароль слишком слабый.</string>
   <!--Folder backup Preference-->
+<<<<<<< HEAD
   <string name="settings_folder_backup_info_title">Папка резервного копирования</string>
   <string name="settings_folder_backup_switch_title">Включить резервное копирование папки</string>
   <string name="settings_folder_backup_service_started">Служба резервного копирования запущена</string>
@@ -605,3 +834,12 @@
   <string name="clear_all">Очистить всё</string>
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

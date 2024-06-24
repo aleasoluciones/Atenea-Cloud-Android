@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Velkomin í Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Persónuverndarstefna</string>
+    <string name='accept'>Samþykkja</string>
+  <string name='hours'>klukkustundir</string>
+  <string name='hour'>klukkustund</string>
+  <string name='minutes'>mínútur</string>
+  <string name='synchronization_frequency'>Tíðni samstillings</string>
+  <string name='password_not_meet_requirements'>Lykilorðið uppfyllir ekki kröfur</string>
+  <string name='password_sharing_rules'>Lykilorð (verður að vera %d stafir og innihalda að minnsta kosti eitt tákn, hástaf, lágstaf eða tölu)</string>
+  <string name='repeat_password_hint'>Endurtaka lykilorð</string>
+  <string name='password_not_match'>Lykilorðin passa ekki saman</string>
+  <string name='exists_files_in_recycle_bin'>Í ruslakofanu eru hlutir með sama nafni.\nViltu halda áfram?</string>
+  <string name='exists_file_in_recycle_bin'>Í ruslakofanu er þegar til hlutur með sama nafni.\nViltu halda áfram?</string>
+  <string name='delete_sync_configuration'>Eyða þessari stillingu?</string>
+  <string name='settings_select_origin'>Veldu uppspretta</string>
+  <string name='settings_select_destination'>Veldu áfangastað</string>
+  <string name='exists_same_source_target'>Sama uppspretta og markamappa er þegar til í öðru öryggisinnstungu</string>
+  <string name='delete_files_finalize'>Eyða skrám þegar lokið er</string>
+  <string name='maintain_files'>Viðhalda skrám</string>
+  <string name='synchronization_type'>Tegund samstillingar</string>
+  <string name='synchronization_enabled'>Samstilling virkt</string>
+  <string name='synchronization_disabled'>Samstilling óvirkt</string>
+  <string name='feature_unavailable'>Þessi eiginleiki er ekki tiltækur í þessari áætlun</string>
+  <string name='permanent'>Varanleg</string>
+  <string name='temporary'>Tímabundið</string>
+  <string name='years'>Ár</string>
+  <string name='months'>Mánuðir</string>
+  <string name='weeks'>Víkur</string>
+  <string name='days'>Dagar</string>
+  <string name='sync_status_view'>Samstillingarástand</string>
+  <string name='backup_expirations'>Baksturruniðurstöður</string>
+  <string name='customized'>persónulega</string>
+  <string name='indefinite'>Óskilgreint</string>
+  <string name='one_year'>1 ár</string>
+  <string name='one_month'>1 mánuður</string>
+  <string name='one_week'>1 vika</string>
+  <string name='select_album_sync'>Veldu albúm</string>
+  <string name='edit_sync'>Breyta samstillingu</string>
+  <string name='general_update'>uppfærsla</string>
+  <string name='save'>Haltu</string>
+  <string name='sync_management_target_folder'>Áfangamöppu</string>
+  <string name='sync_management_active_until'>Virkur upp</string>
+  <string name='sync_management_expire_date'>Gildistími</string>
+  <string name='sync_management_mode'>Háttur</string>
+  <string name='sync_management_upload_video'>Settu upp myndband</string>
+  <string name='sync_management_only_wifi'>Aðeins WiFi</string>
+  <string name='sync_mode_increased'>Stigvaxandi</string>
+  <string name='sync_mode_full'>Heill</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Villa er ekki til í geymslunni</string>
+  <string name='sync_status_error_not_exist_local_folder'>Villa er ekki til möppan</string>
+  <string name='sync_status_error_not_valid_files'>Villa það eru skrár sem ekki eru gildi</string>
+  <string name='sync_status_error_out_space'>Villa án pláss</string>
+  <string name='sync_status_error'>Mistök</string>
+  <string name='sync_status_running'>Í aðgerð</string>
+  <string name='sync_status_pending'>Eyrnalokkur</string>
+  <string name='sync_status_complete'>Heill</string>
+  <string name='sync_management_backup_settings'>Afritaðu stillingar</string>
+  <string name='sync_management_source_and_target'>Uppspretta og ákvörðunarstaður</string>
+  <string name='sync_management_new_sync'>Búðu til nýja samstillingu</string>
+  <string name='sync_current_syncs'>Núverandi samstillingar</string>
+  <string name='sync_status'>Ríki:\u0020</string>
+  <string name='sync_last_execution'>Síðasta framkvæmd:\u0020</string>
+  <string name='sync_target'>Áfangastaður:\u0020</string>
+  <string name='sync_source'>Lind:\u0020</string>
+  <string name='folder'>Skrá</string>
+  <string name='album'>Albúm</string>
+  <string name='gallery'>Gallerí</string>
+  <string name='synchronizations'>Samstillingar</string>
+  <string name='enabled_syncs'>Virkar samstillingar</string>
+  <string name='disabled_syncs'>Óvirkar samstillingar</string>
+  <string name='control_syncs'>Samstillingarstýring</string>
+  <string name='config_sync'>Samstillingarstilling</string>
+  <string name='synchronization'>Samstilling</string>
+  <string name='not_allowed_file'>Ó -gildi skrá fyrir áætlun þína.</string>
+  <string name='not_allowed_image'>Mynd gildir ekki fyrir áætlun þína.</string>
+  <string name='file_download'>Sæktu skrár</string>
+  <string name='continue_downloading_files'>Viltu halda áfram með niðurhalið?</string>
+  <string name="file_upload">Hlaða skrám</string>
+  <string name="continue_uploading_files">Viltu halda áfram með upphleðslu skrárnar?</string>
+  <string name="error_not_account_info">Villa við að endurheimta reikningsupplýsingar</string>
+  <string name='recycle_bin'>Ruslakofinn</string>
+  <string name='clean_trash_repo'>Tómast ruslakofið</string>
+  <string name='recover'>Batna</string>
+  <string name='deleted_files'>Eytt skrám</string>
+  <string name='deleted_repositories'>Eytt bókasöfnum</string>
+  <string name="plan_change">Breyta áætlun</string>
+  <string name="want_plan_change">Viltu breyta áætlun þinni?</string>
+  <string name='not_support_4k'>Þú getur ekki endurskapað þetta myndband með núverandi áætlun þinni.</string>
+  <string name="not_allowed_files">Það eru áður óþekktar skrár fyrir áætlun þína.</string>
+  <string name="without_storage">Þú átt ekki nóg geymslupláss.</string>
+  <string name='storage_access_request'>Til að vinna úr skrám þarf forritið að fá aðgang að geymslu.</string>
+  <string name='storage_access'>Aðgangur að geymslu</string>
+  <string name='deny'>Neita</string>
+  <string name='allow'>Leyfa</string>
+  <string name="welcome_to_seafile">Velkominn</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Veldu reikning til að byrja</string>
   <string name="edit_account">Breyta</string>
   <string name="delete_account">Eyða</string>
@@ -205,6 +304,10 @@
   <string name="settings_account_info_title">Notendaupplýsingar</string>
   <string name="settings_account_info_load_data">hleð...</string>
   <string name="settings_account_space_title">Pláss notað</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Núverandi áætlun</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Útskrá</string>
   <string name="settings_account_sign_out_hint">Smelltu til að útskrá</string>
   <string name="settings_account_sign_out_confirm">Viltu skrá þig út?</string>
@@ -398,3 +501,12 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

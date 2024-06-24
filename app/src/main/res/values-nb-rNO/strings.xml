@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Velkommen til Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Personvernpolicy</string>
+    <string name='accept'>Akseptere</string>
+  <string name='hours'>timer</string>
+  <string name='hour'>time</string>
+  <string name='minutes'>minutter</string>
+  <string name='synchronization_frequency'>Synkroniseringsfrekvens</string>
+  <string name='password_not_meet_requirements'>Passordet oppfyller ikke kravene</string>
+  <string name='password_sharing_rules'>Passord (må være %d tegn og inkludere minst ett symbol, stor bokstav, liten bokstav eller tall)</string>
+  <string name='repeat_password_hint'>Gjenta passordet</string>
+  <string name='password_not_match'>Passordene stemmer ikke overens</string>
+  <string name='exists_files_in_recycle_bin'>Det er filer med samme navn i papirkurven.\nVil du fortsette?</string>
+  <string name='exists_file_in_recycle_bin'>Det er allerede en fil med samme navn i papirkurven.\nVil du fortsette?</string>
+  <string name='delete_sync_configuration'>Slett denne konfigurasjonen?</string>
+  <string name='settings_select_origin'>Velg en kilde</string>
+  <string name='settings_select_destination'>Velg en destinasjon</string>
+  <string name='exists_same_source_target'>Samme kilde- og målmappen finnes allerede i en annen sikkerhetskopieringsinnstilling</string>
+  <string name='delete_files_finalize'>Slett filer ved fullføring</string>
+  <string name='maintain_files'>Vedlikeholde filer</string>
+  <string name='synchronization_type'>Synkroniseringstype</string>
+  <string name='synchronization_enabled'>Synkronisering aktivert</string>
+  <string name='synchronization_disabled'>Synkronisering deaktivert</string>
+  <string name='feature_unavailable'>Funksjonen er ikke tilgjengelig i denne planen</string>
+  <string name='permanent'>Permanent</string>
+  <string name='temporary'>Midlertidig</string>
+  <string name='years'>År</string>
+  <string name='months'>Måneder</string>
+  <string name='weeks'>Uker</string>
+  <string name='days'>Dager</string>
+  <string name='sync_status_view'>Synkroniseringsstatus</string>
+  <string name='backup_expirations'>Sikkerhetskopiering utløper</string>
+  <string name='customized'>personlig</string>
+  <string name='indefinite'>Udefinert</string>
+  <string name='one_year'>1 år</string>
+  <string name='one_month'>1 måned</string>
+  <string name='one_week'>1 uke</string>
+  <string name='select_album_sync'>Velg album</string>
+  <string name='edit_sync'>Rediger synkronisering</string>
+  <string name='general_update'>Oppdater</string>
+  <string name='save'>Beholde</string>
+  <string name='sync_management_target_folder'>Målmappen</string>
+  <string name='sync_management_active_until'>Aktiv opp</string>
+  <string name='sync_management_expire_date'>Utløpsdato</string>
+  <string name='sync_management_mode'>Modus</string>
+  <string name='sync_management_upload_video'>Last opp en video</string>
+  <string name='sync_management_only_wifi'>Bare wifi</string>
+  <string name='sync_mode_increased'>Trinnvis</string>
+  <string name='sync_mode_full'>Fullstendig</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Feil eksisterer ikke i depotet</string>
+  <string name='sync_status_error_not_exist_local_folder'>Feil eksisterer ikke mappen</string>
+  <string name='sync_status_error_not_valid_files'>Feil Det er ikke -valid filer</string>
+  <string name='sync_status_error_out_space'>Feil uten plass</string>
+  <string name='sync_status_error'>Feil</string>
+  <string name='sync_status_running'>I aksjon</string>
+  <string name='sync_status_pending'>Ørering</string>
+  <string name='sync_status_complete'>Fullstendig</string>
+  <string name='sync_management_backup_settings'>Kopier konfigurasjon</string>
+  <string name='sync_management_source_and_target'>Kilde og destinasjon</string>
+  <string name='sync_management_new_sync'>Lag ny synkronisering</string>
+  <string name='sync_current_syncs'>Gjeldende synkroniseringer</string>
+  <string name='sync_status'>Stat:\u0020</string>
+  <string name='sync_last_execution'>Siste henrettelse:\u0020</string>
+  <string name='sync_target'>Mål:\u0020</string>
+  <string name='sync_source'>Fontene:\u0020</string>
+  <string name='folder'>Fil</string>
+  <string name='album'>Album</string>
+  <string name='gallery'>Galleri</string>
+  <string name='synchronizations'>Synkroniseringer</string>
+  <string name='enabled_syncs'>Aktiverte synkroniseringer</string>
+  <string name='disabled_syncs'>Funksjonshemmede synkroniseringer</string>
+  <string name='control_syncs'>Synkroniseringskontroll</string>
+  <string name='config_sync'>Synkroniseringskonfigurasjon</string>
+  <string name='synchronization'>Synkronisering</string>
+  <string name='not_allowed_file'>Ikke -valid fil for planen din.</string>
+  <string name='not_allowed_image'>Bilde ikke gyldig for planen din.</string>
+  <string name='file_download'>Last ned filer</string>
+  <string name='continue_downloading_files'>Vil du fortsette med nedlastingen?</string>
+  <string name="file_upload">Last opp filer</string>
+  <string name="continue_uploading_files">Vil du fortsette med opplastingen av filene?</string>
+  <string name="error_not_account_info">Feil når du gjenoppretter kontoinformasjon</string>
+  <string name='recycle_bin'>Papirkurv</string>
+  <string name='clean_trash_repo'>Tøm papirkurven</string>
+  <string name='recover'>Gjenopprette</string>
+  <string name='deleted_files'>Slettede filer</string>
+  <string name='deleted_repositories'>Slettede biblioteker</string>
+  <string name="plan_change">Plan for endring</string>
+  <string name="want_plan_change">Vil du endre planen din?</string>
+  <string name='not_support_4k'>Du kan ikke reprodusere denne videoen med din nåværende plan.</string>
+  <string name="not_allowed_files">Det er enestående filer for planen din.</string>
+  <string name="without_storage">Du har ikke nok lagringsplass.</string>
+  <string name='storage_access_request'>For å behandle filene, må applikasjonen få tilgang til lagring.</string>
+  <string name='storage_access'>Tilgang til lagring</string>
+  <string name='deny'>Benekte</string>
+  <string name='allow'>Tillate</string>
+  <string name="welcome_to_seafile">Velkommen</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Velg en konto for å starte</string>
   <string name="edit_account">Redigere</string>
   <string name="delete_account">Slette</string>
@@ -199,6 +298,10 @@
   <string name="settings_account_info_title">Brukerinformasjon</string>
   <string name="settings_account_info_load_data">laster inn...</string>
   <string name="settings_account_space_title">Forbrukt lagringsplass</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Gjeldende plan</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Logg ut</string>
   <string name="settings_account_sign_out_hint">Trykk her for å logge ut</string>
   <string name="settings_account_sign_out_confirm">Ønsker du å logge ut?</string>
@@ -380,3 +483,12 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

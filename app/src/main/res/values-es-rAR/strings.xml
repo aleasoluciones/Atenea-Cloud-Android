@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Bienvenido a Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Política de Privacidad</string>
+    <string name='accept'>Aceptar</string>
+  <string name='hours'>horas</string>
+  <string name='hour'>hora</string>
+  <string name='minutes'>minutos</string>
+  <string name='synchronization_frequency'>Frecuencia de sincronización</string>
+  <string name='password_not_meet_requirements'>La contraseña no cumple con los requisitos</string>
+  <string name='password_sharing_rules'>Contraseña (debe tener %d caracteres e incluir al menos un símbolo, letra mayúscula, letra minúscula o número)</string>
+  <string name='repeat_password_hint'>Repetir contraseña</string>
+  <string name='password_not_match'>Las contraseñas no coinciden</string>
+  <string name='exists_files_in_recycle_bin'>Existen elementos con el mismo nombre en la papelera.\n¿Quiere continuar?</string>
+  <string name='exists_file_in_recycle_bin'>Existe un elemento con el mismo nombre en la papelera.\n¿Quiere continuar?</string>
+  <string name='delete_sync_configuration'>¿Eliminar esta configuración?</string>
+  <string name='settings_select_origin'>Selecciona un origen</string>
+  <string name='settings_select_destination'>Selecciona un destino</string>
+  <string name='exists_same_source_target'>La misma carpeta de origen y destino ya existe en otra configuración de copia de seguridad</string>
+  <string name='delete_files_finalize'>Eliminar archivos al finalizar</string>
+  <string name='maintain_files'>Mantener archivos</string>
+  <string name='synchronization_type'>Tipo de sincronización</string>
+  <string name='synchronization_enabled'>Sincronización habilitada</string>
+  <string name='synchronization_disabled'>Sincronización deshabilitada</string>
+  <string name='feature_unavailable'>Característica no disponible en este plan</string>
+  <string name='permanent'>Permanente</string>
+  <string name='temporary'>Temporal</string>
+  <string name='years'>Años</string>
+  <string name='months'>Meses</string>
+  <string name='weeks'>Semanas</string>
+  <string name='days'>Días</string>
+  <string name='sync_status_view'>Estado de sincronización</string>
+  <string name='backup_expirations'>Expiraciones de copia de seguridad</string>
+  <string name='customized'>personalizado</string>
+  <string name='indefinite'>indefinido</string>
+  <string name='one_year'>1 año</string>
+  <string name='one_month'>1 mes</string>
+  <string name='one_week'>1 semana</string>
+  <string name='select_album_sync'>Seleccionar album</string>
+  <string name='edit_sync'>Editar sincronización</string>
+  <string name='general_update'>Actualizar</string>
+  <string name='save'>Guardar</string>
+  <string name='sync_management_target_folder'>Carpeta de destino</string>
+  <string name='sync_management_active_until'>Activo hasta</string>
+  <string name='sync_management_expire_date'>Fecha de expiración</string>
+  <string name='sync_management_mode'>Modo</string>
+  <string name='sync_management_upload_video'>Subir vídeo</string>
+  <string name='sync_management_only_wifi'>Solo Wifi</string>
+  <string name='sync_mode_increased'>Incremental</string>
+  <string name='sync_mode_full'>Completa</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Error no existe la ruta en el repositorio</string>
+  <string name='sync_status_error_not_exist_local_folder'>Error no existe la carpeta</string>
+  <string name='sync_status_error_not_valid_files'>Error hay ficheros no válidos</string>
+  <string name='sync_status_error_out_space'>Error sin espacio</string>
+  <string name='sync_status_error'>Error</string>
+  <string name='sync_status_running'>En ejecución</string>
+  <string name='sync_status_pending'>Pendiente</string>
+  <string name='sync_status_complete'>Completa</string>
+  <string name='sync_management_backup_settings'>Configuración de la copia</string>
+  <string name='sync_management_source_and_target'>Origen y destino</string>
+  <string name='sync_management_new_sync'>Crear nueva sincronización</string>
+  <string name='sync_current_syncs'>Sincronizaciones actuales</string>
+  <string name='sync_status'>Estado:\u0020</string>
+  <string name='sync_last_execution'>Última ejecución:\u0020</string>
+  <string name='sync_target'>Destino:\u0020</string>
+  <string name='sync_source'>Origen:\u0020</string>
+  <string name='folder'>Carpeta</string>
+  <string name='album'>Álbum</string>
+  <string name='gallery'>Galería</string>
+  <string name='synchronizations'>Sincronizaciones</string>
+  <string name='enabled_syncs'>Sincronizaciones activadas</string>
+  <string name='disabled_syncs'>Sincronizaciones desactivadas</string>
+  <string name='control_syncs'>Control de sincronizaciones</string>
+  <string name='config_sync'>Configuración de sincronización</string>
+  <string name='synchronization'>Sincronización</string>
+  <string name='not_allowed_file'>Archivo no valido para tu plan.</string>
+  <string name='not_allowed_image'>Imagen no valida para tu plan.</string>
+  <string name='file_download'>Descargar archivos</string>
+  <string name='continue_downloading_files'>¿Quiere continuar con la descarga?</string>
+  <string name="file_upload">Subir ficheros</string>
+  <string name="continue_uploading_files">¿Quiere continuar con la subida de los archivos?</string>
+  <string name="error_not_account_info">Error al recuperar la información de la cuenta</string>
+  <string name='recycle_bin'>Papelera</string>
+  <string name='clean_trash_repo'>Vaciar papelera</string>
+  <string name='recover'>Recuperar</string>
+  <string name='deleted_files'>Ficheros borrados</string>
+  <string name='deleted_repositories'>Bibliotecas borradas</string>
+  <string name="plan_change">Cambiar de plan</string>
+  <string name="want_plan_change">¿Quieres cambiar tu plan?</string>
+  <string name='not_support_4k'>No puedes reproducir este video con tu plan actual.</string>
+  <string name="not_allowed_files">Hay ficheros no validos para su plan.</string>
+  <string name="without_storage">No tienes suficiente espacio de almacenamiento.</string>
+  <string name='storage_access_request'>Para poder procesar los archivos, la aplicacion necesita poder acceder al almacenamiento.</string>
+  <string name='storage_access'>Acceso al almacenamiento</string>
+  <string name='deny'>Denegar</string>
+  <string name='allow'>Permitir</string>
+  <string name="welcome_to_seafile">Bienvenido</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Elija una cuenta para comenzar</string>
   <string name="edit_account">Editar</string>
   <string name="delete_account">Borrar</string>
@@ -46,10 +145,17 @@
     <item>Fotos/Videos</item>
     <item>Otro</item>
   </string-array>
+<<<<<<< HEAD
   <string name="choose_server">Elija un Servidor Seafile</string>
   <string-array name="choose_server_array">
     <item>Inicio de Sesión único</item>
     <item>Otro Servidor Seafile</item>
+=======
+  <string name="choose_server">Elija un Servidor</string>
+  <string-array name="choose_server_array">
+    <item>Inicio de Sesión único</item>
+    <item>Otro Servidor</item>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   </string-array>
   <string name="network_down">Sin conexión de red</string>
   <string name="unknow_error">Error desconocido</string>
@@ -127,6 +233,7 @@
   <string name="dir_empty">Esta carpeta está vacía</string>
   <string name="no_repo">Aún no tiene bibliotecas</string>
   <string name="no_app_available">No se encuentra ninguna app</string>
+<<<<<<< HEAD
   <string name="add_to_seafile">Agregar a Seafile</string>
   <string name="ok">OK</string>
   <string name="no_account">Por favor, primero configure una cuenta en Seafile</string>
@@ -134,6 +241,15 @@
   <string name="choose_a_library">Elija una biblioteca</string>
   <string name="choose_a_folder">Elija una carpeta</string>
   <string name="load_accounts_fail">Falla al cargar cuentas de Seafile</string>
+=======
+  <string name="add_to_seafile">Agregar a Cloud Drive</string>
+  <string name="ok">OK</string>
+  <string name="no_account">Por favor, primero configure una cuenta</string>
+  <string name="choose_an_account">Elija una cuenta</string>
+  <string name="choose_a_library">Elija una biblioteca</string>
+  <string name="choose_a_folder">Elija una carpeta</string>
+  <string name="load_accounts_fail">Falla al cargar cuentas de Cloud Drive</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="load_libraries_fail">Falla al cargar bibliotecas</string>
   <string name="load_dir_fail">Falla al cargar el contenido de esta carpeta</string>
   <string name="not_supported_share">Este tipo de recurso compartido no es compatible</string>
@@ -266,6 +382,10 @@
   <string name="settings_account_info_title">Información de usuario</string>
   <string name="settings_account_info_load_data">cargando...</string>
   <string name="settings_account_space_title">Espacio utilizado</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Plan actual</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Salir</string>
   <string name="settings_account_sign_out_hint">Click para salir</string>
   <string name="settings_account_sign_out_confirm">¿Desea salir?</string>
@@ -365,7 +485,11 @@
   <string name="settings_cuc_pick_albums">Permitirme elegir los álbumes de fotos</string>
   <string name="settings_cuc_remote_lib_hint">Escoja su cuenta y biblioteca preferidas. \nLuego puede cambiar estas opciones en Configuración.</string>
   <string name="settings_cuc_finish_title">Terminar</string>
+<<<<<<< HEAD
   <string name="settings_cuc_ready">Seafile comenzará a subir los archivos de las carpetas seleccionadas después de su confirmación.\nPuede cerrar la app durante este proceso.</string>
+=======
+  <string name="settings_cuc_ready">Cloud Drive comenzará a subir los archivos de las carpetas seleccionadas después de su confirmación.\nPuede cerrar la app durante este proceso.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_cuc_swipe_left">Deslice a la izquierda para continuar.</string>
   <string name="settings_cuc_click_btn">Click para cerrar la ayuda de configuración.</string>
   <string name="settings_cuc_loading">cargando...</string>
@@ -374,10 +498,28 @@
   <string name="camera_sync_notification_title_failed">Subida de cámara falló</string>
   <string name="camera_sync_notification_repo_missing_failed">No se encuentra el repositorio en el servidor.</string>
   <string name="camera_sync_notification_auth_error_failed">Error de autenticación.</string>
+<<<<<<< HEAD
   <string name="camera_sync_rename_file">%s (renombrado por Seafile)</string>
   <string name="settings_about_title">ACERCA DE</string>
   <string name="settings_about_version_title">App Version</string>
   <string name="settings_about_author_title">Acerca del Autor</string>
+=======
+  <string name="camera_sync_rename_file">%s (renombrado por Cloud Drive)</string>
+  <string name="settings_about_title">ACERCA DE</string>
+  <string name="settings_about_version_title">App Version</string>
+  <string name="settings_about_author_title">Acerca del Autor</string>
+
+  <string name="settings_about_author_info">
+        <![CDATA[
+        <p>
+          E-mail:  info@ateneacloud.com<br><br>
+          Website: www.ateneacloud.com<br><br>
+          Phone:   911 87 90 07<br><br>
+        </p>
+        ]]>
+    </string>
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">FUNCIONES AVANZADAS</string>
   <string name="settings_storage_title">ALMACENAMIENTO DE CACHÉ</string>
   <string name="settings_cache_title">Tamaño del caché</string>
@@ -407,7 +549,11 @@
   <string name="saf_thumbnail_not_found_exception">No se pudo hallar/abrir la imagen en miniatura %s.</string>
   <string name="saf_file_not_downloaded_exception">No se pudo descargar el archivo %s desde el servidor.</string>
   <string name="saf_write_diretory_exception">No se puede abrir la carpeta para leer/escribir.</string>
+<<<<<<< HEAD
   <string name="saf_account_not_found_exception">No se pudo hallar la cuenta de Seafile.</string>
+=======
+  <string name="saf_account_not_found_exception">No se pudo hallar la cuenta.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="saf_upload_path_not_available">No es posible subir, no hay ruta disponible</string>
   <string name="saf_failed_to_create_directory">No se pudo crear la carpeta %s</string>
   <string name="saf_file_exist">Ese archivo ya existe</string>
@@ -490,6 +636,10 @@
   <string name="action_mode_no_items_selected">No se han seleccionado items</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">Para procesar archivos, conceda permiso de almacenamiento para accederlos.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">Para procesar los contactos, permita el acceso a ellos.</string>
   <string name="permission_not_granted">El permiso no fue concedido</string>
   <string name="history_change_title">Detalle de las modificaciones</string>
@@ -544,6 +694,16 @@
   <string name="required_password">Se requiere contraseña.</string>
   <string name="weak_password">La contraseña es demasiado débil.</string>
   <!--Folder backup Preference-->
+<<<<<<< HEAD
   <!--action-->
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

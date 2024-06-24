@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Welkom bij Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Privacybeleid</string>
+    <string name='accept'>Accepteren</string>
+  <string name='hours'>uren</string>
+  <string name='hour'>uur</string>
+  <string name='minutes'>minuten</string>
+  <string name='synchronization_frequency'>Synchronisatiefrequentie</string>
+  <string name='password_not_meet_requirements'>Het wachtwoord voldoet niet aan de eisen</string>
+  <string name='password_sharing_rules'>Wachtwoord (moet %d tekens bevatten en minstens één symbool, hoofdletter, kleine letter of nummer)</string>
+  <string name='repeat_password_hint'>Herhaal wachtwoord</string>
+  <string name='password_not_match'>Wachtwoorden komen niet overeen</string>
+  <string name='exists_files_in_recycle_bin'>Er bevinden zich items met dezelfde naam in de Prullenbak.\nWilt u doorgaan?</string>
+  <string name='exists_file_in_recycle_bin'>Er bevindt zich al een item met dezelfde naam in de Prullenbak.\nWilt u doorgaan?</string>
+  <string name='delete_sync_configuration'>Deze configuratie verwijderen?</string>
+  <string name='settings_select_origin'>Selecteer een bron</string>
+  <string name='settings_select_destination'>Selecteer een bestemming</string>
+  <string name='exists_same_source_target'>Dezelfde bron- en doelmappen bestaan al in een andere back-upinstelling</string>
+  <string name='delete_files_finalize'>Bestanden verwijderen bij voltooien</string>
+  <string name='maintain_files'>Bestanden onderhouden</string>
+  <string name='synchronization_type'>Type synchronisatie</string>
+  <string name='synchronization_enabled'>Synchronisatie ingeschakeld</string>
+  <string name='synchronization_disabled'>Synchronisatie uitgeschakeld</string>
+  <string name='feature_unavailable'>Feature niet beschikbaar in dit plan</string>
+  <string name='permanent'>Permanent</string>
+  <string name='temporary'>Tijdelijk</string>
+  <string name='years'>Jaren</string>
+  <string name='months'>Maanden</string>
+  <string name='weeks'>Weken</string>
+  <string name='days'>Dagen</string>
+  <string name='sync_status_view'>Synchronisatiestatus</string>
+  <string name='backup_expirations'>Back-up verlopen</string>
+  <string name='customized'>gepersonaliseerd</string>
+  <string name='indefinite'>ongedefinieerd</string>
+  <string name='one_year'>1 jaar</string>
+  <string name='one_month'>1 maand</string>
+  <string name='one_week'>1 week</string>
+  <string name='select_album_sync'>Selecteer album</string>
+  <string name='edit_sync'>Synchronisatie bewerken</string>
+  <string name='general_update'>Update</string>
+  <string name='save'>Houden</string>
+  <string name='sync_management_target_folder'>Doelmap</string>
+  <string name='sync_management_active_until'>Actief zijn</string>
+  <string name='sync_management_expire_date'>Uiterste houdbaarheidsdatum</string>
+  <string name='sync_management_mode'>Modus</string>
+  <string name='sync_management_upload_video'>Upload een video</string>
+  <string name='sync_management_only_wifi'>Alleen wifi</string>
+  <string name='sync_mode_increased'>Toenemend</string>
+  <string name='sync_mode_full'>Compleet</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Fout bestaat niet in de repository</string>
+  <string name='sync_status_error_not_exist_local_folder'>Fout bestaat niet de map</string>
+  <string name='sync_status_error_not_valid_files'>Fout Er zijn niet -valide bestanden</string>
+  <string name='sync_status_error_out_space'>Feil uten plass</string>
+  <string name='sync_status_error'>Fout</string>
+  <string name='sync_status_running'>In actie</string>
+  <string name='sync_status_pending'>Oorbel</string>
+  <string name='sync_status_complete'>Compleet</string>
+  <string name='sync_management_backup_settings'>Kopieerconfiguratie</string>
+  <string name='sync_management_source_and_target'>Bron en bestemming</string>
+  <string name='sync_management_new_sync'>Creëer nieuwe synchronisatie</string>
+  <string name='sync_current_syncs'>Huidige synchronisaties</string>
+  <string name='sync_status'>Staat:\u0020</string>
+  <string name='sync_last_execution'>Laatste uitvoering:\u0020</string>
+  <string name='sync_target'>Bestemming:\u0020</string>
+  <string name='sync_source'>Fontein:\u0020</string>
+  <string name='folder'>Bestand</string>
+  <string name='album'>Album</string>
+  <string name='gallery'>Galerij</string>
+  <string name='synchronizations'>Synchronisaties</string>
+  <string name='enabled_syncs'>Geactiveerde synchronisaties</string>
+  <string name='disabled_syncs'>Gehandicapte synchronisaties</string>
+  <string name='control_syncs'>Synchronisatiecontrole</string>
+  <string name='config_sync'>Synchronisatieconfiguratie</string>
+  <string name='synchronization'>Synchronisatie</string>
+  <string name='not_allowed_file'>Niet -valid -bestand voor uw plan.</string>
+  <string name='not_allowed_image'>Afbeelding niet geldig voor uw plan.</string>
+  <string name='file_download'>Download bestanden</string>
+  <string name='continue_downloading_files'>Wilt u doorgaan met de download?</string>
+  <string name="file_upload">Upload bestanden</string>
+  <string name="continue_uploading_files">Wilt u doorgaan met de upload van de bestanden?</string>
+  <string name="error_not_account_info">Fout bij het herstellen van accountinformatie</string>
+  <string name='recycle_bin'>Prullenbak</string>
+  <string name='clean_trash_repo'>Prullenbak legen</string>
+  <string name='recover'>Herstellen</string>
+  <string name='deleted_files'>Verwijderde bestanden</string>
+  <string name='deleted_repositories'>Verwijderde bibliotheken</string>
+  <string name="plan_change">Veranderingsplan</string>
+  <string name="want_plan_change">Wil je je plan wijzigen?</string>
+  <string name='not_support_4k'>U kunt deze video niet reproduceren met uw huidige plan.</string>
+  <string name="not_allowed_files">Er zijn ongekende bestanden voor uw plan.</string>
+  <string name="without_storage">U hebt niet genoeg opslagruimte.</string>
+  <string name='storage_access_request'>Om de bestanden te verwerken, moet de applicatie toegang krijgen tot opslag.</string>
+  <string name='storage_access'>Toegang tot opslag</string>
+  <string name='deny'>Ontkennen</string>
+  <string name='allow'>Toestaan</string>
+  <string name="welcome_to_seafile">Welkom</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Kies een account om te beginnen</string>
   <string name="edit_account">Bewerken</string>
   <string name="delete_account">Verwijderen</string>
@@ -232,6 +331,10 @@
   <string name="settings_account_info_title">Gebruikersinfo</string>
   <string name="settings_account_info_load_data">Laden...</string>
   <string name="settings_account_space_title">Gebruikte ruimte</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Huidig plan</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Afmelden</string>
   <string name="settings_account_sign_out_hint">Klik om af te melden</string>
   <string name="settings_account_sign_out_confirm">Wil je afmelden?</string>
@@ -431,6 +534,10 @@
   <string name="action_mode_no_items_selected">Geen items geselecteerd</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">Om de bestanden te kunnen verwerken zijn voldoende leesrechten noodzakelijk</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_not_granted">Toestemming is niet verleend</string>
   <string name="history_change_title">Details over de wijzigingen</string>
   <string name="no_more_activities">Geen acties meer over</string>
@@ -450,7 +557,17 @@
   <!--Home list title-->
   <string name="shared_with_all">Gedeeld met iedereen</string>
   <!--editor-->
+<<<<<<< HEAD
   <!--Folder backup Preference-->
   <!--action-->
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

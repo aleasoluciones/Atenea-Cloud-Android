@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+=======
+ // Top-level build file where you can add configuration options common to all sub-projects/modules.
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
 
 buildscript {
     repositories {
@@ -10,13 +14,22 @@ buildscript {
         mavenCentral()
         maven { url 'https://jitpack.io' }
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+<<<<<<< HEAD
 //        maven { url "https://maven.aliyun.com/repository/public" }  //do not use，because F-Droid.
+=======
+//        maven { url "https://maven.aliyun.com/repository/public" }  //do not use
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.4.2'
 
+<<<<<<< HEAD
         classpath 'com.google.gms:google-services:4.4.1'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
+=======
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     }
 }
 
@@ -30,14 +43,25 @@ allprojects {
         mavenCentral()
         maven { url 'https://jitpack.io' }
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+<<<<<<< HEAD
 //        maven { url "https://maven.aliyun.com/repository/public" }
+=======
+//        maven { url "https://maven.aliyun.com/repository/public" } //do not use
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     }
 }
 
 ext {
+<<<<<<< HEAD
     compileSdkVersion = 34 // 13.0 "Tiramisu"
     targetSdkVersion = 34 //14
     supportLibVersion = '27.1.1'  // variable that can be referenced to keep support libs consistent
     minSdkVersion = 26 //8.0 "Oreo"
+=======
+    compileSdkVersion = 33 // 13.0 "Tiramisu"
+    supportLibVersion = '27.1.1'  // variable that can be referenced to keep support libs consistent
+    minSdkVersion = 26 //8.0 "Oreo"
+    targetSdkVersion = 31 //12.0 "S"
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     buildToolsVersion = '27.0.3'
 }

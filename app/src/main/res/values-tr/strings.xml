@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Seafile\'a Hoşgeldiniz</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Gizlilik Politikası</string>
+    <string name='accept'>Kabul etmek</string>
+  <string name='hours'>saatler</string>
+  <string name='hour'>saat</string>
+  <string name='minutes'>dakika</string>
+  <string name='synchronization_frequency'>Senkronizasyon sıklığı</string>
+  <string name='password_not_meet_requirements'>Şifre gereksinimleri karşılamıyor</string>
+  <string name='password_sharing_rules'>Parola (en az bir sembol, büyük harf, küçük harf veya rakam içermesi gereken %d karakterli)</string>
+  <string name='repeat_password_hint'>Parolayı tekrarla</string>
+  <string name='password_not_match'>Parolalar eşleşmiyor</string>
+  <string name='exists_files_in_recycle_bin'>Geri dönüşüm kutusunda aynı isimde öğeler bulunuyor.\nDevam etmek istiyor musunuz?</string>
+  <string name='exists_file_in_recycle_bin'>Geri dönüşüm kutusunda aynı isimde bir öğe bulunuyor.\nDevam etmek istiyor musunuz?</string>
+  <string name='delete_sync_configuration'>Bu yapılandırmayı silmek istiyor musunuz?</string>
+  <string name='settings_select_origin'>Bir kaynak seçin</string>
+  <string name='settings_select_destination'>Bir hedef seçin</string>
+  <string name='exists_same_source_target'>Aynı kaynak ve hedef klasörü zaten başka bir yedekleme ayarında mevcut</string>
+  <string name='delete_files_finalize'>Finalize edildiğinde dosyaları sil</string>
+  <string name='maintain_files'>Dosyaları sürdürmek</string>
+  <string name='synchronization_type'>Senkronizasyon Türü</string>
+  <string name='synchronization_enabled'>Senkronizasyon etkin</string>
+  <string name='synchronization_disabled'>Senkronizasyon devre dışı</string>
+  <string name='feature_unavailable'>Bu planda kullanılamıyor özellik</string>
+  <string name='permanent'>Kalıcı</string>
+  <string name='temporary'>Geçici</string>
+  <string name='years'>Yıllar</string>
+  <string name='months'>Aylar</string>
+  <string name='weeks'>Haftalar</string>
+  <string name='days'>Günler</string>
+  <string name='sync_status_view'>Senkronizasyon Durumu</string>
+  <string name='backup_expirations'>Yedekleme süreleri dolmuş</string>
+  <string name='customized'>kişiselleştirilmiş</string>
+  <string name='indefinite'>tanımsız</string>
+  <string name='one_year'>1 yıl</string>
+  <string name='one_month'>1 ay</string>
+  <string name='one_week'>1 hafta</string>
+  <string name='select_album_sync'>Albüm seçin</string>
+  <string name='edit_sync'>Senkronizasyonu Düzenle</string>
+  <string name='general_update'>Güncelleme</string>
+  <string name='save'>Kale</string>
+  <string name='sync_management_target_folder'>Hedef klasör</string>
+  <string name='sync_management_active_until'>Aktif</string>
+  <string name='sync_management_expire_date'>Son kullanma tarihi</string>
+  <string name='sync_management_mode'>Moda</string>
+  <string name='sync_management_upload_video'>Video yüklemek</string>
+  <string name='sync_management_only_wifi'>Sadece WiFi</string>
+  <string name='sync_mode_increased'>Artımlı</string>
+  <string name='sync_mode_full'>Tamamlamak</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Depoda hata yok</string>
+  <string name='sync_status_error_not_exist_local_folder'>Klasör hata yok</string>
+  <string name='sync_status_error_not_valid_files'>Hata Valid olmayan dosyalar var</string>
+  <string name='sync_status_error_out_space'>Uzaysız hata</string>
+  <string name='sync_status_error'>Hata</string>
+  <string name='sync_status_running'>Eylemde</string>
+  <string name='sync_status_pending'>Küpe</string>
+  <string name='sync_status_complete'>Tamamlamak</string>
+  <string name='sync_management_backup_settings'>Yapılandırma kopyala</string>
+  <string name='sync_management_source_and_target'>Kaynak ve hedef</string>
+  <string name='sync_management_new_sync'>Yeni Senkronizasyon Oluşturun</string>
+  <string name='sync_current_syncs'>Mevcut senkronizasyonlar</string>
+  <string name='sync_status'>Durum:\u0020</string>
+  <string name='sync_last_execution'>Son infaz:\u0020</string>
+  <string name='sync_target'>Varış noktası:\u0020</string>
+  <string name='sync_source'>Çeşme:\u0020</string>
+  <string name='folder'>Dosya</string>
+  <string name='album'>Albüm</string>
+  <string name='gallery'>Galeri</string>
+  <string name='synchronizations'>Senkronizasyonlar</string>
+  <string name='enabled_syncs'>Aktif senkronizasyonlar</string>
+  <string name='disabled_syncs'>Devre dışı senkronizasyonlar</string>
+  <string name='control_syncs'>Senkronizasyon kontrolü</string>
+  <string name='config_sync'>Senkronizasyon yapılandırması</string>
+  <string name='synchronization'>Senkronizasyon</string>
+  <string name='not_allowed_file'>Planınız için valid olmayan dosya.</string>
+  <string name='not_allowed_image'>Görüntü planınız için geçerli değil.</string>
+  <string name='file_download'>Dosyaları indir</string>
+  <string name='continue_downloading_files'>İndirmeye devam etmek ister misiniz?</string>
+  <string name="file_upload">Dosyaları yükle</string>
+  <string name="continue_uploading_files">Dosyaların yüklenmesine devam etmek istiyor musunuz?</string>
+  <string name="error_not_account_info">Hesap bilgilerini kurtarırken hata</string>
+  <string name='recycle_bin'>Geri dönüşüm kutusu</string>
+  <string name='clean_trash_repo'>Geri dönüşüm kutusunu boşalt</string>
+  <string name='recover'>İyileşmek</string>
+  <string name='deleted_files'>Silinmiş dosyalar</string>
+  <string name='deleted_repositories'>Silinmiş kütüphaneler</string>
+  <string name="plan_change">Plan değiştir</string>
+  <string name="want_plan_change">Planınızı değiştirmek istiyor musunuz?</string>
+  <string name='not_support_4k'>Bu videoyu mevcut planınızla çoğaltamazsınız.</string>
+  <string name="not_allowed_files">Planınız için benzeri görülmemiş dosyalar var.</string>
+  <string name="without_storage">Yeterli depolama alanınız yok.</string>
+  <string name='storage_access_request'>Dosyaları işlemek için uygulamanın depolamaya erişmesi gerekir.</string>
+  <string name='storage_access'>Depolamaya erişim</string>
+  <string name='deny'>Reddetmek</string>
+  <string name='allow'>İzin vermek</string>
+  <string name="welcome_to_seafile">Hoş geldin</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Başlamak için bir hesap seçin</string>
   <string name="edit_account">Düzenle</string>
   <string name="delete_account">Sil</string>
@@ -134,6 +233,10 @@
   <string name="settings_account">Hesap</string>
   <string name="settings_account_info_title">Kullanıcı Bilgileri</string>
   <string name="settings_account_space_title">Kullanılan alan</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Mevcut plan</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Çıkış yap</string>
   <string name="settings_account_sign_out_hint">Çıkış yapmak için tıklayın</string>
   <string name="settings_account_sign_out_confirm">Çıkış yapmak istiyor musunuz?</string>
@@ -201,3 +304,12 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Vítejte v Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Zásady ochrany osobných údajov</string>
+    <string name='accept'>Akceptovať</string>
+  <string name='hours'>hodiny</string>
+  <string name='hour'>hodina</string>
+  <string name='minutes'>minúty</string>
+  <string name='synchronization_frequency'>Frekvencia synchronizácie</string>
+  <string name='password_not_meet_requirements'>Heslo nesplňuje požiadavky</string>
+  <string name='password_sharing_rules'>Heslo (musí mať %d znakov a obsahovať aspoň jeden symbol, veľké písmeno, malé písmeno alebo číslicu)</string>
+  <string name='repeat_password_hint'>Opakovať heslo</string>
+  <string name='password_not_match'>Heslá sa nezhodujú</string>
+  <string name='exists_files_in_recycle_bin'>V koši sú položky s rovnakým názvom.\nChcete pokračovať?</string>
+  <string name='exists_file_in_recycle_bin'>V koši je položka s rovnakým názvom.\nChcete pokračovať?</string>
+  <string name='delete_sync_configuration'>Vymazať túto konfiguráciu?</string>
+  <string name='settings_select_origin'>Vyberte zdroj</string>
+  <string name='settings_select_destination'>Vyberte cieľ</string>
+  <string name='exists_same_source_target'>Rovnaký zdroj a cieľový priečinok už existuje v inom nastavení zálohovania</string>
+  <string name='delete_files_finalize'>Vymazať súbory pri finalizácii</string>
+  <string name='maintain_files'>Udržiavať súbory</string>
+  <string name='synchronization_type'>Typ synchronizácie</string>
+  <string name='synchronization_enabled'>Synchronizácia povolená</string>
+  <string name='synchronization_disabled'>Synchronizácia je deaktivovaná</string>
+  <string name='feature_unavailable'>Funkcia nie je k dispozícii v tomto pláne</string>
+  <string name='permanent'>Trvalý</string>
+  <string name='temporary'>Dočasný</string>
+  <string name='years'>Roky</string>
+  <string name='months'>Mesiace</string>
+  <string name='weeks'>Týždne</string>
+  <string name='days'>Dni</string>
+  <string name='sync_status_view'>Stav synchronizácie</string>
+  <string name='backup_expirations'>Platí záložné expirácie</string>
+  <string name='customized'>personalizovaný</string>
+  <string name='indefinite'>Nicht definiert</string>
+  <string name='one_year'>1 rok</string>
+  <string name='one_month'>1 měsíc</string>
+  <string name='one_week'>1 týden</string>
+  <string name='select_album_sync'>Vyberte album</string>
+  <string name='edit_sync'>Upravit synchronizaci</string>
+  <string name='general_update'>Aktualizace</string>
+  <string name='save'>Držet</string>
+  <string name='sync_management_target_folder'>Cílová složka</string>
+  <string name='sync_management_active_until'>Aktivní nahoru</string>
+  <string name='sync_management_expire_date'>Datum spotřeby</string>
+  <string name='sync_management_mode'>Režim</string>
+  <string name='sync_management_upload_video'>Nahrajte video</string>
+  <string name='sync_management_only_wifi'>Pouze wifi</string>
+  <string name='sync_mode_increased'>Přírůstkové</string>
+  <string name='sync_mode_full'>Kompletní</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Chyba v úložišti neexistuje</string>
+  <string name='sync_status_error_not_exist_local_folder'>Chyba neexistuje složka</string>
+  <string name='sync_status_error_not_valid_files'>Chyba existují ne -hodnotné soubory</string>
+  <string name='sync_status_error_out_space'>Chyba bez prostoru</string>
+  <string name='sync_status_error'>Chyba</string>
+  <string name='sync_status_running'>V akci</string>
+  <string name='sync_status_pending'>Náušnice</string>
+  <string name='sync_status_complete'>Kompletní</string>
+  <string name='sync_management_backup_settings'>Konfigurace kopírování</string>
+  <string name='sync_management_source_and_target'>Zdroj a cíl</string>
+  <string name='sync_management_new_sync'>Vytvořte novou synchronizaci</string>
+  <string name='sync_current_syncs'>Aktuální synchronizace</string>
+  <string name='sync_status'>Stát:\u0020</string>
+  <string name='sync_last_execution'>Poslední provedení:\u0020</string>
+  <string name='sync_target'>Destinace:\u0020</string>
+  <string name='sync_source'>Kašna:\u0020</string>
+  <string name='folder'>Soubor</string>
+  <string name='album'>Album</string>
+  <string name='gallery'>Galerie</string>
+  <string name='synchronizations'>Synchronizace</string>
+  <string name='enabled_syncs'>Aktivované synchronizace</string>
+  <string name='disabled_syncs'>Synchronizace zdravotně postižených</string>
+  <string name='control_syncs'>Synchronizační kontrola</string>
+  <string name='config_sync'>Konfigurace synchronizace</string>
+  <string name='synchronization'>Synchronizace</string>
+  <string name='not_allowed_file'>Nevylidský soubor pro váš plán.</string>
+  <string name='not_allowed_image'>Obrázek není platný pro váš plán.</string>
+  <string name='file_download'>Stáhněte si soubory</string>
+  <string name='continue_downloading_files'>Chcete pokračovat se stahováním?</string>
+  <string name="file_upload">Nahrát soubory</string>
+  <string name="continue_uploading_files">Chcete pokračovat v nahrávání souborů?</string>
+  <string name="error_not_account_info">Chyba při získávání informací o účtu</string>
+  <string name='recycle_bin'>Koš</string>
+  <string name='clean_trash_repo'>Vysypat koš</string>
+  <string name='recover'>Uzdravit se</string>
+  <string name='deleted_files'>Smazané soubory</string>
+  <string name='deleted_repositories'>Smazané knihovny</string>
+  <string name="plan_change">Zmeniť plán</string>
+  <string name="want_plan_change">Chcete zmeniť svoj plán?</string>
+  <string name='not_support_4k'>Toto video nemůžete reprodukovat svým aktuálním plánem.</string>
+  <string name="not_allowed_files">Pro váš plán existují bezprecedentní soubory.</string>
+  <string name="without_storage">Nemáte dostatok úložiska.</string>
+  <string name='storage_access_request'>Za účelem zpracování souborů musí aplikace získat přístup k úložišti.</string>
+  <string name='storage_access'>Přístup k úložišti</string>
+  <string name='deny'>Odmítnout</string>
+  <string name='allow'>Dovolit</string>
+  <string name="welcome_to_seafile">Vitajte na</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Nejprve vyberte svůj účet</string>
   <string name="edit_account">Upravit</string>
   <string name="delete_account">Smazat</string>
@@ -192,6 +291,10 @@
   <string name="settings_account_info_title">Uživatelské informace</string>
   <string name="settings_account_info_load_data">načítání...</string>
   <string name="settings_account_space_title">Využitý prostor</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Současný plán</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Odhlásit se</string>
   <string name="settings_account_sign_out_hint">Klikněte pro odhlášení</string>
   <string name="settings_account_sign_out_confirm">Opravdu se chcete odhlásit?</string>
@@ -296,3 +399,12 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

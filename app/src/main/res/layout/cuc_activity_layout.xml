@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+<<<<<<< HEAD
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager"
         android:layout_width="match_parent"
@@ -35,3 +40,23 @@
         app:tabIndicatorFullWidth="false"
         app:tabIndicatorHeight="0dp" />
 </LinearLayout>
+=======
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/cuc_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="16dp" />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/cuc_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="8dp"
+        app:ci_drawable="@drawable/indicator_drawable"
+        app:ci_drawable_unselected="@drawable/indicator_drawable_2"
+        app:ci_height="4dp"
+        app:ci_margin="8dp"
+        app:ci_width="16dp" />
+</FrameLayout>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Witamy w Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>Polityka prywatności</string>
+    <string name='accept'>Akceptować</string>
+  <string name='hours'>godziny</string>
+  <string name='hour'>godzina</string>
+  <string name='minutes'>minuty</string>
+  <string name='synchronization_frequency'>Częstotliwość synchronizacji</string>
+  <string name='password_not_meet_requirements'>Hasło nie spełnia wymagań</string>
+  <string name='password_sharing_rules'>Hasło (musi mieć %d znaków i zawierać co najmniej jeden symbol, dużą literę, małą literę lub liczbę)</string>
+  <string name='repeat_password_hint'>Powtórz hasło</string>
+  <string name='password_not_match'>Hasła nie są identyczne</string>
+  <string name='exists_files_in_recycle_bin'>W koszu znajdują się elementy o tej samej nazwie.\nCzy chcesz kontynuować?</string>
+  <string name='exists_file_in_recycle_bin'>W koszu znajduje się element o tej samej nazwie.\nCzy chcesz kontynuować?</string>
+  <string name='delete_sync_configuration'>Usunąć tę konfigurację?</string>
+  <string name='settings_select_origin'>Wybierz źródło</string>
+  <string name='settings_select_destination'>Wybierz cel</string>
+  <string name='exists_same_source_target'>Ta sama ścieżka źródłowa i docelowa już istnieje w innych ustawieniach kopii zapasowej</string>
+  <string name='delete_files_finalize'>Usuwanie plików przy finalizacji</string>
+  <string name='maintain_files'>Utrzymywać pliki</string>
+  <string name='synchronization_type'>Typ synchronizacji</string>
+  <string name='synchronization_enabled'>Synchronizacja włączona</string>
+  <string name='synchronization_disabled'>Synchronizacja wyłączona</string>
+  <string name='feature_unavailable'>Funkcja niedostępna w tym planie</string>
+  <string name='permanent'>Stały</string>
+  <string name='temporary'>Tymczasowy</string>
+  <string name='years'>Lata</string>
+  <string name='months'>Miesiące</string>
+  <string name='weeks'>Tygodnie</string>
+  <string name='days'>Dni</string>
+  <string name='sync_status_view'>Stan synchronizacji</string>
+  <string name='backup_expirations'>Wygasanie kopii zapasowej</string>
+  <string name='customized'>spersonalizowany</string>
+  <string name='indefinite'>nieokreślony</string>
+  <string name='one_year'>1 rok</string>
+  <string name='one_month'>1 miesiąc</string>
+  <string name='one_week'>1 tydzień</string>
+  <string name='select_album_sync'>Wybierz album</string>
+  <string name='edit_sync'>Edytuj synchronizację</string>
+  <string name='general_update'>Aktualizacja</string>
+  <string name='save'>Trzymać</string>
+  <string name='sync_management_target_folder'>Folder docelowy</string>
+  <string name='sync_management_active_until'>Aktywny</string>
+  <string name='sync_management_expire_date'>Termin ważności</string>
+  <string name='sync_management_mode'>Tryb</string>
+  <string name='sync_management_upload_video'>Prześlij wideo</string>
+  <string name='sync_management_only_wifi'>Tylko Wi -Fi</string>
+  <string name='sync_mode_increased'>Przyrostowe</string>
+  <string name='sync_mode_full'>Kompletny</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Błąd nie istnieje w repozytorium</string>
+  <string name='sync_status_error_not_exist_local_folder'>Błąd nie istnieje folder</string>
+  <string name='sync_status_error_not_valid_files'>Błąd Istnieją pliki niewiarygodne</string>
+  <string name='sync_status_error_out_space'>Błąd bez przestrzeni</string>
+  <string name='sync_status_error'>Błąd</string>
+  <string name='sync_status_running'>W akcji</string>
+  <string name='sync_status_pending'>Kolczyk</string>
+  <string name='sync_status_complete'>Kompletny</string>
+  <string name='sync_management_backup_settings'>Konfiguracja kopiowania</string>
+  <string name='sync_management_source_and_target'>Źródło i miejsce docelowe</string>
+  <string name='sync_management_new_sync'>Utwórz nową synchronizację</string>
+  <string name='sync_current_syncs'>Obecne synchronizacje</string>
+  <string name='sync_status'>Państwo:\u0020</string>
+  <string name='sync_last_execution'>Ostatnie wykonanie:\u0020</string>
+  <string name='sync_target'>Miejsce docelowe:\u0020</string>
+  <string name='sync_source'>Fontanna:\u0020</string>
+  <string name='folder'>Plik</string>
+  <string name='album'>Album</string>
+  <string name='gallery'>Galeria</string>
+  <string name='synchronizations'>Synchronizacje</string>
+  <string name='enabled_syncs'>Aktywowane synchronizacje</string>
+  <string name='disabled_syncs'>Nieprawidłowe synchronizacje</string>
+  <string name='control_syncs'>Kontrola synchronizacji</string>
+  <string name='config_sync'>Konfiguracja synchronizacji</string>
+  <string name='synchronization'>Synchronizacja</string>
+  <string name='not_allowed_file'>Plik niewiarydowy dla twojego planu.</string>
+  <string name='not_allowed_image'>Obraz nie jest ważny dla twojego planu.</string>
+  <string name='file_download'>Pobierz pliki</string>
+  <string name='continue_downloading_files'>Chcesz kontynuować pobieranie?</string>
+  <string name="file_upload">Prześlij pliki</string>
+  <string name="continue_uploading_files">Czy chcesz kontynuować przesłanie plików?</string>
+  <string name="error_not_account_info">Błąd podczas odzyskiwania informacji o koncie</string>
+  <string name='recycle_bin'>Kosz</string>
+  <string name='clean_trash_repo'>Opróżnić kosz</string>
+  <string name='recover'>Odzyskiwać</string>
+  <string name='deleted_files'>Usunięte pliki</string>
+  <string name='deleted_repositories'>Usunięte biblioteki</string>
+  <string name="plan_change">Zmień plan</string>
+  <string name="want_plan_change">Czy chcesz zmienić swój plan?</string>
+  <string name='not_support_4k'>Nie możesz odtworzyć tego filmu swoim obecnym planem.</string>
+  <string name="not_allowed_files">Istnieje bezprecedensowe pliki do twojego planu.</string>
+  <string name="without_storage">Nie masz wystarczającej ilości miejsca.</string>
+  <string name='storage_access_request'>Aby przetworzyć pliki, aplikacja musi uzyskać dostęp do pamięci.</string>
+  <string name='storage_access'>Dostęp do przechowywania</string>
+  <string name='deny'>Zaprzeczyć</string>
+  <string name='allow'>Umożliwić</string>
+  <string name="welcome_to_seafile">Powitanie</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Wybierz konto</string>
   <string name="edit_account">Edytuj</string>
   <string name="delete_account">Usuń</string>
@@ -256,6 +355,10 @@
   <string name="settings_account_info_title">Informacje o użytkowniku</string>
   <string name="settings_account_info_load_data">wczytywanie...</string>
   <string name="settings_account_space_title">Wykorzystane miejsce</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">Aktualny plan</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">Wyloguj się</string>
   <string name="settings_account_sign_out_hint">Dotknij, aby się wylogować</string>
   <string name="settings_account_sign_out_confirm">Czy chcesz się wylogować?</string>
@@ -371,6 +474,20 @@
   <string name="settings_about_title">O PROGRAMIE</string>
   <string name="settings_about_version_title">Wersja aplikacji</string>
   <string name="settings_about_author_title">O autorze</string>
+<<<<<<< HEAD
+=======
+
+  <string name="settings_about_author_info">
+    <![CDATA[
+        <p>
+            E-mail:  info@ateneacloud.com<br><br>
+            Website: www.ateneacloud.com<br><br>
+            Phone:   911 87 90 07<br><br>
+        </p>
+    ]]>
+  </string>
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">ZAAWANSOWANE</string>
   <string name="settings_storage_title">PAMIĘĆ PODRĘCZNA</string>
   <string name="settings_cache_title">Pamięć podręczna</string>
@@ -487,6 +604,10 @@
   <string name="action_mode_no_items_selected">Nie wybrano elementów</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">Aby obsługiwać pliki zezwól aplikacji na dostęp do pamięci.</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">Aby obsługiwać kontakty, zezwól aplikacji na dostęp do nich.</string>
   <string name="permission_not_granted">Nie przyznano uprawnień</string>
   <string name="history_change_title">Szczegóły modyfikacji</string>
@@ -529,6 +650,16 @@
   <string name="redo">powtórz</string>
   <string name="link">Link</string>
   <!--Folder backup Preference-->
+<<<<<<< HEAD
   <!--action-->
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

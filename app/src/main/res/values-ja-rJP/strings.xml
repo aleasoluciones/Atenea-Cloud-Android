@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Seafile にようこそ</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'>プライバシーポリシ</string>
+    <string name='accept'>受け入れる</string>
+  <string name='hours'>時間</string>
+  <string name='hour'>時間</string>
+  <string name='minutes'>分</string>
+  <string name='synchronization_frequency'>同期頻度</string>
+  <string name='password_not_meet_requirements'>パスワードが要件を満たしていません</string>
+  <string name='password_sharing_rules'>パスワード（ %d 文字で、少なくとも1つの記号、大文字、小文字、または数字を含む必要があります）</string>
+  <string name='repeat_password_hint'>パスワードを繰り返す</string>
+  <string name='password_not_match'>パスワードが一致しません</string>
+  <string name='exists_files_in_recycle_bin'>リサイクル ビンに同じ名前のアイテムがあります。\n続行しますか？</string>
+  <string name='exists_file_in_recycle_bin'>リサイクル ビンに同じ名前のアイテムがあります。\n続行しますか？</string>
+  <string name='delete_sync_configuration'>この設定を削除しますか？</string>
+  <string name='settings_select_origin'>ソースを選択</string>
+  <string name='settings_select_destination'>宛先を選択</string>
+  <string name='exists_same_source_target'>同じソースとターゲットフォルダは他のバックアップ設定にすでに存在しています</string>
+  <string name='delete_files_finalize'>完了時にファイルを削除</string>
+  <string name='maintain_files'>ファイルを維持する</string>
+  <string name='synchronization_type'>同期の種類</string>
+  <string name='synchronization_enabled'>同期が有効になっています</string>
+  <string name='synchronization_disabled'>同期が無効になっています</string>
+  <string name='feature_unavailable'>この計画では機能しません</string>
+  <string name='permanent'>恒久的な</string>
+  <string name='temporary'>一時的な</string>
+  <string name='years'>年</string>
+  <string name='months'>月</string>
+  <string name='weeks'>週間</string>
+  <string name='days'>日々</string>
+  <string name='sync_status_view'>同期のステータス</string>
+  <string name='backup_expirations'>バックアップ期限切れ</string>
+  <string name='customized'>パーソナライズ</string>
+  <string name='indefinite'>未定義</string>
+  <string name='one_year'>1年</string>
+  <string name='one_month'>1ヶ月</string>
+  <string name='one_week'>1週間</string>
+  <string name='select_album_sync'>アルバムを選択します</string>
+  <string name='edit_sync'>同期を編集します</string>
+  <string name='general_update'>アップデート</string>
+  <string name='save'>保つ</string>
+  <string name='sync_management_target_folder'>移動先フォルダ</string>
+  <string name='sync_management_active_until'>アクティブ</string>
+  <string name='sync_management_expire_date'>有効期限</string>
+  <string name='sync_management_mode'>モード</string>
+  <string name='sync_management_upload_video'>ビデオをアップロードします</string>
+  <string name='sync_management_only_wifi'>wifiのみ</string>
+  <string name='sync_mode_increased'>増分</string>
+  <string name='sync_mode_full'>完了</string>
+  <string name='sync_status_error_not_exist_repo_dir'>リポジトリにはエラーが存在しません</string>
+  <string name='sync_status_error_not_exist_local_folder'>エラーはフォルダーに存在しません</string>
+  <string name='sync_status_error_not_valid_files'>エラー非validファイルがあります</string>
+  <string name='sync_status_error_out_space'>スペースなしのエラー</string>
+  <string name='sync_status_error'>間違い</string>
+  <string name='sync_status_running'>活動中</string>
+  <string name='sync_status_pending'>イヤリング</string>
+  <string name='sync_status_complete'>完了</string>
+  <string name='sync_management_backup_settings'>構成をコピーします</string>
+  <string name='sync_management_source_and_target'>ソースと目的地</string>
+  <string name='sync_management_new_sync'>新しい同期を作成します</string>
+  <string name='sync_current_syncs'>現在の同期</string>
+  <string name='sync_status'>州:\u0020</string>
+  <string name='sync_last_execution'>最後の実行:\u0020</string>
+  <string name='sync_target'>行き先:\u0020</string>
+  <string name='sync_source'>噴水:\u0020</string>
+  <string name='folder'>ファイル</string>
+  <string name='album'>アルバム</string>
+  <string name='gallery'>ギャラリー</string>
+  <string name='synchronizations'>同期</string>
+  <string name='enabled_syncs'>アクティブ化された同期</string>
+  <string name='disabled_syncs'>無効化した同期</string>
+  <string name='control_syncs'>同期制御</string>
+  <string name='config_sync'>同期構成</string>
+  <string name='synchronization'>同期</string>
+  <string name='not_allowed_file'>プランの非検証ファイル。</string>
+  <string name='not_allowed_image'>あなたの計画には無効ではありません。</string>
+  <string name='file_download'>ファイルをダウンロードします</string>
+  <string name='continue_downloading_files'>ダウンロードを続けたいですか？</string>
+  <string name="file_upload">ファイルをアップロードします</string>
+  <string name="continue_uploading_files">ファイルのアップロードを続けたいですか？</string>
+  <string name="error_not_account_info">アカウント情報を回復するときのエラー</string>
+  <string name='recycle_bin'>ゴミ箱</string>
+  <string name='clean_trash_repo'>ゴミ箱を空にする</string>
+  <string name='recover'>回復する</string>
+  <string name='deleted_files'>削除されたファイル</string>
+  <string name='deleted_repositories'>削除されたライブラリ</string>
+  <string name="plan_change">変更計画</string>
+  <string name="want_plan_change">プランを変更しますか？</string>
+  <string name='not_support_4k'>現在の計画でこのビデオを再現することはできません。</string>
+  <string name="not_allowed_files">あなたの計画のために前例のないファイルがあります。</string>
+  <string name="without_storage">十分なストレージ容量がありません。</string>
+  <string name='storage_access_request'>ファイルを処理するには、アプリケーションがストレージにアクセスする必要があります。</string>
+  <string name='storage_access'>ストレージへのアクセス</string>
+  <string name='deny'>拒否</string>
+  <string name='allow'>許可する</string>
+  <string name="welcome_to_seafile">いらっしゃいませ</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">アカウントを選択して始めましょう</string>
   <string name="edit_account">編集</string>
   <string name="delete_account">削除</string>
@@ -262,6 +361,10 @@
   <string name="settings_account_info_title">ユーザー情報</string>
   <string name="settings_account_info_load_data">読み込み中…</string>
   <string name="settings_account_space_title">容量使用</string>
+<<<<<<< HEAD
+=======
+  <string name="settings_account_plan_title">当前计划</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_account_sign_out_title">サインアウト</string>
   <string name="settings_account_sign_out_hint">クリックするとサインアウト</string>
   <string name="settings_account_sign_out_confirm">サインアウトしますか?</string>
@@ -368,6 +471,20 @@
   <string name="settings_about_title">アプリについて</string>
   <string name="settings_about_version_title">アプリ バージョン</string>
   <string name="settings_about_author_title">作者について</string>
+<<<<<<< HEAD
+=======
+
+  <string name="settings_about_author_info">
+     <![CDATA[
+        <p>
+            メール:   info@ateneacloud.com<br><br>
+            Website: www.ateneacloud.com<br><br>
+            Phone:   911 87 90 07<br><br>
+        </p>
+     ]]>
+    </string>
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="settings_advance_feature_title">高度な機能</string>
   <string name="settings_storage_title">キャッシュストレージ</string>
   <string name="settings_cache_title">キャッシュサイズ</string>
@@ -472,6 +589,10 @@
   <string name="action_mode_no_items_selected">アイテムが選択されていません</string>
   <!--Accessibility description for navigation drawer-->
   <!--permission-->
+<<<<<<< HEAD
+=======
+  <string name="permission_read_exteral_storage_rationale">ファイルを処理するには、ファイルにアクセスするストレージのアクセス許可が必要です。</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="permission_read_contacts_storage_rationale">連絡先を処理するには、連絡先へのアクセス許可が必要です。</string>
   <string name="permission_not_granted">アクセス許可が付与されていません</string>
   <string name="history_change_title">更新の詳細</string>
@@ -524,6 +645,16 @@
   <string name="is_uploading">アップロードしています</string>
   <string name="network_unavailable">ネットワークが利用できません</string>
   <!--Folder backup Preference-->
+<<<<<<< HEAD
   <!--action-->
   <!--share link-->
 </resources>
+=======
+</resources>
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
 
     <!--    /data/data/<package_name>/files   -->
     <!--    Context.getFilesDir()   -->
@@ -45,3 +46,9 @@
 
 </paths>
 
+=======
+    <root-path
+        name="name"
+        path="."/>
+</paths>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD

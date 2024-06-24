@@ -1,6 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<<<<<<< HEAD
   <string name="welcome_to_seafile">Καλωσήρθατε στο Seafile</string>
+=======
+    <string name='url_policy'>https://www.ateneacloud.com/privacidad.html</string>
+  <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+    <string name='policy_privacy'> Πολιτική Απορρήτου</string>
+    <string name='accept'>Αποδέχομαι</string>
+  <string name='hours'>ώρες</string>
+  <string name='hour'>ώρα</string>
+  <string name='minutes'>λεπτά</string>
+  <string name='synchronization_frequency'>Συχνότητα συγχρονισμού</string>
+  <string name='password_not_meet_requirements'>Ο κωδικός πρόσβασης δεν πληροί τις απαιτήσεις</string>
+  <string name='password_sharing_rules'>Κωδικός πρόσβασης (πρέπει να έχει %d χαρακτήρες και να περιλαμβάνει τουλάχιστον ένα σύμβολο, κεφαλαίο γράμμα, πεζό γράμμα ή αριθμό)</string>
+  <string name='repeat_password_hint'>Επανάληψη κωδικού πρόσβασης</string>
+  <string name='password_not_match'>Οι κωδικοί πρόσβασης δεν ταιριάζουν</string>
+  <string name='exists_files_in_recycle_bin'>Υπάρχουν στοιχεία με το ίδιο όνομα στον κάδο ανακύκλωσης.\nΘέλετε να συνεχίσετε;</string>
+  <string name='exists_file_in_recycle_bin'>Υπάρχει ένα στοιχείο με το ίδιο όνομα στον κάδο ανακύκλωσης.\nΘέλετε να συνεχίσετε;</string>
+  <string name='delete_sync_configuration'>Διαγραφή αυτής της διαμόρφωσης;</string>
+  <string name='settings_select_origin'>Επιλέξτε μια πηγή</string>
+  <string name='settings_select_destination'>Επιλέξτε έναν προορισμό</string>
+  <string name='exists_same_source_target'>Η ίδια πηγή και φάκελος προορισμού υπάρχει ήδη σε άλλη ρύθμιση αντιγράφου ασφαλείας</string>
+  <string name='delete_files_finalize'>Διαγραφή αρχείων κατά την ολοκλήρωση</string>
+  <string name='maintain_files'>Διατηρείτε αρχεία</string>
+  <string name='synchronization_type'>Τύπος συγχρονισμού</string>
+  <string name='synchronization_enabled'>Ενεργοποιημένος συγχρονισμός</string>
+  <string name='synchronization_disabled'>Απενεργοποιημένος συγχρονισμός</string>
+  <string name='feature_unavailable'>Η λειτουργία δεν είναι διαθέσιμη σε αυτό το σχέδιο</string>
+  <string name='permanent'>Μόνιμος</string>
+  <string name='temporary'>Προσωρινός</string>
+  <string name='years'>Χρόνια</string>
+  <string name='months'>Μήνες</string>
+  <string name='weeks'>Εβδομάδες</string>
+  <string name='days'>Ημέρες</string>
+  <string name='sync_status_view'>Κατάσταση συγχρονισμού</string>
+  <string name='backup_expirations'>Λήξη αντιγράφων ασφαλείας</string>
+  <string name='customized'>εξατομικευμένος</string>
+  <string name='indefinite'>Απροσδιόριστος</string>
+  <string name='one_year'>1 χρόνος</string>
+  <string name='one_month'>1 μήνα</string>
+  <string name='one_week'>1 εβδομάδα</string>
+  <string name='select_album_sync'>Επιλέξτε άλμπουμ</string>
+  <string name='edit_sync'>Επεξεργασία συγχρονισμού</string>
+  <string name='general_update'>Εκσυγχρονίζω</string>
+  <string name='save'>Διατήρηση</string>
+  <string name='sync_management_target_folder'>Φάκελος προορισμού</string>
+  <string name='sync_management_active_until'>Ενεργός</string>
+  <string name='sync_management_expire_date'>Ημερομηνία λήξης</string>
+  <string name='sync_management_mode'>Τρόπος</string>
+  <string name='sync_management_upload_video'>Ανεβάστε ένα βίντεο</string>
+  <string name='sync_management_only_wifi'>Μόνο WiFi</string>
+  <string name='sync_mode_increased'>Σταδιακή</string>
+  <string name='sync_mode_full'>Πλήρης</string>
+  <string name='sync_status_error_not_exist_repo_dir'>Το σφάλμα δεν υπάρχει στο χώρο αποθήκευσης</string>
+  <string name='sync_status_error_not_exist_local_folder'>Το σφάλμα δεν υπάρχει το φάκελο</string>
+  <string name='sync_status_error_not_valid_files'>Σφάλμα υπάρχουν μη έγκαιρα αρχεία</string>
+  <string name='sync_status_error_out_space'>Σφάλμα χωρίς χώρο</string>
+  <string name='sync_status_error'>Λάθος</string>
+  <string name='sync_status_running'>Εν ΔΡΑΣΕΙ</string>
+  <string name='sync_status_pending'>Σκουλαρίκι</string>
+  <string name='sync_status_complete'>Πλήρης</string>
+  <string name='sync_management_backup_settings'>Διαμόρφωση αντιγραφής</string>
+  <string name='sync_management_source_and_target'>Πηγή και προορισμός</string>
+  <string name='sync_management_new_sync'>Δημιουργία νέου συγχρονισμού</string>
+  <string name='sync_current_syncs'>Τρέχουσες συγχρονισμούς</string>
+  <string name='sync_status'>κατάσταση:\u0020</string>
+  <string name='sync_last_execution'>Τελευταία εκτέλεση:\u0020</string>
+  <string name='sync_target'>Προορισμός:\u0020</string>
+  <string name='sync_source'>Κρήνη:\u0020</string>
+  <string name='folder'>Αρχείο</string>
+  <string name='album'>Αλμπουμ</string>
+  <string name='gallery'>Εκθεσιακός χώρος</string>
+  <string name='synchronizations'>Συγχρονισμοί</string>
+  <string name='enabled_syncs'>Ενεργοποιημένες συγχρονισμούς</string>
+  <string name='disabled_syncs'>Συγχρονισμούς με ειδικές ανάγκες</string>
+  <string name='control_syncs'>Έλεγχος συγχρονισμού</string>
+  <string name='config_sync'>Διαμόρφωση συγχρονισμού</string>
+  <string name='synchronization'>Συγχρονισμός</string>
+  <string name='not_allowed_file'>Μη επικαλυμμένο αρχείο για το σχέδιό σας.</string>
+  <string name='not_allowed_image'>Η εικόνα δεν ισχύει για το σχέδιό σας.</string>
+  <string name='file_download'>Λήψη αρχείων</string>
+  <string name='continue_downloading_files'>Θέλετε να συνεχίσετε με τη λήψη;</string>
+  <string name="file_upload">Μεταφορτώστε αρχεία</string>
+  <string name="continue_uploading_files">Θέλετε να συνεχίσετε με τη μεταφόρτωση των αρχείων;</string>
+  <string name="error_not_account_info">Σφάλμα κατά την ανάκτηση πληροφοριών λογαριασμού</string>
+  <string name='recycle_bin'>Κάδος ανακύκλωσης</string>
+  <string name='clean_trash_repo'>Άδειασμα του κάδου ανακύκλωσης</string>
+  <string name='recover'>Αναρρώνω</string>
+  <string name='deleted_files'>Διαγραμμένα αρχεία</string>
+  <string name='deleted_repositories'>Διαγραμμένες βιβλιοθήκες</string>
+  <string name="plan_change">Αλλαγή σχεδίου</string>
+  <string name="want_plan_change">Θέλετε να αλλάξετε το σχέδιό σας;</string>
+  <string name='not_support_4k'>Δεν μπορείτε να αναπαράγετε αυτό το βίντεο με το τρέχον σχέδιό σας.</string>
+  <string name="not_allowed_files">Υπάρχουν πρωτοφανή αρχεία για το σχέδιό σας.</string>
+  <string name="without_storage">Δεν έχετε αρκετό αποθηκευτικό χώρο.</string>
+  <string name='storage_access_request'>Προκειμένου να επεξεργαστεί τα αρχεία, η εφαρμογή πρέπει να έχει πρόσβαση στην αποθήκευση.</string>
+  <string name='storage_access'>Πρόσβαση στην αποθήκευση</string>
+  <string name='deny'>Αρνούμαι</string>
+  <string name='allow'>Επιτρέπω</string>
+  <string name="welcome_to_seafile">Καλώς ήρθατε</string>
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
   <string name="select_account">Επιλέξτε ένα λογαριασμό για να ξεκινήσετε</string>
   <string name="edit_account">Επεξεργασία</string>
   <string name="delete_account">Διαγραφή</string>
@@ -179,3 +278,12 @@
   <!--Home list title-->
   <!--editor-->
 </resources>
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+>>>>>>> huawei-android-mod-private/feature/ATENEA-CLOUD
