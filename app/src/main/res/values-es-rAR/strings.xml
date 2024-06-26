@@ -222,13 +222,13 @@
   <string name="dir_empty">Esta carpeta está vacía</string>
   <string name="no_repo">Aún no tiene bibliotecas</string>
   <string name="no_app_available">No se encuentra ninguna app</string>
-  <string name="add_to_seafile">Agregar a Cloud Drive</string>
+  <string name="add_to_seafile">Agregar a Atenea Cloud</string>
   <string name="ok">OK</string>
   <string name="no_account">Por favor, primero configure una cuenta</string>
   <string name="choose_an_account">Elija una cuenta</string>
   <string name="choose_a_library">Elija una biblioteca</string>
   <string name="choose_a_folder">Elija una carpeta</string>
-  <string name="load_accounts_fail">Falla al cargar cuentas de Cloud Drive</string>
+  <string name="load_accounts_fail">Falla al cargar cuentas de Atenea Cloud</string>
   <string name="load_libraries_fail">Falla al cargar bibliotecas</string>
   <string name="load_dir_fail">Falla al cargar el contenido de esta carpeta</string>
   <string name="not_supported_share">Este tipo de recurso compartido no es compatible</string>
@@ -461,7 +461,7 @@
   <string name="settings_cuc_pick_albums">Permitirme elegir los álbumes de fotos</string>
   <string name="settings_cuc_remote_lib_hint">Escoja su cuenta y biblioteca preferidas. \nLuego puede cambiar estas opciones en Configuración.</string>
   <string name="settings_cuc_finish_title">Terminar</string>
-  <string name="settings_cuc_ready">Cloud Drive comenzará a subir los archivos de las carpetas seleccionadas después de su confirmación.\nPuede cerrar la app durante este proceso.</string>
+  <string name="settings_cuc_ready">Atenea Cloud comenzará a subir los archivos de las carpetas seleccionadas después de su confirmación.\nPuede cerrar la app durante este proceso.</string>
   <string name="settings_cuc_swipe_left">Deslice a la izquierda para continuar.</string>
   <string name="settings_cuc_click_btn">Click para cerrar la ayuda de configuración.</string>
   <string name="settings_cuc_loading">cargando...</string>
@@ -470,7 +470,7 @@
   <string name="camera_sync_notification_title_failed">Subida de cámara falló</string>
   <string name="camera_sync_notification_repo_missing_failed">No se encuentra el repositorio en el servidor.</string>
   <string name="camera_sync_notification_auth_error_failed">Error de autenticación.</string>
-  <string name="camera_sync_rename_file">%s (renombrado por Cloud Drive)</string>
+  <string name="camera_sync_rename_file">%s (renombrado por Atenea Cloud)</string>
   <string name="settings_about_title">ACERCA DE</string>
   <string name="settings_about_version_title">App Version</string>
   <string name="settings_about_author_title">Acerca del Autor</string>
