@@ -38,17 +38,24 @@ jobs:
     - name: Build Debug APK
       run: ./gradlew assembleDebug
 
-    - name: Verify APK Path
-      run: ls -la app/build/outputs/apk/debug/
+    - name: Set Debug APK path
+      run: echo DEBUG_APK_PATH=$(find app/build/outputs/apk/debug/*.apk)" >> $GITHUB_ENV
+
+    - name: Extract Debug APK version
+      id: extract_debug_version
+      run: |
+        APK_PATH=$(echo ${{ env.DEBUG_APK_PATH }})
+        FILE_NAME=$(basename "$APK_PATH")
+        VERSION="${FILE_NAME%.apk}"
+        VERSION="${VERSION##*-}"
+        echo "DEBUG_APK_FILENAME=$FILE_NAME" >> $GITHUB_ENV
+        echo "DEBUG_APK_VERSION=$VERSION" >> $GITHUB_ENV
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: app-debug.apk
-        path: app/build/outputs/apk/debug/app-debug.apk
-
-    - name: Set Version
-      run: echo "VERSION=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+        name: ${{ env.DEBUG_APK_FILENAME }}
+        path: ${{ env.DEBUG_APK_PATH }}
 
     - name: Create GitHub Release
       id: create_release
@@ -56,8 +63,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.VERSION }}
-        release_name: Release ${{ env.VERSION }}
+        tag_name: ${{ env.DEBUG_APK_VERSION }}
+        release_name: Release ${{ env.DEBUG_APK_VERSION }}
         draft: false
         prerelease: false
 
@@ -67,6 +74,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: app/build/outputs/apk/debug/app-debug.apk
-        asset_name: app-debug.apk
+        asset_path: ${{ env.DEBUG_APK_PATH }}
+        asset_name: ${{ env.DEBUG_APK_FILENAME }}
         asset_content_type: application/vnd.android.package-archive
