@@ -39,7 +39,7 @@ jobs:
       run: ./gradlew assembleDebug
 
     - name: Set Debug APK path
-      run: echo DEBUG_APK_PATH=$(find app/build/outputs/apk/debug/*.apk)" >> $GITHUB_ENV
+      run: echo DEBUG_APK_PATH=$(find app/build/outputs/apk/debug/*.apk) >> $GITHUB_ENV
 
     - name: Extract Debug APK version
       id: extract_debug_version
