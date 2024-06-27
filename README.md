@@ -36,3 +36,18 @@ You will get `app/build/outputs/apk/atenea-cloud-${versionName}.apk` after the b
 * Select atenea-cloud directory
 * Choose import from gradle
 * Click next until import is completed
+
+## Run GitHub Action Workflow locally
+
+You can run locally the 'build and release' GitHub action using the [act](https://github.com/nektos/act) project:
+
+```
+# A local directory is needed to upload the created artifacts (APK)
+$ mkdir -p $HOME/.act
+$ echo "--artifact-server-path $HOME/.act" >> $HOME/.actrc
+
+The GITHUB_TOKEN env var is needed when running the workflow (You can obtain the token using `gh auth status -t`:
+$ act -s GITHUB_TOKEN="XXXX_TOKEN_HERE_XXXX"
+
+```
+
