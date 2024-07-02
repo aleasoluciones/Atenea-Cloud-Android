@@ -44,9 +44,9 @@ jobs:
       run: |
         echo "
         keyStore=alea_android.keystore
-        keyStorePassword=${{ ALEA_KEYSTORE_PASSWORD }}
+        keyStorePassword=${{ secrets.ALEA_KEYSTORE_PASSWORD }}
         keyAlias=${{ secrets.ALEA_KEYSTORE_ALIAS }}
-        keyAliasPassword=${{ ALEA_KEYSTORE_PASSWORD }}" > app/key.properties
+        keyAliasPassword=${{ secrets.ALEA_KEYSTORE_PASSWORD }}" > app/key.properties
 
     - name: Generate keystore file
       run: |
