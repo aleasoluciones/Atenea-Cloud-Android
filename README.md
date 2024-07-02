@@ -37,6 +37,16 @@ You will get `app/build/outputs/apk/atenea-cloud-${versionName}.apk` after the b
 * Choose import from gradle
 * Click next until import is completed
 
+## GitHub Actions Secrets
+
+You need to add some GitHub Actions Secrets to launch the Action and build the release version:
+```
+ALEA_KEYSTORE=XXXX
+ALEA_KEYSTORE_ALIAS=XXXX
+ALEA_KEYSTORE_ALIAS_PASSWORD=XXXX
+ALEA_KEYSTORE_PASSWORD=XXXX
+```
+
 ## Run GitHub Action Workflow locally
 
 You can run locally the 'build and release' GitHub action using the [act](https://github.com/nektos/act) project:
