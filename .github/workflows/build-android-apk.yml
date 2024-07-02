@@ -40,30 +40,60 @@ jobs:
         restore-keys: |
           gradle-${{ runner.os }}-
 
+    - name: Generate key.properties file
+      run: |
+        echo "
+        keyStore=alea_android.keystore
+        keyStorePassword=${{ ALEA_KEYSTORE_PASSWORD }}
+        keyAlias=${{ secrets.ALEA_KEYSTORE_ALIAS }}
+        keyAliasPassword=${{ ALEA_KEYSTORE_PASSWORD }}" > app/key.properties
+
+    - name: Generate keystore file
+      run: |
+        echo ${{ secrets.ALEA_KEYSTORE }} | base64 -d > app/alea_android.keystore
+
     - name: Download dependencies
       run: ./gradlew build --stacktrace
 
-    - name: Build Debug APK
-      run: ./gradlew assembleDebug
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
 
-    - name: Set Debug APK path
-      run: echo DEBUG_APK_PATH=$(find app/build/outputs/apk/debug/*.apk) >> $GITHUB_ENV
+    - name: Set Release APK path
+      run: echo RELEASE_APK_PATH=$(find app/build/outputs/apk/release/*.apk) >> $GITHUB_ENV
 
-    - name: Extract Debug APK version
-      id: extract_debug_version
+    - name: Extract Release APK version
       run: |
-        APK_PATH=$(echo ${{ env.DEBUG_APK_PATH }})
-        FILE_NAME=$(basename "$APK_PATH")
-        VERSION="${FILE_NAME%.apk}"
-        VERSION="${VERSION##*-}"
-        echo "DEBUG_APK_FILENAME=$FILE_NAME" >> $GITHUB_ENV
-        echo "DEBUG_APK_VERSION=$VERSION" >> $GITHUB_ENV
+        APK_PATH=$(echo ${{ env.RELEASE_APK_PATH }})
+        APK_FILE_NAME=$(basename "$APK_PATH")
+        APK_VERSION="${APK_FILE_NAME%.apk}"
+        APK_VERSION=$(echo $APK_VERSION | awk -F '-' '{print $(NF-1)}')
+        echo "RELEASE_APK_FILENAME=$APK_FILE_NAME" >> $GITHUB_ENV
+        echo "RELEASE_APK_VERSION=$APK_VERSION" >> $GITHUB_ENV
+
+    - name: Build AAB Release
+      run: ./gradlew bundleRelease
+
+    - name: Set Release AAB path
+      run: |
+        echo RELEASE_AAB_PATH=$(find app/build/outputs/bundle/release/*.aab) >> $GITHUB_ENV
+        echo ${{ env.RELEASE_AAB_PATH }}
+
+    - name: Extract Release AAB version
+      run: |
+        AAB_PATH=$(echo ${{ env.RELEASE_AAB_PATH }})
+        AAB_FILE_NAME=$(basename "$AAB_PATH")
+        AAB_VERSION="${AAB_FILE_NAME%.aab}"
+        AAB_VERSION=$(echo $AAB_VERSION | awk -F '-' '{print $(NF-1)}')
+        echo "RELEASE_AAB_FILENAME=$AAB_FILE_NAME" >> $GITHUB_ENV
+        echo "RELEASE_AAB_VERSION=$AAB_VERSION" >> $GITHUB_ENV
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: ${{ env.DEBUG_APK_FILENAME }}
-        path: ${{ env.DEBUG_APK_PATH }}
+        name: atenea-cloud
+        path: |
+          ${{ env.RELEASE_APK_PATH }}
+          ${{ env.RELEASE_AAB_PATH }}
 
     - name: Create GitHub Release
       id: create_release
@@ -71,8 +101,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.DEBUG_APK_VERSION }}
-        release_name: Release ${{ env.DEBUG_APK_VERSION }}
+        tag_name: ${{ env.RELEASE_APK_VERSION }}
+        release_name: Release ${{ env.RELEASE_APK_VERSION }}
         draft: false
         prerelease: false
 
@@ -82,6 +112,17 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ${{ env.DEBUG_APK_PATH }}
-        asset_name: ${{ env.DEBUG_APK_FILENAME }}
+        asset_path: ${{ env.RELEASE_APK_PATH }}
+        asset_name: ${{ env.RELEASE_APK_FILENAME }}
         asset_content_type: application/vnd.android.package-archive
+
+    - name: Upload AAB to Release
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ env.RELEASE_AAB_PATH }}
+        asset_name: ${{ env.RELEASE_AAB_FILENAME }}
+        asset_content_type: application/vnd.android.package-archive
+

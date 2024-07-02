@@ -9,12 +9,13 @@ android {
         applicationId 'com.ateneacloud.drive'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 138
+        versionCode 139
         versionName "2.3.5"
         multiDexEnabled true
         resValue "string", "authorities", applicationId + '.cameraupload.provider'
         resValue "string", "account_type", "com.seafile.seadroid2.account.api2"
         buildConfigField "String", "ACCOUNT_TYPE", '"com.seafile.seadroid2.account.api2"'
+        archivesBaseName = "atenea-cloud-${versionName}"
     }
 
     lintOptions {
@@ -35,23 +36,9 @@ android {
     }
 
     signingConfigs {
-        debug {
-//            def props = new Properties()
-//            props.load(new FileInputStream(project.file("debugkey.properties")))
-//            storeFile project.file(props.keyStore)
-//            storePassword props.keyStorePassword
-//            keyAlias props.keyAlias
-//            keyPassword props.keyAliasPassword
-        }
         release {
-//            Signing code for manual signing
-//            storeFile file(System.console().readLine("\n\$ Enter keystore path: "))
-//            storePassword System.console().readPassword("\n\$ Enter keystore password: ").toString()
-//            keyAlias System.console().readLine("\n\$ Enter key alias: ")
-//            keyPassword System.console().readPassword("\n\$ Enter key password: ").toString()
-
             def props = new Properties()
-            props.load(new FileInputStream(project.file("key.properties")))
+            props.load(new FileInputStream(rootProject.file("app/key.properties")))
             storeFile project.file(props.keyStore)
             storePassword props.keyStorePassword
             keyAlias props.keyAlias
@@ -80,20 +67,10 @@ android {
         }
 
         release {
-           // signingConfig signingConfigs.release
-            debuggable true
+            debuggable false
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
-            signingConfig signingConfigs.debug
-            applicationVariants.all { variant ->
-                variant.outputs.all { output ->
-                    if (output.outputFile != null && output.outputFile.name.endsWith('.apk')) {
-                        if (variant.name == "release") {
-                            outputFileName = "atenea-cloud-" + defaultConfig.versionName + ".apk"
-                        }
-                    }
-                }
-            }
+            signingConfig signingConfigs.release
         }
     }
     bundle {
