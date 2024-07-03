@@ -1,4 +1,5 @@
 # Atenea Cloud Android Client
+[![Build Android APK](https://github.com/aleasoluciones/Atenea-Cloud-Android/actions/workflows/build-android-apk.yml/badge.svg)](https://github.com/aleasoluciones/Atenea-Cloud-Android/actions/workflows/build-android-apk.yml)
 
 Atenea Cloud Android client - SeaDroid mod
 
