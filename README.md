@@ -1,11 +1,7 @@
 # Atenea Cloud Android Client
 [![Build Android APK](https://github.com/aleasoluciones/Atenea-Cloud-Android/actions/workflows/build-android-apk.yml/badge.svg)](https://github.com/aleasoluciones/Atenea-Cloud-Android/actions/workflows/build-android-apk.yml)
 
-Atenea Cloud Android client - SeaDroid mod
-
-## Contributors
-
-See [Contributors Graph](https://github.com/haiwen/atenea-cloud/graphs/contributors)
+Atenea Cloud Android client - [SeaDroid](https://github.com/haiwen/seadroid) mod
 
 ## Build the APK
 
