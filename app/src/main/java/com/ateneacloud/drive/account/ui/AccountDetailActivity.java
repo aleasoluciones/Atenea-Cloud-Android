@@ -98,7 +98,6 @@ public class AccountDetailActivity extends BaseActivity implements  Toolbar.OnMe
         mServerEt = (EditText) findViewById(R.id.server_url);
         mEmailEt = (EmailAutoCompleteTextView) findViewById(R.id.email_address);
         mPasswdEt = (EditText) findViewById(R.id.password);
-        mSeaHubUrlHintTv = (TextView) findViewById(R.id.seahub_url_hint);
 
         mClearEmailIv = (ImageView) findViewById(R.id.iv_delete_email);
         mClearPasswordIv = (ImageView) findViewById(R.id.iv_delete_pwd);

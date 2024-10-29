@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
 
     <include layout="@layout/toolbar_actionbar" /> <!-- placeholder, empty except on L -->
-    <CheckBox
-        android:id="@+id/https_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/cb_padding_left"
-        android:layout_marginLeft="@dimen/cb_padding_left"
-        android:layout_marginTop="@dimen/cb_padding_top"
-        android:onClick="onHttpsCheckboxClicked"
-        android:text="@string/accounts_https_hint"
-        android:textSize="@dimen/cb_btn_txt_size" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,16 +21,6 @@
             android:layout_height="wrap_content"
             android:hint="@string/server_hint">
 
-            <EditText
-                android:id="@+id/server_url"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/et_margin_left"
-                android:layout_marginRight="@dimen/et_margin_right"
-                android:layout_marginBottom="@dimen/et_margin_bottom"
-                android:importantForAutofill="auto"
-                android:inputType="textUri"
-                android:textSize="@dimen/et_txt_size" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <RelativeLayout
@@ -181,13 +162,31 @@
         android:layout_marginRight="@dimen/tv_margin_right"
         android:text="" />
 
-    <TextView
-        android:id="@+id/seahub_url_hint"
+    <CheckBox
+        android:id="@+id/https_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cb_padding_left"
+        android:layout_marginLeft="@dimen/cb_padding_left"
+        android:layout_marginTop="@dimen/cb_padding_top"
+        android:checked="true"
+        android:onClick="onHttpsCheckboxClicked"
+        android:text="@string/accounts_https_hint"
+        android:textSize="@dimen/cb_btn_txt_size"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/server_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/tv_margin_left"
-        android:layout_marginRight="@dimen/tv_margin_right"
-        android:text="@string/seahub_url_hint"
-        android:textSize="@dimen/tv_txt_size" />
+        android:layout_marginLeft="@dimen/et_margin_left"
+        android:layout_marginRight="@dimen/et_margin_right"
+        android:layout_marginBottom="@dimen/et_margin_bottom"
+        android:importantForAutofill="auto"
+        android:inputType="textUri"
+        android:textSize="@dimen/et_txt_size"
+        android:visibility="invisible"
+        tools:visibility="invisible" />
 
 </LinearLayout>

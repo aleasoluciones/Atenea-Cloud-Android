@@ -81,9 +81,7 @@ public class SeafileAuthenticatorActivity extends BaseAuthenticatorActivity {
                         startActivityForResult(intent, SeafileAuthenticatorActivity.REQ_SIGNUP);
                         break;
                     case OTHER_SERVER:
-                        intent = new Intent(SeafileAuthenticatorActivity.this, AccountDetailActivity.class);
-                        intent.putExtras(getIntent());
-                        startActivityForResult(intent, SeafileAuthenticatorActivity.REQ_SIGNUP);
+                        launchAccountDetailActivity();
                         break;
                     default:
                         return;
@@ -115,6 +113,10 @@ public class SeafileAuthenticatorActivity extends BaseAuthenticatorActivity {
                 navigateUpOrBack(SeafileAuthenticatorActivity.this, null);
             }
         });
+
+        // When this activity starts, always start Detail Ativity
+        // This is because Atenea Cloud only supports that type of login
+        launchAccountDetailActivity();
     }
 
     @Override
@@ -197,5 +199,12 @@ public class SeafileAuthenticatorActivity extends BaseAuthenticatorActivity {
         setAccountAuthenticatorResult(result);
         setResult(RESULT_OK, intent);
         finish();
+    }
+
+    private void launchAccountDetailActivity() {
+        Intent intent = new Intent(SeafileAuthenticatorActivity.this, AccountDetailActivity.class);
+        intent.putExtra(SeafileAuthenticatorActivity.ARG_SERVER_URI, getString(R.string.server_atenea_cloud));
+        intent.putExtras(getIntent());
+        startActivityForResult(intent, SeafileAuthenticatorActivity.REQ_SIGNUP);
     }
 }
