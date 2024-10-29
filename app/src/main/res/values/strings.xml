@@ -151,6 +151,7 @@
   </string-array>
   <string name="server_name_top" translatable="false">cloud.seafile.com</string>
   <string name="server_url_seacloud" translatable="false">https://cloud.seafile.com</string>
+  <string name="server_atenea_cloud" translatable="false">https://drive.ateneacloud.com</string>
   <string name="network_down">No network connection</string>
   <string name="unknow_error">Unknown error</string>
   <string name="invalid_server_address">Invalid server address</string>
