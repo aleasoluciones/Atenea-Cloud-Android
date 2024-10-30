@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.ateneacloud.drive">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-sdk tools:overrideLibrary="us.feras.mdv" />
 
@@ -20,6 +19,7 @@
     <!-- android 9.0  FOREGROUND_SERVICE -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_SYNC_STATS" />
 
@@ -151,7 +151,10 @@
             </intent-filter>
         </provider>
 
-        <service android:name="com.ateneacloud.drive.transfer.TransferService" />
+        <service
+            android:name="com.ateneacloud.drive.transfer.TransferService"
+            android:foregroundServiceType="dataSync" />
+
         <!--<service android:name=".folderbackup.FolderBackupService" />
         <service android:name=".monitor.FileMonitorService" />
         <service android:name=".cameraupload.MediaObserverService" />-->

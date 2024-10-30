@@ -1,9 +1,13 @@
 package com.ateneacloud.drive.notification;
 
 import static android.app.PendingIntent.FLAG_IMMUTABLE;
+import static android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC;
 
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.pm.ServiceInfo;
+import android.os.Build;
+
 import com.ateneacloud.drive.R;
 import com.ateneacloud.drive.SeadroidApplication;
 import com.ateneacloud.drive.transfer.TaskState;
@@ -79,7 +83,12 @@ public class UploadNotificationProvider extends BaseNotificationProvider {
 
         // Make this service run in the foreground, supplying the ongoing
         // notification to be shown to the user while in this state.
-        txService.startForeground(NOTIFICATION_ID_UPLOAD, mNotifBuilder.build());
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.TIRAMISU) {
+            txService.startForeground(NOTIFICATION_ID_UPLOAD, mNotifBuilder.build(), FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+        } else {
+            txService.startForeground(NOTIFICATION_ID_UPLOAD, mNotifBuilder.build());
+        }
+
     }
 
     @Override

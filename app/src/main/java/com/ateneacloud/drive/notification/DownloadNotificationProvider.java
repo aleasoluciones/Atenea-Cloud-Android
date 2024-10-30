@@ -1,8 +1,13 @@
 package com.ateneacloud.drive.notification;
 
+import static android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC;
+import static androidx.media3.exoplayer.offline.DownloadService.startForeground;
+
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Intent;
+import android.content.pm.ServiceInfo;
+import android.os.Build;
 
 import com.ateneacloud.drive.R;
 import com.ateneacloud.drive.SeadroidApplication;
@@ -119,7 +124,11 @@ public class DownloadNotificationProvider extends BaseNotificationProvider {
 
         // Make this service run in the foreground, supplying the ongoing
         // notification to be shown to the user while in this state.
-        txService.startForeground(NOTIFICATION_ID_DOWNLOAD, mNotifBuilder.build());
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.TIRAMISU) {
+            txService.startForeground(NOTIFICATION_ID_DOWNLOAD, mNotifBuilder.build(), FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+        } else {
+            txService.startForeground(NOTIFICATION_ID_DOWNLOAD, mNotifBuilder.build());
+        }
     }
 
     @Override
