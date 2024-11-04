@@ -1,4 +1,8 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
 
 android {
     namespace 'com.ateneacloud.drive'
@@ -9,8 +13,8 @@ android {
         applicationId 'com.ateneacloud.drive'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 142
-        versionName "2.3.5m2"
+        versionCode 143
+        versionName "2.3.5m3"
         multiDexEnabled true
         resValue "string", "authorities", applicationId + '.cameraupload.provider'
         resValue "string", "account_type", "com.seafile.seadroid2.account.api2"
@@ -101,6 +105,12 @@ android {
 
         implementation 'com.blankj:utilcode:1.30.7'
         implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper:4.0.0-beta14"
+
+        // Firebase
+        implementation platform('com.google.firebase:firebase-bom:33.5.1')
+        implementation("com.google.firebase:firebase-crashlytics")
+        implementation("com.google.firebase:firebase-analytics")
+
 
         //media3
         final def media3_version = '1.1.0'
