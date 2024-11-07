@@ -305,7 +305,7 @@ public class WidgetUtils {
         Notification notification = new NotificationCompat.Builder(activity, channelName)
                 .setContentTitle(fileName + " " + activity.getString(R.string.download_finished))
                 .setContentText(activity.getString(R.string.open))
-                .setSmallIcon(R.drawable.icon)
+                .setSmallIcon(R.drawable.ic_launcher)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .build();

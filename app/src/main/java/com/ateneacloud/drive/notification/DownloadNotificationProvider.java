@@ -113,7 +113,7 @@ public class DownloadNotificationProvider extends BaseNotificationProvider {
                 PendingIntent.FLAG_IMMUTABLE);
         mNotifBuilder = CustomNotificationBuilder.getNotificationBuilder(SeadroidApplication.getAppContext(),
                 CustomNotificationBuilder.CHANNEL_ID_DOWNLOAD)
-                .setSmallIcon(R.drawable.icon)
+                .setSmallIcon(R.drawable.ic_launcher)
                 .setOnlyAlertOnce(true)
                 .setDefaults(Notification.DEFAULT_VIBRATE)
                 .setContentTitle(SeadroidApplication.getAppContext().getString(R.string.notification_download_started_title))

@@ -114,7 +114,7 @@ public abstract class BaseNotificationProvider {
                                 String title,
                                 String info,
                                 int progress) {
-        mNotifBuilder.setSmallIcon(R.drawable.icon);
+        mNotifBuilder.setSmallIcon(R.drawable.ic_launcher);
         mNotifBuilder.setContentTitle(title);
         mNotifBuilder.setContentText(info);
         mNotifBuilder.setProgress(100, progress, false);
@@ -131,7 +131,7 @@ public abstract class BaseNotificationProvider {
      *
      */
     private void notifyCompleted(int notificationID, String title, String info) {
-        mNotifBuilder.setSmallIcon(R.drawable.icon);
+        mNotifBuilder.setSmallIcon(R.drawable.ic_launcher);
         mNotifBuilder.setContentTitle(title);
         mNotifBuilder.setContentText(info);
         mNotifBuilder.setProgress(100, 100, false);
@@ -175,7 +175,7 @@ public abstract class BaseNotificationProvider {
      *
      */
     protected void notifyCompletedWithErrors(int notificationID, String title, String info, int progress) {
-        mNotifBuilder.setSmallIcon(R.drawable.icon);
+        mNotifBuilder.setSmallIcon(R.drawable.ic_launcher);
         mNotifBuilder.setContentTitle(title);
         mNotifBuilder.setContentText(info);
         mNotifBuilder.setProgress(100, progress, false);

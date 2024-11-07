@@ -93,40 +93,22 @@ public class BucketsFragment extends Fragment {
         List<String> currentBucketList = settingsManager.getCameraUploadBucketList();
         buckets = GalleryBucketUtils.getMediaBuckets(getActivity().getApplicationContext());
         selectedBuckets = new boolean[buckets.size()];
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
-            thumbnails = new Bitmap[buckets.size()];
-            for (int i = 0; i < buckets.size(); i++) {
-                GalleryBucketUtils.Bucket b = buckets.get(i);
-                if (b.image_id > 0) {
-                    thumbnails[i] = MediaStore.Images.Thumbnails.getThumbnail(
-                            requireContext().getContentResolver(), b.image_id,
-                            MediaStore.Images.Thumbnails.MINI_KIND, null);
-                }
-                if (currentBucketList.size() > 0)
-                    selectedBuckets[i] = currentBucketList.contains(b.id);
-                else
-                    selectedBuckets[i] = b.isCameraBucket;
+        for (int i = 0; i < this.buckets.size(); i++) {
+            GalleryBucketUtils.Bucket b = this.buckets.get(i);
+            if (b.isImages != null && b.isImages.equals(GalleryBucketUtils.IMAGES)) {
+                Uri image_uri = Uri.withAppendedPath(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, b.imageId);
+                b.imagePath = Utils.getRealPathFromURI(SeadroidApplication.getAppContext(), image_uri, "images");
+            } else {
+                Uri video_uri = Uri.withAppendedPath(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, b.videoId);
+                b.videoPath = Utils.getRealPathFromURI(SeadroidApplication.getAppContext(), video_uri, "video");
             }
-        } else {
-            for (int i = 0; i < this.buckets.size(); i++) {
-                GalleryBucketUtils.Bucket b = this.buckets.get(i);
-                if (b.isImages != null && b.isImages.equals(GalleryBucketUtils.IMAGES)) {
-                    Uri image_uri = Uri.withAppendedPath(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, b.imageId);
-                    String image_path = Utils.getRealPathFromURI(SeadroidApplication.getAppContext(), image_uri, "images");
-                    b.imagePath = image_path;
-                } else {
-                    Uri video_uri = Uri.withAppendedPath(MediaStore.Video.Media.EXTERNAL_CONTENT_URI, b.videoId);
-                    String videoPath = Utils.getRealPathFromURI(SeadroidApplication.getAppContext(), video_uri, "video");
-                    b.videoPath = videoPath;
-                }
 
-                // if the user has previously selected buckets, mark these.
-                // otherwise, select the ones that will be auto-guessed.
-                if (currentBucketList.size() > 0)
-                    selectedBuckets[i] = currentBucketList.contains(b.id);
-                else
-                    selectedBuckets[i] = b.isCameraBucket;
-            }
+            // if the user has previously selected buckets, mark these.
+            // otherwise, select the ones that will be auto-guessed.
+            if (!currentBucketList.isEmpty())
+                selectedBuckets[i] = currentBucketList.contains(b.id);
+            else
+                selectedBuckets[i] = b.isCameraBucket;
         }
 
         imageAdapter = new ImageAdapter();

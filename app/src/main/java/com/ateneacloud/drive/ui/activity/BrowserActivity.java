@@ -28,10 +28,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import androidx.annotation.NonNull;
@@ -257,6 +260,23 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         return navContext;
     }
 
+    private ActivityResultLauncher<String> requestPermissionLauncher =
+            registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
+                if (!isGranted) {
+                    Toast.makeText(this, "Permiso para notificaciones denegado", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+
+    private void askNotificationPermission() {
+        // Solo necesitamos solicitar permiso si estamos en Android 13 o superior
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            if (shouldShowRequestPermissionRationale(Manifest.permission.POST_NOTIFICATIONS)) {
+                Toast.makeText(this, "Activa las notificaciones para recibir alertas importantes.", Toast.LENGTH_LONG).show();
+            }
+            requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -268,6 +288,8 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         accountManager = new AccountManager(this);
 
         creatingFiles = false;
+
+        askNotificationPermission();
 
         // restart service should it have been stopped for some reason
 //        Intent mediaObserver = new Intent(this, MediaObserverService.class);
@@ -1424,7 +1446,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
                             showShortToast(BrowserActivity.this, getString(R.string.added_to_upload_tasks));
                             final SeafRepo repo = dataManager.getCachedRepoByID(navContext.getRepoID());
 
-                            uploadFiles(Arrays.asList(path), repo);
+                            uploadFiles(Arrays.asList(path), repo, false);
 
 //                            if (repo != null && repo.canLocalDecrypt()) {
 //                                addUploadBlocksTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
@@ -1458,7 +1480,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
                             showShortToast(BrowserActivity.this, getString(R.string.added_to_upload_tasks));
                             final SeafRepo repo = dataManager.getCachedRepoByID(navContext.getRepoID());
 
-                            uploadFiles(Arrays.asList(path), repo);
+                            uploadFiles(Arrays.asList(path), repo, false);
 
 //                            if (repo != null && repo.canLocalDecrypt()) {
 //                                addUploadBlocksTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
@@ -1598,7 +1620,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
                     showShortToast(this, getString(R.string.added_to_upload_tasks));
                     final SeafRepo repo = dataManager.getCachedRepoByID(navContext.getRepoID());
 
-                    uploadFiles(Arrays.asList(takeCameraPhotoTempFile.getAbsolutePath()), repo);
+                    uploadFiles(Arrays.asList(takeCameraPhotoTempFile.getAbsolutePath()), repo, false);
 
 //                    if (repo != null && repo.canLocalDecrypt()) {
 //                        addUploadBlocksTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), takeCameraPhotoTempFile.getAbsolutePath());
@@ -1780,7 +1802,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 showShortToast(BrowserActivity.this, getString(R.string.added_to_upload_tasks));
-                uploadFiles(Arrays.asList(file.getAbsolutePath()), repo);
+                uploadFiles(Arrays.asList(file.getAbsolutePath()), repo, true);
 //                if (repo != null && repo.canLocalDecrypt()) {
 //                    addUpdateBlocksTask(repo.id, repo.name, navContext.getDirPath(), file.getAbsolutePath());
 //                } else {
@@ -1796,7 +1818,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         builder.setNegativeButton(getString(R.string.upload_keep_both), new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                uploadFiles(Arrays.asList(file.getAbsolutePath()), repo);
+                uploadFiles(Arrays.asList(file.getAbsolutePath()), repo, false);
 
 //                if (repo != null && repo.canLocalDecrypt()) {
 //                    addUploadBlocksTask(repo.id, repo.name, navContext.getDirPath(), file.getAbsolutePath());
@@ -3052,7 +3074,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
     }
 
 
-    private void uploadFiles(List<String> pathsFiles, SeafRepo repo) {
+    private void uploadFiles(List<String> pathsFiles, SeafRepo repo, boolean replace) {
 
         List<String> pathsFilesTemp = new ArrayList<>();
         List<String> pathsFilesNotValid = new ArrayList<>();
@@ -3067,7 +3089,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         }
 
         if (pathsFilesNotValid.isEmpty()) {
-            uploadValidFiles(repo, pathsFiles, pathsFilesNotValid);
+            uploadValidFiles(repo, pathsFiles, pathsFilesNotValid, replace);
         } else if (pathsFilesNotValid.size() == pathsFilesTemp.size()) {
             int changeType = pathsFilesTemp.size() > 1 ? ChangePlanDialog.NOT_ALLOWED_FILES : ChangePlanDialog.NOT_ALLOWED_FILE;
 
@@ -3115,7 +3137,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
                 .setOnContinueTask(new ContinueDialog.ContinueDialogContinueTask() {
                     @Override
                     public void continueTask() {
-                        uploadValidFiles(repo, pathsFiles, pathsFilesNotValid);
+                        uploadValidFiles(repo, pathsFiles, pathsFilesNotValid, false);
                     }
 
                     @Override
@@ -3209,7 +3231,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         }
     }
 
-    private void uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid) {
+    private void out__uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid) {
         checkItemsInRecycleBin(pathsFiles, pathsFilesNotValid);
         for (String path : pathsFiles) {
             if (!pathsFilesNotValid.contains(path)) {
@@ -3217,6 +3239,22 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
                     addUploadBlocksTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
                 } else {
                     addUploadTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
+                }
+            }
+        }
+    }
+
+    public void uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid, boolean replace) {
+        checkItemsInRecycleBin(pathsFiles, pathsFilesNotValid);
+        for (String path : pathsFiles) {
+            if (!pathsFilesNotValid.contains(path)) {
+                File file = new File(path);
+                if (repo != null && repo.canLocalDecrypt()) {
+                    addUpdateBlocksTask(repo.id, repo.name, this.navContext.getDirPath(), file.getAbsolutePath());
+                } else if (replace) {
+                    addUpdateTask(this.navContext.getRepoID(), this.navContext.getRepoName(), this.navContext.getDirPath(), file.getAbsolutePath());
+                } else {
+                    addUploadTask(this.navContext.getRepoID(), this.navContext.getRepoName(), this.navContext.getDirPath(), file.getAbsolutePath());
                 }
             }
         }

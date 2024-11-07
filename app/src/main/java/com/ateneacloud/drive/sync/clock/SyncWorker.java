@@ -75,35 +75,4 @@ public class SyncWorker extends Worker {
 
         return Result.success();
     }
-
-//    private void createAndShowNotification() {
-//        // Obtener el servicio de notificación
-//        NotificationManager notificationManager = getSystemService(getApplicationContext(), NotificationManager.class);
-//
-//        // Crear un canal de notificación (requerido para Android 8.0 y superior)
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, "Seafile Sync", NotificationManager.IMPORTANCE_DEFAULT);
-//            notificationManager.createNotificationChannel(channel);
-//        }
-//
-//        // Crear un intent para abrir la actividad cuando se toque la notificación
-//        Intent intent = new Intent(getApplicationContext(), BrowserActivity.class);
-//        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-//
-//        // Crear la notificación
-//        Notification notification = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
-//                .setContentTitle("Sincronización en progreso")
-//                .setContentText("La sincronización está en curso")
-//                .setSmallIcon(R.drawable.icon)
-//                .setContentIntent(pendingIntent)
-//                .build();
-//
-//        // Mostrar la notificación
-//        notificationManager.notify(NOTIFICATION_ID, notification);
-//    }
-//
-//    private void cancelNotification() {
-//        NotificationManager notificationManager = getSystemService(getApplicationContext(), NotificationManager.class);
-//        notificationManager.cancel(NOTIFICATION_ID);
-//    }
 }

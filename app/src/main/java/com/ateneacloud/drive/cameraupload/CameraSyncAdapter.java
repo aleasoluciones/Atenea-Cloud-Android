@@ -683,7 +683,7 @@ public class CameraSyncAdapter extends AbstractThreadedSyncAdapter {
             mBuilder = new NotificationCompat.Builder(getContext());
         }
 
-        mBuilder.setSmallIcon(R.drawable.icon)
+        mBuilder.setSmallIcon(R.drawable.ic_launcher)
                 .setOnlyAlertOnce(true)
                 .setContentTitle(getContext().getString(R.string.camera_sync_notification_title_failed))
                 .setContentText(getContext().getString(R.string.camera_sync_notification_auth_error_failed));
@@ -712,7 +712,7 @@ public class CameraSyncAdapter extends AbstractThreadedSyncAdapter {
     private void showNotificationRepoError() {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(getContext())
-                        .setSmallIcon(R.drawable.icon)
+                        .setSmallIcon(R.drawable.ic_launcher)
                         .setContentTitle(getContext().getString(R.string.camera_sync_notification_title_failed))
                         .setContentText(getContext().getString(R.string.camera_sync_notification_repo_missing_failed));
 
