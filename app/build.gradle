@@ -13,8 +13,8 @@ android {
         applicationId 'com.ateneacloud.drive'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 143
-        versionName "2.3.5m3"
+        versionCode 144
+        versionName "2.3.5m4"
         multiDexEnabled true
         resValue "string", "authorities", applicationId + '.cameraupload.provider'
         resValue "string", "account_type", "com.seafile.seadroid2.account.api2"
