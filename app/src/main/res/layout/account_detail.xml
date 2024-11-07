@@ -31,6 +31,7 @@
                 android:id="@+id/email_hint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/cb_padding_top"
                 android:hint="@string/email_hint">
 
                 <com.ateneacloud.drive.ui.EmailAutoCompleteTextView

@@ -102,7 +102,7 @@ import java.util.concurrent.Executors;
 
 public class Utils {
     public static final String MIME_APPLICATION_OCTET_STREAM = "application/octet-stream";
-    public static final String AUTHORITY = "com.seafile.seadroid2";
+    public static final String AUTHORITY = "com.ateneacloud.drive";
     public static final String PATH_SEPERATOR = "/";
     // public static final String NOGROUP = "$nogroup";
     public static final String PERSONAL_REPO = "personal_repo";
