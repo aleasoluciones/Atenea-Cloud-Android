@@ -13,8 +13,8 @@ android {
         applicationId 'com.ateneacloud.drive'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 145
-        versionName "2.3.5m5"
+        versionCode 146
+        versionName "2.3.5m6"
         multiDexEnabled true
         resValue "string", "authorities", applicationId + '.cameraupload.provider'
         resValue "string", "account_type", "com.ateneacloud.drive.account.api2"
