@@ -133,7 +133,7 @@ public class AccountDetailActivity extends BaseActivity implements  Toolbar.OnMe
             mServerEt.setText(server);
             mEmailEt.setText(email);
             mEmailEt.requestFocus();
-            mSeaHubUrlHintTv.setVisibility(View.GONE);
+            //mSeaHubUrlHintTv.setVisibility(View.GONE);
 
 
         } else if (defaultServerUri != null) {
