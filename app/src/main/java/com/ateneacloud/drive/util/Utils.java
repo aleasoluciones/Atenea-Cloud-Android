@@ -1227,7 +1227,7 @@ public class Utils {
         return new Date(timeMiliseconds);
     }
 
-    public static void openWebPlans(Activity activity) {
+    public static void openWebPlans(Activity activity){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(activity.getResources().getString(R.string.change_plan_url)));
         activity.startActivity(intent);
     }
@@ -1325,14 +1325,10 @@ public class Utils {
                     return id.substring(4);
                 }
 
-                if (id != null && id.startsWith("msf:")){
-                    return id.substring(4);
-                }
-
                 String[] contentUriPrefixesToTry = new String[]{
                         "content://downloads/public_downloads",
                         "content://downloads/my_downloads"
-                }
+                };
 
                 for (String contentUriPrefix : contentUriPrefixesToTry) {
                     Uri contentUri = ContentUris.withAppendedId(Uri.parse(contentUriPrefix), Long.valueOf(id));
@@ -1361,22 +1357,17 @@ public class Utils {
                 if (split2.length >= 2) {
                     String type = split2[0];
                     String id2 = split2[1];
-
-                    Uri contentUri = null;
                     if ("image".equals(type)) {
                         contentUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
                     } else if ("video".equals(type)) {
                         contentUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
                     } else if ("audio".equals(type)) {
                         contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
-                    }else {
-                        // Manejo para otro tipo de documento
+                    } else {
                         contentUri = MediaStore.Files.getContentUri("external");
                     }
-
-                    final String selection = "_id=?";
-                    final String[] selectionArgs = new String[]{ id };
-                    return getDataColumn(context, contentUri, selection, selectionArgs);
+                    String[] selectionArgs = {id2};
+                    return getDataColumn(context, contentUri, "_id=?", selectionArgs);
                 }
             }
         } else if ("content".equalsIgnoreCase(uri.getScheme())) {
@@ -1565,6 +1556,7 @@ public class Utils {
         }
     }
 
+
     public static String getDataColumn(Context context, Uri uri, String selection,
                                        String[] selectionArgs) {
 
@@ -1625,3 +1617,4 @@ public class Utils {
         return "com.google.android.apps.docs.storage.legacy".equals(uri.getAuthority());
     }
 }
+
