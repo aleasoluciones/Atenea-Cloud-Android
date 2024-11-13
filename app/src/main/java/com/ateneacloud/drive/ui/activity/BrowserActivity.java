@@ -3235,10 +3235,16 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         checkItemsInRecycleBin(pathsFiles, pathsFilesNotValid);
         for (String path : pathsFiles) {
             if (!pathsFilesNotValid.contains(path)) {
+                File file = new File(path);
                 if (repo != null && repo.canLocalDecrypt()) {
-                    addUploadBlocksTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
+                    addUpdateBlocksTask(repo.id, repo.name, navContext.getDirPath(), file.getAbsolutePath());
                 } else {
-                    addUploadTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
+                    if(replace){
+                        addUpdateTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), file.getAbsolutePath());
+                    }else{
+                        addUploadTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), file.getAbsolutePath());
+                    }
+
                 }
             }
         }
