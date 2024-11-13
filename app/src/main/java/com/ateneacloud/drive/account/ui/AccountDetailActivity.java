@@ -377,19 +377,18 @@ public class AccountDetailActivity extends BaseActivity implements  Toolbar.OnMe
 
     public void verifyPolicy(Account account, PolicyVerificationCallback callback) {
         SharedPreferences preferences = getSharedPreferences("PolicyUser", Context.MODE_PRIVATE);
-        boolean policyAccept = preferences.getBoolean("PolicyUser "+ account.getServer()+ account.getEmail(),false);
-
+        boolean policyAccept = preferences.getBoolean("PolicyUser "+ account.getServer()+"/"+ account.getName(),false);
         Log.d("Policy", "Valor de politica "+  policyAccept);
 
         if (!policyAccept) {
-            showDialogPolicy(callback);
+            showDialogPolicy(callback, account);
         }else {
             // Llamar al callback si la política ya se ha aceptado
             callback.onPolicyVerified(true);
         }
     }
 
-    public void showDialogPolicy(final PolicyVerificationCallback callback){
+    public void showDialogPolicy(final PolicyVerificationCallback callback, Account account){
         SharedPreferences preferences = getSharedPreferences("PolicyUser", Context.MODE_PRIVATE);
             PolicyPolityDialog dialog = new PolicyPolityDialog(this, new PolicyPolityDialog.OnCloseListener() {
                 @Override
@@ -397,7 +396,7 @@ public class AccountDetailActivity extends BaseActivity implements  Toolbar.OnMe
                     if (accepted) {
                         // Actualizar el valor de la preferencia cuando se acepta la política
                         SharedPreferences.Editor editor = preferences.edit();
-                        editor.putBoolean("PolicyUser " + mServerEt.getText() +"/"+ mEmailEt.getText(), true);
+                        editor.putBoolean("PolicyUser " + account.getServer() +"/"+ account.getName(), true);
                         editor.apply();
 
                     } else {
