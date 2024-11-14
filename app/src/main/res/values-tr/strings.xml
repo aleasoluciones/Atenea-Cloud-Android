@@ -2,6 +2,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name='url_policy'>https://www.ateneacloud.com/terminos.html</string>
   <string name='change_plan_url'>https://www.ateneacloud.com/contacto.html</string>
+  <string name='change_password_url'>https://drive.ateneacloud.com/accounts/password/change/</string>
+  <string name='reset_password_url'>https://drive.ateneacloud.com/accounts/password/reset/</string>
     <string name='policy_privacy'>Gizlilik Politikası</string>
     <string name='accept'>Kabul etmek</string>
   <string name='hours'>saatler</string>

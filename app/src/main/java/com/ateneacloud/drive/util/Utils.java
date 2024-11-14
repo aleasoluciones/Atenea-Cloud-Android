@@ -1474,4 +1474,3 @@ public class Utils {
         return "com.google.android.apps.docs.storage.legacy".equals(uri.getAuthority());
     }
 }
-

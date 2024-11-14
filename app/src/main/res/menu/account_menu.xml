@@ -2,9 +2,13 @@
 
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/edit"
-        android:visible="false"
-        android:title="@string/edit_account" />
+    <item android:id="@+id/request_change_password"
+        android:visible="true"
+        android:title="@string/change_account_password" />
+
+    <item android:id="@+id/request_reset_password"
+        android:visible="true"
+        android:title="@string/reset_account_password" />
     
     <item android:id="@+id/delete"
         android:visible="true"

@@ -3,14 +3,15 @@ package com.ateneacloud.drive.ui.activity;
 import android.accounts.AccountManagerCallback;
 import android.accounts.AccountManagerFuture;
 import android.accounts.OnAccountsUpdateListener;
+import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.IBinder;
-import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -23,7 +24,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Button;
 import android.widget.ListView;
 
-import com.google.common.collect.Lists;
+import androidx.appcompat.widget.Toolbar;
+
 import com.ateneacloud.drive.R;
 import com.ateneacloud.drive.SeafConnection;
 import com.ateneacloud.drive.SeafException;
@@ -39,6 +41,7 @@ import com.ateneacloud.drive.ui.adapter.SeafAccountAdapter;
 import com.ateneacloud.drive.ui.dialog.PolicyDialog;
 import com.ateneacloud.drive.util.ConcurrentAsyncTask;
 import com.ateneacloud.drive.util.Utils;
+import com.google.common.collect.Lists;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -292,9 +295,11 @@ public class AccountsActivity extends BaseActivity implements Toolbar.OnMenuItem
         AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
         Account account;
         switch (item.getItemId()) {
-            case R.id.edit:
-                account = adapter.getItem((int) info.id);
-                startEditAccountActivity(account);
+            case R.id.request_change_password:
+                openBrowserWithUrl(this, getString(R.string.change_password_url));
+                return true;
+            case R.id.request_reset_password:
+                openBrowserWithUrl(this, getString(R.string.reset_password_url));
                 return true;
             case R.id.delete:
                 account = adapter.getItem((int) info.id);
@@ -440,4 +445,10 @@ public class AccountsActivity extends BaseActivity implements Toolbar.OnMenuItem
         mDialog.setCancelable(false);
 
     }
+
+    public static void openBrowserWithUrl(Activity activity, String url) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        activity.startActivity(intent);
+    }
 }
+
