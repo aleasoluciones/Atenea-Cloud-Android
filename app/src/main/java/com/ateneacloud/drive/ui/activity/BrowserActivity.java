@@ -491,7 +491,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         //requestReadExternalStoragePermission();
         //Utils.startCameraSyncJob(this);
         //syncCamera();
-        checkManagerStoragePermission();
+        //checkManagerStoragePermission();
         syncCamera();
         loadAccountInfo();
 
