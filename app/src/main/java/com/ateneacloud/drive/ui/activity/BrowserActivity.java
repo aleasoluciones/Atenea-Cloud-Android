@@ -1446,7 +1446,19 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
                             showShortToast(BrowserActivity.this, getString(R.string.added_to_upload_tasks));
                             final SeafRepo repo = dataManager.getCachedRepoByID(navContext.getRepoID());
 
+<<<<<<< .mine
+<<<<<<< HEAD
                             uploadFiles(Arrays.asList(path), repo, false);
+=======
+                            uploadFiles(Arrays.asList(path), repo,false);
+>>>>>>> bugfix update/upload file
+=======
+                            uploadFiles(Arrays.asList(path), repo,false);
+
+
+
+
+>>>>>>> .theirs
 
 //                            if (repo != null && repo.canLocalDecrypt()) {
 //                                addUploadBlocksTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
@@ -1802,12 +1814,30 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 showShortToast(BrowserActivity.this, getString(R.string.added_to_upload_tasks));
+<<<<<<< .mine
                 uploadFiles(Arrays.asList(file.getAbsolutePath()), repo, true);
+<<<<<<< HEAD
 //                if (repo != null && repo.canLocalDecrypt()) {
 //                    addUpdateBlocksTask(repo.id, repo.name, navContext.getDirPath(), file.getAbsolutePath());
 //                } else {
 //                    addUpdateTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), file.getAbsolutePath());
 //                }
+=======
+                uploadFiles(Arrays.asList(file.getAbsolutePath()), repo, true);
+        //       if (repo != null && repo.canLocalDecrypt()) {
+        //            addUpdateBlocksTask(repo.id, repo.name, navContext.getDirPath(), file.getAbsolutePath());
+        //        } else {
+        //           addUpdateTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), file.getAbsolutePath());
+        //        }
+
+>>>>>>> .theirs
+=======
+        //       if (repo != null && repo.canLocalDecrypt()) {
+        //            addUpdateBlocksTask(repo.id, repo.name, navContext.getDirPath(), file.getAbsolutePath());
+        //        } else {
+        //           addUpdateTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), file.getAbsolutePath());
+        //        }
+>>>>>>> bugfix update/upload file
             }
         });
         builder.setNeutralButton(getString(R.string.cancel), new DialogInterface.OnClickListener() {
@@ -3231,14 +3261,32 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         }
     }
 
+<<<<<<< .mine
+<<<<<<< HEAD
     private void out__uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid) {
+=======
+    private void uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid, boolean replace) {
+>>>>>>> bugfix update/upload file
+=======
+    private void uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid, boolean replace) {
+
+
+
+
+>>>>>>> .theirs
         checkItemsInRecycleBin(pathsFiles, pathsFilesNotValid);
         for (String path : pathsFiles) {
             if (!pathsFilesNotValid.contains(path)) {
+                File file = new File(path);
                 if (repo != null && repo.canLocalDecrypt()) {
-                    addUploadBlocksTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
+                    addUpdateBlocksTask(repo.id, repo.name, navContext.getDirPath(), file.getAbsolutePath());
                 } else {
-                    addUploadTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), path);
+                    if(replace){
+                        addUpdateTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), file.getAbsolutePath());
+                    }else{
+                        addUploadTask(navContext.getRepoID(), navContext.getRepoName(), navContext.getDirPath(), file.getAbsolutePath());
+                    }
+
                 }
             }
         }

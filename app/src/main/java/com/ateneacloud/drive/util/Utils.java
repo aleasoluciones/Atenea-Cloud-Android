@@ -24,6 +24,10 @@ import android.os.LocaleList;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.provider.OpenableColumns;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import android.text.TextUtils;
 import android.text.format.DateFormat;
 import android.util.Log;
@@ -31,8 +35,9 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 
-import androidx.annotation.NonNull;
-
+import com.ateneacloud.drive.ui.NavContext;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.ateneacloud.drive.R;
 import com.ateneacloud.drive.SeadroidApplication;
 import com.ateneacloud.drive.SettingsManager;
@@ -53,8 +58,6 @@ import com.ateneacloud.drive.sync.fileProvider.syncItems.SeafSyncFileItem;
 import com.ateneacloud.drive.sync.logs.services.SeafSyncLogsService;
 import com.ateneacloud.drive.sync.settings.SeafSyncSettings;
 import com.ateneacloud.drive.sync.settings.SeafSyncSettingsService;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -95,14 +98,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
-import java.util.Objects;
 import java.util.TreeMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Utils {
     public static final String MIME_APPLICATION_OCTET_STREAM = "application/octet-stream";
-    public static final String AUTHORITY = "com.ateneacloud.drive";
+    public static final String AUTHORITY = "com.seafile.seadroid2";
     public static final String PATH_SEPERATOR = "/";
     // public static final String NOGROUP = "$nogroup";
     public static final String PERSONAL_REPO = "personal_repo";
@@ -111,7 +113,9 @@ public class Utils {
     public static final String TRANSFER_FOLDER_TAG = "folder_backup";
     private static final String DEBUG_TAG = "Utils";
     private static final String HIDDEN_PREFIX = ".";
-    private static final String DOCUMENTS_DIR = "documents";
+
+    private static final String DOCUMENTS_DIR = "documents" ;
+
     private static HashMap<String, Integer> suffixIconMap = null;
     private static final int JOB_ID = 0;
 
@@ -1231,188 +1235,231 @@ public class Utils {
         activity.startActivity(intent);
     }
 
-    public static String getName(String filename) {
-        if (filename == null) {
-            return null;
-        }
-        int index = filename.lastIndexOf(47);
-        return filename.substring(index + 1);
-    }
+    public static String getPathFromUri(final Context context, final Uri uri) {
 
-    public static String getFileName(Context context, Uri uri) {
-        String mimeType = context.getContentResolver().getType(uri);
-        if (mimeType == null) {
-            try {
-                String path = getPath(context, uri);
-                if (path == null) {
-                    String filename = getName(uri.toString());
-                    return filename;
+        final boolean isKitKat = Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT;
+
+        // DocumentProvider
+        if (isKitKat && DocumentsContract.isDocumentUri(context, uri)) {
+            // ExternalStorageProvider
+            if (isExternalStorageDocument(uri)) {
+                final String docId = DocumentsContract.getDocumentId(uri);
+                final String[] split = docId.split(":");
+                final String type = split[0];
+
+                if ("primary".equalsIgnoreCase(type)) {
+                    return Environment.getExternalStorageDirectory() + "/" + split[1];
                 }
-                File file = new File(path);
-                String filename2 = file.getName();
-                return filename2;
-            } catch (URISyntaxException e) {
-                throw new RuntimeException(e);
+
+                // TODO handle non-primary volumes
+            }
+            // DownloadsProvider
+            else if (isDownloadsDocument(uri)) {
+
+                final String id = DocumentsContract.getDocumentId(uri);
+
+                if (id != null && id.startsWith("raw:")) {
+                    return id.substring(4);
+                }
+
+                String[] contentUriPrefixesToTry = new String[]{
+                        "content://downloads/public_downloads",
+                        "content://downloads/my_downloads"
+                };
+
+                for (String contentUriPrefix : contentUriPrefixesToTry) {
+                    Uri contentUri = ContentUris.withAppendedId(Uri.parse(contentUriPrefix), Long.valueOf(id));
+                    try {
+                        String path = getDataColumn(context, contentUri, null, null);
+                        if (path != null) {
+                            return path;
+                        }
+                    } catch (Exception e) {}
+                }
+
+                String fileName = getFileName(context, uri);
+                File cacheDir = getDocumentCacheDir(context);
+                File file = generateFileName(fileName, cacheDir);
+                String destinationPath = null;
+                if (file != null) {
+                    destinationPath = file.getAbsolutePath();
+                    saveFileFromUri(context, uri, destinationPath);
+                }
+
+                return destinationPath;
+            }
+            // MediaProvider
+            else if (isMediaDocument(uri)) {
+                final String docId = DocumentsContract.getDocumentId(uri);
+                final String[] split = docId.split(":");
+                final String type = split[0];
+
+                Uri contentUri = null;
+                if ("image".equals(type)) {
+                    contentUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+                } else if ("video".equals(type)) {
+                    contentUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+                } else if ("audio".equals(type)) {
+                    contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+                }
+
+                final String selection = "_id=?";
+                final String[] selectionArgs = new String[]{
+                        split[1]
+                };
+
+                return getDataColumn(context, contentUri, selection, selectionArgs);
             }
         }
-        Cursor returnCursor = context.getContentResolver().query(uri, null, null, null, null);
-        if (returnCursor == null) {
-            return null;
+        // MediaStore (and general)
+        else if ("content".equalsIgnoreCase(uri.getScheme())) {
+
+            // Return the remote address
+            if (isGooglePhotosUri(uri))
+                return uri.getLastPathSegment();
+
+            return getDataColumn(context, uri, null, null);
         }
-        int nameIndex = returnCursor.getColumnIndex("_display_name");
-        returnCursor.moveToFirst();
-        String filename3 = returnCursor.getString(nameIndex);
-        returnCursor.close();
-        return filename3;
+        // File
+        else if ("file".equalsIgnoreCase(uri.getScheme())) {
+            return uri.getPath();
+        }
+
+        return null;
     }
 
-    public static File getDocumentCacheDir(Context context) {
+
+    public static File getDocumentCacheDir(@NonNull Context context) {
         File dir = new File(context.getCacheDir(), DOCUMENTS_DIR);
         if (!dir.exists()) {
             dir.mkdirs();
         }
+
+
         return dir;
     }
 
-    public static File generateFileName(String name, File directory) {
+    @Nullable
+    public static File generateFileName(@Nullable String name, File directory) {
         if (name == null) {
             return null;
         }
+
         File file = new File(directory, name);
+
         if (file.exists()) {
             String fileName = name;
             String extension = "";
-            int dotIndex = name.lastIndexOf(46);
+            int dotIndex = name.lastIndexOf('.');
             if (dotIndex > 0) {
                 fileName = name.substring(0, dotIndex);
                 extension = name.substring(dotIndex);
             }
+
             int index = 0;
+
             while (file.exists()) {
                 index++;
-                file = new File(directory, fileName + '(' + index + ')' + extension);
+                name = fileName + '(' + index + ')' + extension;
+                file = new File(directory, name);
             }
         }
+
         try {
             if (!file.createNewFile()) {
                 return null;
             }
-            return file;
         } catch (IOException e) {
             return null;
         }
+
+
+        return file;
     }
 
-    public static String getPathFromUri(final Context context, final Uri uri) {
-        String docId;
-        Uri contentUri;
-        String path = null;
-        String[] split;
-        if (DocumentsContract.isDocumentUri(context, uri)) {
-            if (isExternalStorageDocument(uri)) {
-                if ("primary".equalsIgnoreCase(DocumentsContract.getDocumentId(uri).split(":")[0])) {
-                    split = Objects.requireNonNull(uri.getPath()).split(":");
-                    return Environment.getExternalStorageDirectory() + "/" + split[1];
-                }
-            } else if (isDownloadsDocument(uri)) {
-                String id = DocumentsContract.getDocumentId(uri);
-                if (id != null && id.startsWith("raw:")) {
-                    return id.substring(4);
-                }
-                if (id != null && id.startsWith("msf:")) {
-                    return id.substring(4);
-                }
-                String[] contentUriPrefixesToTry = {"content://downloads/public_downloads", "content://downloads/my_downloads"};
-                for (String contentUriPrefix : contentUriPrefixesToTry) {
-                    Uri contentUri2 = ContentUris.withAppendedId(Uri.parse(contentUriPrefix), Long.valueOf(id).longValue());
-                    try {
-                        path = getDataColumn(context, contentUri2, null, null);
-                    } catch (Exception e) {
-                    }
-                    if (path != null) {
-                        return path;
-                    }
-                }
-                String fileName = getFileName(context, uri);
-                File cacheDir = getDocumentCacheDir(context);
-                File file = generateFileName(fileName, cacheDir);
-                if (file == null) {
-                    return null;
-                }
-                String destinationPath = file.getAbsolutePath();
-                saveFileFromUri(context, uri, destinationPath);
-                return destinationPath;
-            } else if (isMediaDocument(uri) && (docId = DocumentsContract.getDocumentId(uri)) != null && docId.contains(":")) {
-                String[] split2 = docId.split(":");
-                if (split2.length >= 2) {
-                    String type = split2[0];
-                    String id2 = split2[1];
-                    if ("image".equals(type)) {
-                        contentUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-                    } else if ("video".equals(type)) {
-                        contentUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
-                    } else if ("audio".equals(type)) {
-                        contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
-                    } else {
-                        contentUri = MediaStore.Files.getContentUri("external");
-                    }
-                    String[] selectionArgs = {id2};
-                    return getDataColumn(context, contentUri, "_id=?", selectionArgs);
-                }
+
+
+    public static String getFileName(@NonNull Context context, Uri uri) {
+        String mimeType = context.getContentResolver().getType(uri);
+        String filename = null;
+
+        if (mimeType == null && context != null) {
+            String path = null;
+            try {
+                path = getPath(context, uri);
+            } catch (URISyntaxException e) {
+                throw new RuntimeException(e);
             }
-        } else if ("content".equalsIgnoreCase(uri.getScheme())) {
-            if (isGooglePhotosUri(uri) || isGoogleDriveUri(uri)) {
-                return uri.getLastPathSegment();
+            if (path == null) {
+                filename = getName(uri.toString());
+            } else {
+                File file = new File(path);
+                filename = file.getName();
             }
-            return getDataColumn(context, uri, null, null);
-        } else if ("file".equalsIgnoreCase(uri.getScheme())) {
-            return uri.getPath();
+        } else {
+            Cursor returnCursor = context.getContentResolver().query(uri, null,
+                    null, null, null);
+            if (returnCursor != null) {
+                int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
+                returnCursor.moveToFirst();
+                filename = returnCursor.getString(nameIndex);
+                returnCursor.close();
+            }
+        }
+
+        return filename;
+    }
+
+    public static String getName(String filename) {
+        if (filename == null) {
+            return null;
+        }
+        int index = filename.lastIndexOf('/');
+        return filename.substring(index + 1);
+    }
+
+    public static File getFile(Context context, Uri uri) {
+        if (uri != null) {
+            String path = null;
+            try {
+                path = getPath(context, uri);
+            } catch (URISyntaxException e) {
+                throw new RuntimeException(e);
+            }
+            if (path != null && isLocal(path)) {
+                return new File(path);
+            }
         }
         return null;
+    }
+
+    public static boolean isLocal(String url) {
+        return url != null && !url.startsWith("http://") && !url.startsWith("https://");
     }
 
     private static void saveFileFromUri(Context context, Uri uri, String destinationPath) {
         InputStream is = null;
         BufferedOutputStream bos = null;
         try {
+            is = context.getContentResolver().openInputStream(uri);
+            bos = new BufferedOutputStream(new FileOutputStream(destinationPath, false));
+            byte[] buf = new byte[1024];
+            is.read(buf);
+            do {
+                bos.write(buf);
+            } while (is.read(buf) != -1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
             try {
-                try {
-                    is = context.getContentResolver().openInputStream(uri);
-                    bos = new BufferedOutputStream(new FileOutputStream(destinationPath, false));
-                    byte[] buf = new byte[1024];
-                    is.read(buf);
-                    do {
-                        bos.write(buf);
-                    } while (is.read(buf) != -1);
-                    is.close();
-                    bos.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    if (is != null) {
-                        is.close();
-                    }
-                    if (bos != null) {
-                        bos.close();
-                    }
-                }
-            } catch (Throwable th) {
-                if (is != null) {
-                    try {
-                        is.close();
-                    } catch (IOException e2) {
-                        e2.printStackTrace();
-                        throw th;
-                    }
-                }
-                if (bos != null) {
-                    bos.close();
-                }
-                throw th;
+                if (is != null) is.close();
+                if (bos != null) bos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e3) {
-            e3.printStackTrace();
         }
     }
+
 
     public static String getDataColumn(Context context, Uri uri, String selection,
                                        String[] selectionArgs) {
@@ -1467,10 +1514,7 @@ public class Utils {
      * @return Whether the Uri authority is Google Photos.
      */
     public static boolean isGooglePhotosUri(Uri uri) {
-        return "com.google.android.apps.photos.contentprovider".equals(uri.getAuthority());
-    }
-
-    public static boolean isGoogleDriveUri(Uri uri) {
-        return "com.google.android.apps.docs.storage.legacy".equals(uri.getAuthority());
+        return "com.google.android.apps.photos.content".equals(uri.getAuthority());
     }
 }
+
