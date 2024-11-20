@@ -32,6 +32,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.MimeTypeMap;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import com.ateneacloud.drive.R;
 import com.ateneacloud.drive.SeadroidApplication;
@@ -1235,35 +1236,39 @@ public class Utils {
         if (filename == null) {
             return null;
         }
-        int index = filename.lastIndexOf(47);
+        int index = filename.lastIndexOf('/');
         return filename.substring(index + 1);
     }
 
-    public static String getFileName(Context context, Uri uri) {
+    public static String getFileName(@NonNull Context context, Uri uri) {
         String mimeType = context.getContentResolver().getType(uri);
-        if (mimeType == null) {
+        String filename = null;
+
+        if (mimeType == null && context != null) {
+            String path = null;
             try {
-                String path = getPath(context, uri);
-                if (path == null) {
-                    String filename = getName(uri.toString());
-                    return filename;
-                }
-                File file = new File(path);
-                String filename2 = file.getName();
-                return filename2;
+                path = getPath(context, uri);
             } catch (URISyntaxException e) {
                 throw new RuntimeException(e);
             }
+
+            if (path == null) {
+                filename = getName(uri.toString());
+            } else {
+                File file = new File(path);
+                filename = file.getName();
+            }
+        } else {
+            Cursor returnCursor = context.getContentResolver().query(uri, null, null, null, null);
+            if (returnCursor != null) {
+                int nameIndex = returnCursor.getColumnIndex(OpenableColumns.DISPLAY_NAME);
+                returnCursor.moveToFirst();
+                filename = returnCursor.getString(nameIndex);
+                returnCursor.close();
+            }
         }
-        Cursor returnCursor = context.getContentResolver().query(uri, null, null, null, null);
-        if (returnCursor == null) {
-            return null;
-        }
-        int nameIndex = returnCursor.getColumnIndex("_display_name");
-        returnCursor.moveToFirst();
-        String filename3 = returnCursor.getString(nameIndex);
-        returnCursor.close();
-        return filename3;
+
+        return filename;
     }
 
     public static File getDocumentCacheDir(Context context) {
@@ -1274,6 +1279,7 @@ public class Utils {
         return dir;
     }
 
+    @Nullable
     public static File generateFileName(String name, File directory) {
         if (name == null) {
             return null;
@@ -1282,7 +1288,7 @@ public class Utils {
         if (file.exists()) {
             String fileName = name;
             String extension = "";
-            int dotIndex = name.lastIndexOf(46);
+            int dotIndex = name.lastIndexOf('.');
             if (dotIndex > 0) {
                 fileName = name.substring(0, dotIndex);
                 extension = name.substring(dotIndex);
@@ -1343,22 +1349,7 @@ public class Utils {
                 saveFileFromUri(context, uri, destinationPath);
                 return destinationPath;
             } else if (isMediaDocument(uri) && (docId = DocumentsContract.getDocumentId(uri)) != null && docId.contains(":")) {
-                String[] split2 = docId.split(":");
-                if (split2.length >= 2) {
-                    String type = split2[0];
-                    String id2 = split2[1];
-                    if ("image".equals(type)) {
-                        contentUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
-                    } else if ("video".equals(type)) {
-                        contentUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
-                    } else if ("audio".equals(type)) {
-                        contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
-                    } else {
-                        contentUri = MediaStore.Files.getContentUri("external");
-                    }
-                    String[] selectionArgs = {id2};
-                    return getDataColumn(context, contentUri, "_id=?", selectionArgs);
-                }
+                return uri.toString();
             }
         } else if ("content".equalsIgnoreCase(uri.getScheme())) {
             if (isGooglePhotosUri(uri) || isGoogleDriveUri(uri)) {
@@ -1375,42 +1366,22 @@ public class Utils {
         InputStream is = null;
         BufferedOutputStream bos = null;
         try {
+            is = context.getContentResolver().openInputStream(uri);
+            bos = new BufferedOutputStream(new FileOutputStream(destinationPath, false));
+            byte[] buf = new byte[1024];
+            is.read(buf);
+            do {
+                bos.write(buf);
+            } while (is.read(buf) != -1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
             try {
-                try {
-                    is = context.getContentResolver().openInputStream(uri);
-                    bos = new BufferedOutputStream(new FileOutputStream(destinationPath, false));
-                    byte[] buf = new byte[1024];
-                    is.read(buf);
-                    do {
-                        bos.write(buf);
-                    } while (is.read(buf) != -1);
-                    is.close();
-                    bos.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    if (is != null) {
-                        is.close();
-                    }
-                    if (bos != null) {
-                        bos.close();
-                    }
-                }
-            } catch (Throwable th) {
-                if (is != null) {
-                    try {
-                        is.close();
-                    } catch (IOException e2) {
-                        e2.printStackTrace();
-                        throw th;
-                    }
-                }
-                if (bos != null) {
-                    bos.close();
-                }
-                throw th;
+                if (is != null) is.close();
+                if (bos != null) bos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e3) {
-            e3.printStackTrace();
         }
     }
 

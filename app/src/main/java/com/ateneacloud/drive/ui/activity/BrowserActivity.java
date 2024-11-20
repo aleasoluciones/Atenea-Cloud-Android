@@ -3244,7 +3244,7 @@ public class BrowserActivity extends BaseActivity implements ReposFragment.OnFil
         }
     }
 
-    public void uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid, boolean replace) {
+    private void uploadValidFiles(SeafRepo repo, List<String> pathsFiles, List<String> pathsFilesNotValid, boolean replace) {
         checkItemsInRecycleBin(pathsFiles, pathsFilesNotValid);
         for (String path : pathsFiles) {
             if (!pathsFilesNotValid.contains(path)) {
