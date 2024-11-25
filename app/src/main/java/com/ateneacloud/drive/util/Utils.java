@@ -1348,7 +1348,28 @@ public class Utils {
                 String destinationPath = file.getAbsolutePath();
                 saveFileFromUri(context, uri, destinationPath);
                 return destinationPath;
+            // MediaProvider
             } else if (isMediaDocument(uri) && (docId = DocumentsContract.getDocumentId(uri)) != null && docId.contains(":")) {
+                    split = docId.split(":");
+                    if (split.length >= 2) {
+                        String type = split[0];
+                        String id = split[1];
+
+                        if ("image".equals(type)) {
+                            contentUri = MediaStore.Images.Media.EXTERNAL_CONTENT_URI;
+                        } else if ("video".equals(type)) {
+                            contentUri = MediaStore.Video.Media.EXTERNAL_CONTENT_URI;
+                        } else if ("audio".equals(type)) {
+                            contentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+                        }else {
+                            // Manejo para otro tipo de documento
+                            contentUri = MediaStore.Files.getContentUri("external");
+                        }
+
+                        final String selection = "_id=?";
+                        final String[] selectionArgs = new String[]{ id };
+                        return getDataColumn(context, contentUri, selection, selectionArgs);
+                    }
                 return uri.toString();
             }
         } else if ("content".equalsIgnoreCase(uri.getScheme())) {
