@@ -63,6 +63,8 @@ public class SeafConnection {
     private static final int CONNECTION_TIMEOUT = 15000;
     private static final int READ_TIMEOUT = 30000;
 
+    private static final String ATENEA_PROXY_URL = "https://drive.ateneacloud.com:8553";
+
     private Account account;
 
     public SeafConnection(Account act) {
@@ -81,6 +83,12 @@ public class SeafConnection {
 
     private HttpRequest prepareApiPutRequest(String apiPath, Map<String, ?> params) throws IOException {
         HttpRequest req = HttpRequest.put(account.server + apiPath, params, false);
+        setRequestCommon(req);
+        return req;
+    }
+
+    private HttpRequest prepareAteneaProxyApiGetRequest(String apiPath) throws IOException {
+        HttpRequest req = HttpRequest.get(ATENEA_PROXY_URL + apiPath, false);
         setRequestCommon(req);
         return req;
     }
@@ -402,6 +410,29 @@ public class SeafConnection {
             throw getSeafExceptionFromHttpRequestException(e);
         } catch (IOException e) {
             throw SeafException.networkException;
+        }
+    }
+
+    public String getAteneaProxyPolicyURL(String accountEmail) throws SeafException {
+        HttpRequest req = null;
+        try {
+            req = prepareAteneaProxyApiGetRequest("/api/url/" + accountEmail);
+            String result = new String(req.bytes(), "UTF-8");
+            JSONObject json = Utils.parseJsonObject(result);
+            if (req.code() == HttpURLConnection.HTTP_BAD_REQUEST) {
+                String errorMessage = (String) json.get("error");
+                throw new SeafException(15, errorMessage);
+            }
+            checkRequestResponseStatus(req, HttpURLConnection.HTTP_OK);
+            return (String) json.get("url");
+        } catch (SeafException e) {
+            throw e;
+        } catch (HttpRequestException e) {
+            throw getSeafExceptionFromHttpRequestException(e);
+        } catch (IOException e) {
+            throw SeafException.networkException;
+        } catch (JSONException e) {
+            throw SeafException.encodingException;
         }
     }
 

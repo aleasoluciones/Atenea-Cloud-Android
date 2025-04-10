@@ -375,23 +375,23 @@ public class AccountDetailActivity extends BaseActivity implements  Toolbar.OnMe
         });
     }
 
-    public void verifyPolicy(Account account, PolicyVerificationCallback callback) {
+    public void verifyPolicy(Account account, String accountPolicyURL, PolicyVerificationCallback callback) {
         SharedPreferences preferences = getSharedPreferences("PolicyUser", Context.MODE_PRIVATE);
         boolean policyAccept = preferences.getBoolean("PolicyUser "+ account.getServer()+ account.getEmail(),false);
 
         Log.d("Policy", "Valor de politica "+  policyAccept);
 
         if (!policyAccept) {
-            showDialogPolicy(callback);
+            showDialogPolicy(callback, accountPolicyURL);
         }else {
             // Llamar al callback si la política ya se ha aceptado
             callback.onPolicyVerified(true);
         }
     }
 
-    public void showDialogPolicy(final PolicyVerificationCallback callback){
+    public void showDialogPolicy(final PolicyVerificationCallback callback, String accountPolicyURL){
         SharedPreferences preferences = getSharedPreferences("PolicyUser", Context.MODE_PRIVATE);
-            PolicyPolityDialog dialog = new PolicyPolityDialog(this, new PolicyPolityDialog.OnCloseListener() {
+            PolicyPolityDialog dialog = new PolicyPolityDialog(this, accountPolicyURL, new PolicyPolityDialog.OnCloseListener() {
                 @Override
                 public void onClose(boolean accepted) {
                     if (accepted) {
@@ -599,6 +599,8 @@ public class AccountDetailActivity extends BaseActivity implements  Toolbar.OnMe
                 DataManager manager = new DataManager(loginAccount);
                 AccountInfo accountInfo = manager.getAccountInfo();
 
+                String accountPolicyURL = sc.getAteneaProxyPolicyURL(accountInfo.getEmail());
+
                 if (accountInfo == null)
                     return "Unknown error";
 
@@ -613,7 +615,7 @@ public class AccountDetailActivity extends BaseActivity implements  Toolbar.OnMe
                 executor.execute(() -> {
 
                     handler.post(() -> {
-                        verifyPolicy(loginAccount, new PolicyVerificationCallback() {
+                        verifyPolicy(loginAccount, accountPolicyURL, new PolicyVerificationCallback() {
                             @Override
                             public void onPolicyVerified(boolean isAccept) {
                                 accept[0] = isAccept;

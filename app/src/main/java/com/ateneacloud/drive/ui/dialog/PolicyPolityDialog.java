@@ -12,6 +12,7 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.UnderlineSpan;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -22,6 +23,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 
 import com.ateneacloud.drive.R;
+import com.ateneacloud.drive.account.Account;
 import com.ateneacloud.drive.util.Utils;
 
 public class PolicyPolityDialog extends Dialog implements View.OnClickListener {
@@ -30,11 +32,14 @@ public class PolicyPolityDialog extends Dialog implements View.OnClickListener {
     private TextView textViewPolicy;
     private CheckBox checkBox;
     private Context mContext;
+
+    private String mAccountPolicyURL;
    private PolicyPolityDialog.OnCloseListener onCloseListener;
 
-    public PolicyPolityDialog(@NonNull Context context, PolicyPolityDialog.OnCloseListener listener) {
+    public PolicyPolityDialog(@NonNull Context context, String accountPolicyURL, PolicyPolityDialog.OnCloseListener listener) {
         super(context);
         this.mContext = context;
+        this.mAccountPolicyURL = accountPolicyURL;
         this.onCloseListener = listener;
     }
 
@@ -74,7 +79,7 @@ public class PolicyPolityDialog extends Dialog implements View.OnClickListener {
             @Override
             public void onClick(View textView) {
                 // Acción cuando se hace clic en el enlace
-                Intent intent = new Intent(Intent.ACTION_VIEW,  Uri.parse(mContext.getString(R.string.url_policy)));
+                Intent intent = new Intent(Intent.ACTION_VIEW,  Uri.parse(mAccountPolicyURL));
                 mContext.startActivity(intent);
             }
         };
