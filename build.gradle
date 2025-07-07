@@ -12,7 +12,7 @@
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.9.3'
         classpath 'com.google.gms:google-services:4.4.1'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.9.9'
         // NOTE: Do not place your application dependencies here; they belong
@@ -34,9 +34,9 @@ allprojects {
 }
 
 ext {
-    compileSdkVersion = 33
+    compileSdkVersion = 35
     supportLibVersion = '27.1.1'
     minSdkVersion = 29
-    targetSdkVersion = 34
+    targetSdkVersion = 35
     buildToolsVersion = '27.0.3'
 }
