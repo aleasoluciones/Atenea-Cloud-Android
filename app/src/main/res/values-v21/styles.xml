@@ -3,6 +3,7 @@
 
     <style name="AppTheme" parent="AppTheme.Base"/>
 
+
     <!-- Base application theme. -->
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/color_primary</item>
@@ -19,6 +20,8 @@
         <item name="colorButtonNormal">@color/fancy_blue</item>
         <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
         <item name="android:alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+        <item name="android:navigationBarColor">@color/fancy_light_white</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="NegativeButton" parent="Base.Widget.AppCompat.Button">

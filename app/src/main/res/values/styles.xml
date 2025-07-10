@@ -43,6 +43,8 @@
         <item name="android:colorButtonNormal">@color/fancy_blue</item>
         <item name="colorButtonNormal">@color/fancy_blue</item>
         <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+        <item name="android:navigationBarColor">@color/fancy_light_white</item>
+        <item name="android:windowLightNavigationBar">true</item>
     </style>
 
     <style name="AppTheme.Multiple" parent="AppTheme">
