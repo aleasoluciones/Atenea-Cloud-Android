@@ -16,6 +16,24 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: Check if versionCode line changed
+      id: version-check
+      run: |
+        # Busca cambios en la línea que contiene 'versionCode'
+        if git diff HEAD^ HEAD -- app/build.gradle | grep -E '^[+-].*versionCode'; then
+          echo "Version code line was changed"
+          echo "changed=true" >> $GITHUB_OUTPUT
+        else
+          echo "Version code line was NOT changed"
+          echo "changed=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Stop job if versionCode not changed
+      if: steps.version-check.outputs.changed == 'false'
+      run: |
+        echo "versionCode no cambió. Cancelando ejecución del CI."
+        exit 0
+          
     - name: Install Unzip/Zstd
       if: ${{ env.ACT }} # Only run on local act
       run: apt update -y && apt install -y unzip zstd
