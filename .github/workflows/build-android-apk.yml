@@ -9,9 +9,10 @@ on:
       - mod
 
 jobs:
-  build:
+  check-version:
     runs-on: ubuntu-latest
-
+    outputs:
+      version_changed: ${{ steps.version-check.outputs.changed }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -19,21 +20,31 @@ jobs:
     - name: Check if versionCode line changed
       id: version-check
       run: |
-        # Busca cambios en la línea que contiene 'versionCode'
+        echo "Checking for versionCode changes..."
+        
+        if [ ! -f "app/build.gradle" ]; then
+          echo "::error::app/build.gradle not found"
+          echo "changed=false" >> $GITHUB_OUTPUT
+          exit 1
+        fi
+        
         if git diff HEAD^ HEAD -- app/build.gradle | grep -E '^[+-].*versionCode'; then
-          echo "Version code line was changed"
+          echo "::notice::Version code line was changed"
           echo "changed=true" >> $GITHUB_OUTPUT
         else
-          echo "Version code line was NOT changed"
+          echo "::notice::Version code line was NOT changed"
           echo "changed=false" >> $GITHUB_OUTPUT
         fi
 
-    - name: Stop job if versionCode not changed
-      if: steps.version-check.outputs.changed == 'false'
-      run: |
-        echo "versionCode no cambió. Cancelando ejecución del CI."
-        exit 0
-          
+  build:
+    needs: check-version
+    if: needs.check-version.outputs.version_changed == 'true'
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
     - name: Install Unzip/Zstd
       if: ${{ env.ACT }} # Only run on local act
       run: apt update -y && apt install -y unzip zstd
@@ -144,3 +155,12 @@ jobs:
         asset_name: ${{ env.RELEASE_AAB_FILENAME }}
         asset_content_type: application/vnd.android.package-archive
 
+  skip-notification:
+    needs: check-version
+    if: needs.check-version.outputs.version_changed == 'false'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Skip build notification
+      run: |
+        echo "::notice::No versionCode changes detected. Build skipped."
+        echo "Artifacts will not be generated because there are no version changes."
